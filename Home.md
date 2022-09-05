@@ -6,7 +6,7 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 
 ## Why eweOS
 
-It's fun.
+It's fun!
 
 ## Contribute to eweOS
 
