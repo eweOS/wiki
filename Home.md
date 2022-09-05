@@ -23,6 +23,10 @@ It's fun.
 - [Create Bootable Image](/todos/bootable-image)
 - [Change Init System to dinit](/todos/move-to-dinit)
 
+## Guides
+
+- [Create Non-bootable Disk Image](/guides/create-nbootable-image)
+
 ## Quick Notes
 
 [Quick Notes](/quick-notes)
