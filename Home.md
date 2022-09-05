@@ -1,8 +1,6 @@
-# eweOS Wiki
-
 <img src="/uploads/logo.png" alt="eweOS Logo" width="200"/>
 
-Welcome to eweOS wiki!
+**Welcome to eweOS wiki!**
 
 eweOS is an musl-based, lightweight, general-purpose Linux distribution, which adopts musl libc and busybox to the latest versions of software with a rolling-release model.
 
