@@ -10,8 +10,11 @@ Work Project: [eweOS:LLVM](https://os-build.ewe.moe/project/show/eweOS:LLVM)
 - libcxxabi (libc++abi)
 - lld
 - compiler-rt
-- lldb
 - libunwind
+
+## Packages (Currently not used)
+
+- lldb
 - openmp
 - lldb
 - libclc
