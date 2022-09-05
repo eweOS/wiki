@@ -11,3 +11,4 @@
 ### mkinitramfs
 
 - remove `bash`
+- replace `bash` and `sh` with `ash`
