@@ -6,7 +6,7 @@
 
 - ~~remove `halt` `poweroff` `reboot` for `dinit`~~ (Finished)
 - ~~remove `lspci` for `pciutils`~~ (Finished)
-- enable `ash` for initramfs
+- ~~enable `ash` for initramfs~~ (Finished)
 
 ### mkinitramfs
 
