@@ -8,7 +8,7 @@ Work Project: [eweOS:LLVM](https://os-build.ewe.moe/project/show/eweOS:LLVM)
 - llvm
 - libcxx (libc++)
 - libcxxabi (libc++abi)
-- lld
+- lld (will be replaced with mold)
 - compiler-rt
 - libunwind
 
