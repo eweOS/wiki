@@ -2,7 +2,7 @@
 
 ```
 [options]
-HoldPkg     = pacman glibc
+HoldPkg     = pacman musl
 Architecture = auto
 Color
 CheckSpace
