@@ -1,5 +1,7 @@
 # TODO: Change Init System to dinit
 
+**Total progress: 70%**
+
 Currently eweOS uses S6 for /sbin/init, and it will be replaced with dinit.
 
 Some services must be rewritten before S6 is formally replaced:
