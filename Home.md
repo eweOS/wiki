@@ -1,4 +1,4 @@
-<img src="/uploads/logo.png" alt="eweOS Logo" width="150"/>
+<img src="/uploads/logo.png" alt="eweOS Logo" width="100" style="float: left; margin-right: 20px;"/>
 
 **Welcome to eweOS wiki!**
 
@@ -10,10 +10,10 @@ It's fun.
 
 ## Contribute to eweOS
 
-* [HomePage](https://os.ewe.moe)
-* [Wiki](https://os-wiki.ewe.moe)
-* [Repo](https://os-repo.ewe.moe)
-* [BuildSystem](https://os-build.ewe.moe)
+* :house: [HomePage](https://os.ewe.moe)
+* :notebook_with_decorative_cover: [Wiki](https://os-wiki.ewe.moe)
+* :package: [Repo](https://os-repo.ewe.moe)
+* :hammer: [BuildSystem](https://os-build.ewe.moe)
 
 ## TODOs
 
