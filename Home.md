@@ -1,4 +1,4 @@
-<img src="/uploads/logo.png" alt="eweOS Logo" width="200"/>
+<img src="/uploads/logo.png" alt="eweOS Logo" width="150"/>
 
 **Welcome to eweOS wiki!**
 
@@ -14,3 +14,11 @@ It's fun.
 * [Wiki](https://os-wiki.ewe.moe)
 * [Repo](https://os-repo.ewe.moe)
 * [BuildSystem](https://os-build.ewe.moe)
+
+## TODOs
+
+- [Split LLVM Package](/todos/llvm-split)
+- [Split Core Package Group](/todos/core-split)
+- [Create Unified Kernel Image](/todos/uni-kernel-image)
+- [Create Bootable Image](/todos/bootable-image)
+- [Change Init System to dinit](/todos/move-to-dinit)
