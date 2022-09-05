@@ -22,3 +22,9 @@ It's fun.
 - [Create Unified Kernel Image](/todos/uni-kernel-image)
 - [Create Bootable Image](/todos/bootable-image)
 - [Change Init System to dinit](/todos/move-to-dinit)
+
+## Quick Notes
+
+[Quick Notes](/quick-notes)
+
+Quick Notes is a rapidly updated notepad for project management of contributors.
