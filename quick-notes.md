@@ -23,4 +23,4 @@ Currently: x86
 
 Roadmap: arm64 riscv64 (as Tier-1 support)
 
-- `mold` have no riscv64 support yet.
+- ~~`mold` have no riscv64 support yet.~~ (Now supported)
