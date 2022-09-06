@@ -24,3 +24,5 @@ sudo umount ./test-os
 
 qemu-system-x86_64 -m 1G -hda testos.img -kernel vmlinux -initrd initrd.gz -nographic -append "console=ttyS0 root=/dev/sda" -device virtio-net,netdev=ewe -netdev user,id=ewe
 ```
+
+A copy of usable `pacman.conf` can be found at [here](https://os-wiki.ewe.moe/guides/usable-pacman-conf).
