@@ -10,17 +10,21 @@ ParallelDownloads = 8
 
 [core]
 SigLevel = Never
-Server = http://repo.nia.dn42/eweos/core/x86_64/
+Server = http://os-repo.ewe.moe/eweos/core/x86_64/
 
 [boot]
 SigLevel = Never
-Server = http://repo.nia.dn42/eweos/boot/x86_64/
+Server = http://os-repo.ewe.moe/eweos/boot/x86_64/
 
 [kernel]
 SigLevel = Never
-Server = http://repo.nia.dn42/eweos/kernel/x86_64/
+Server = http://os-repo.ewe.moe/eweos/kernel/x86_64/
 
 [extra]
 SigLevel = Never
-Server = http://repo.nia.dn42/eweos/extra/x86_64/
+Server = http://os-repo.ewe.moe/eweos/extra/x86_64/
+
+[desktop]
+SigLevel = Never
+Server = http://os-repo.ewe.moe/eweos/desktop/x86_64/
 ```
