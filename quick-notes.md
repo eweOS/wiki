@@ -15,7 +15,7 @@
 
 ### utmps
 
-- A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit.
+- A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit. (Note)
 
 ## Architecture
 
