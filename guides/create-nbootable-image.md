@@ -1,6 +1,6 @@
 # Create Non-bootable Disk Image
 
-All-in-one script:
+All-in-one script (from a installed Archlinux):
 
 ```
 #!/bin/bash
