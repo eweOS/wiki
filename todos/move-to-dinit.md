@@ -9,5 +9,6 @@ Some services must be rewritten before S6 is formally replaced:
 - ~~`tty1` and `ttyS0` must be launched.~~ (Finished)
 - ~~`syslogd` must be launched.~~ (Finished)
 - `utmps` services must be launched.
+  - `s6-ipcserver` is required, try `ucspi-unix` for alternative.
 
 For every newly added package, s6 service file is not needed anymore while dinit service file is required.
