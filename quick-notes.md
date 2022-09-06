@@ -13,6 +13,10 @@
 - ~~remove `bash`~~ (Finished)
 - ~~replace `bash` and `sh` with `ash`~~ (Finished)
 
+### utmps
+
+- A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit.
+
 ## Architecture
 
 Currently: x86
