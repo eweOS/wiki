@@ -1,5 +1,7 @@
 # Create Bootable Image
 
+**Total progress: 90%**
+
 Currently eweOS have no bootloader built from source code. A choice is `clover-efi` from `eweOS:Boot`, which is a package built from binaries. 
 
 `syslinux` and `grub` can not be built currently since `gcc` and/or `binutils` are required.
