@@ -10,8 +10,8 @@
 
 ### mkinitramfs
 
-- remove `bash`
-- replace `bash` and `sh` with `ash`
+- ~~remove `bash`~~ (Finished)
+- ~~replace `bash` and `sh` with `ash`~~ (Finished)
 
 ## Architecture
 
