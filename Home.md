@@ -28,6 +28,7 @@ It's fun.
 
 - [Create Non-bootable Disk Image](/guides/create-nbootable-image)
 - [Currently Usable pacman.conf](/guides/usable-pacman-conf)
+- [Errors FAQ](/guides/errors-faq)
 
 ## Quick Notes
 
