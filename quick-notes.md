@@ -17,6 +17,10 @@
 
 - A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit. (Note)
 
+### sudo
+
+- Can be compiled with utmps.h
+
 ## Architecture
 
 Currently: x86
