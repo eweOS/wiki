@@ -11,6 +11,6 @@ Some services must be rewritten before S6 is formally replaced:
 - `utmps` services must be launched.
   - `s6-ipcserver` is required, try `ucspi-unix` for alternative.
 
-~~`dinit` must be compiled to support `utmps`.~~ (Finished)
+~~`dinit` must be compiled to support `utmps`.~~ (Finished but not working)
 
 For every newly added package, s6 service file is not needed anymore while dinit service file is required.
