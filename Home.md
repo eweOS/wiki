@@ -23,7 +23,6 @@ It's fun.
 - [Change Init System to dinit](/todos/move-to-dinit)
 - [Add git Package](/todos/add-git)
 - [Fakeroot with Busybox](/todo/fakeroot-busybox)
-- [Package List Table](https://docs.google.com/spreadsheets/d/1jUk64g5y9nh-wKk9xs8V5Ydt59ddO4aU_L-KtZ9hnVY/edit?usp=sharing)
 
 ## Guides
 
