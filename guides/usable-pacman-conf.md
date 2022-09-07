@@ -32,6 +32,10 @@ Server = http://os-repo.ewe.moe/eweos/misc/x86_64/
 SigLevel = Never
 Server = http://os-repo.ewe.moe/eweos/misclibs/x86_64/
 
+[network]
+SigLevel = Never
+Server = http://os-repo.ewe.moe/eweos/network/x86_64/
+
 [desktop]
 SigLevel = Never
 Server = http://os-repo.ewe.moe/eweos/desktop/x86_64/
