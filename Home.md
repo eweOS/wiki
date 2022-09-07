@@ -18,7 +18,6 @@ It's fun.
 ## TODOs
 
 - [Split LLVM Package](/todos/llvm-split)
-- [Split Core Package Group](/todos/core-split)
 - [Create Unified Kernel Image](/todos/uni-kernel-image)
 - [Create Bootable Image](/todos/bootable-image)
 - [Change Init System to dinit](/todos/move-to-dinit)
