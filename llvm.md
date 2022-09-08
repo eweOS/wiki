@@ -20,6 +20,7 @@
 - `LLVM_BUILD_LLVM_DYLIB` : ON. We'll build `libllvm` dynlib.
 - `LLVM_INCLUDE_BENCHMARKS` : OFF. We'll temporary disable benchmark.
 - `LLVM_TARGETS_TO_BUILD` : `Native`. Currently we do not consider cross compile.
+- `LLVM_LINK_LLVM_DYLIB` : ON. Build tools using `libllvm`.
 
 ## `clang` Flags
 
