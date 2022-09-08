@@ -30,3 +30,8 @@
 ## `libunwind` Flags
 
 - `LIBUNWIND_USE_COMPILER_RT` : ON. We use `compiler-rt`.
+
+## `compiler-rt` Flags
+
+- `DCOMPILER_RT_BUILD_SANITIZERS` : OFF. Not supported for musl.
+- `DCOMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
