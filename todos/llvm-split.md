@@ -11,12 +11,12 @@ Work Project: [eweOS:LLVM](https://os-build.ewe.moe/project/show/eweOS:LLVM)
 - libcxxabi (libc++abi)
 - libunwind
 (`libcxx` and `libcxxabi` can not be built without a mono repo)
+- compiler-rt
 
 ### Other packages
 
 - clang (as Default CC)
 - lld (will be replaced with mold)
-- compiler-rt
 
 ## Packages Standalone
 
