@@ -12,10 +12,13 @@ Work Project: [eweOS:LLVM](https://os-build.ewe.moe/project/show/eweOS:LLVM)
 - compiler-rt
 - libunwind
 
+## Packages Standalone
+
+- libclc (eweOS:Misclibs)
+
 ## Packages (Currently not used)
 
 - lldb
 - openmp
 - lldb
-- libclc
 - (Others)
