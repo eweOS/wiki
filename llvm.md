@@ -11,6 +11,7 @@
 ## `llvm` Flags
 
 - `LLVM_INSTALL_UTILS` : ON. We'll install llvm utils.
+- `LLVM_ENABLE_LIBCXX` : ON. We'll use libc++.
 
 ## `libcxx/abi` Flags
 
