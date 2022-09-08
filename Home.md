@@ -40,4 +40,4 @@ Quick Notes is a rapidly updated notepad for project management of contributors.
 ## Package Topic
 
 - [musl](/musl)
-- - [llvm](/llvm)
+- [llvm](/llvm)
