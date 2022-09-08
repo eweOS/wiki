@@ -9,6 +9,7 @@
   - `compiler-rt` `libcxx` `libcxxabi` `libunwind` are integrated into `llvm-libs`.
   - `libclc` `openmp` `lldb` are extra libs.
 - `LLVM_DEFAULT_TARGET_TRIPLE` : `$CHOST`.
+- `LLVM_HOST_TRIPLE` : `$CHOST`.
 
 ## `llvm` Flags
 
@@ -19,6 +20,11 @@
 - `LLVM_BUILD_LLVM_DYLIB` : ON. We'll build `libllvm` dynlib.
 - `LLVM_INCLUDE_BENCHMARKS` : OFF. We'll temporary disable benchmark.
 - `LLVM_TARGETS_TO_BUILD` : `Native`. Currently we do not consider cross compile.
+
+## `clang` Flags
+
+- `CLANG_DEFAULT_CXX_STDLIB` : `libc++`. We use `libc++` for C++ lib.
+- `CLANG_DEFAULT_RTLIB` : `compiler-rt`. We use `compiler-rt`.
 
 ## `libcxx/abi` Flags
 
