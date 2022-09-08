@@ -7,6 +7,7 @@
   - `lld` for `lld` package. (Default `ld` currently)
   - `clang` for `clang` package. (Default `cc`)
   - `compiler-rt` `libcxx` `libcxxabi` `libunwind` are integrated into `llvm-libs`.
+  - `libclc` `openmp` `lldb` are extra libs.
 - `LLVM_DEFAULT_TARGET_TRIPLE` : `$CHOST`.
 
 ## `llvm` Flags
