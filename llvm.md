@@ -1,5 +1,9 @@
 # LLVM
 
+## Test Scripts
+
+- [`install.sh` from a full build](/scripts/llvm-full-install-pkg.sh)
+
 ## Common Flags
 
 - `CMAKE_BUILD_TYPE` : Release.
