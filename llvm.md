@@ -10,6 +10,7 @@
   - `libclc` `openmp` `lldb` are extra libs.
 - `LLVM_DEFAULT_TARGET_TRIPLE` : `$CHOST`.
 - `LLVM_HOST_TRIPLE` : `$CHOST`.
+- `LLVM_ENABLE_PER_TARGET_RUNTIME_DIR` : OFF. We'll not seperate target dir by default.
 
 ## `llvm` Flags
 
