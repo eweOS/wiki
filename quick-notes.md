@@ -21,6 +21,10 @@
 
 - Can be compiled with utmps.h
 
+### mold
+
+- Can be compiled with external `tbb`
+
 ## Architecture
 
 Currently: x86
