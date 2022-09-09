@@ -20,7 +20,6 @@ It's fun.
 - [Create Unified Kernel Image](/todos/uni-kernel-image)
 - [Create Bootable Image](/todos/bootable-image)
 - [Change Init System to dinit](/todos/move-to-dinit)
-- [Add git Package](/todos/add-git)
 - [Fakeroot with Busybox](/todo/fakeroot-busybox)
 
 ## Guides
