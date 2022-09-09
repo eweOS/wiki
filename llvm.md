@@ -9,6 +9,17 @@ git
 libxml2
 ```
 
+## Special Sub-Packages
+
+`llvm-libs`: `libcxx` `libcxxabi` `libunwind`
+> These packages are installed in minimal system since most programs depend on them.
+
+`llvm-lto`: `libLTO.so*`
+> LTO lib. Required by linkers.
+
+`clang`: `clang` `compiler-rt`
+> `compiler-rt` is needed by clang.
+
 ## Common Flags
 
 - `CMAKE_BUILD_TYPE` : Release.
