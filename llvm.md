@@ -37,6 +37,7 @@ libz
 - `LLVM_ENABLE_PER_TARGET_RUNTIME_DIR` : OFF. We'll not seperate target dir by default.
 - `LLVM_BUILD_LLVM_C_DYLIB` : ON. We'll build shared libs by default.
 - `LLVM_LINK_LLVM_DYLIB` : ON. We'll also link shared libs.
+- `LLVM_LIBGCC_EXPLICIT_OPT_IN` : ON. We'll use llvm-libgcc to improve compatibility.
 
 ## `llvm` Flags
 
