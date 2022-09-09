@@ -1,8 +1,13 @@
 # LLVM
 
-## Test Scripts
+## Extra Dependencies
 
-- [`install.sh` from a full build](/scripts/llvm-full-install-pkg.sh)
+```
+libffi
+libedit
+git
+libxml2
+```
 
 ## Common Flags
 
