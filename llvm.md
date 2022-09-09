@@ -24,6 +24,9 @@ libz
 `clang`: `clang` `compiler-rt`
 > `compiler-rt` is needed by clang.
 
+`unknown`: `libLLVM*.a`
+> llvm-static libs, used to bootstrap `rust`.
+
 ## Common Flags
 
 - `CMAKE_BUILD_TYPE` : Release.
