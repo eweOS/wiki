@@ -10,7 +10,7 @@ libedit
 git
 libxml2
 ncurses
-xz
+libz
 ```
 
 ## Special Sub-Packages
