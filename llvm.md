@@ -15,6 +15,7 @@
 
 - `LLVM_INSTALL_UTILS` : ON. We'll install llvm utils.
 - `LLVM_ENABLE_LIBCXX` : ON. We'll use libc++.
+- `DLLVM_ENABLE_RTTI` : ON. We'll support EH.
 - `LLVM_ENABLE_FFI` : ON. We'll use `libffi`.
 - `LLVM_INSTALL_BINUTILS_SYMLINKS` : ON. We'll use llvm utils to replace GNU binutils.
 - `LLVM_BUILD_LLVM_DYLIB` : ON. We'll build `libllvm` dynlib.
