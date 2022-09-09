@@ -1,12 +1,15 @@
 # LLVM
 
-## Extra Dependencies
+## Temporary Note
+
+###  Extra Dependencies of 2nd Round Compile
 
 ```
 libffi
 libedit
 git
 libxml2
+ncurses
 ```
 
 ## Special Sub-Packages
