@@ -31,6 +31,7 @@ libz
   - `lld` for `lld` package. (Default `ld` currently)
   - `clang` for `clang` package. (Default `cc`)
   - `compiler-rt` `libcxx` `libcxxabi` `libunwind` are integrated into `llvm-libs`.
+    - `compiler-rt` & `libunwind` are included from `llvm-libgcc`, so remove them from list.
   - `libclc` `openmp` `lldb` are extra libs.
 - `LLVM_DEFAULT_TARGET_TRIPLE` : `$CHOST`.
 - `LLVM_HOST_TRIPLE` : `$CHOST`.
