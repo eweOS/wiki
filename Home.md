@@ -19,9 +19,10 @@ It's fun.
 
 - [Create Unified Kernel Image](/todos/uni-kernel-image)
 - [Create Bootable Image](/todos/bootable-image)
-- [Fakeroot with Busybox](/todo/fakeroot-busybox)
-- [Version Bumper](/todo/version-bumper)
-- [Switch to mold and mimalloc](/todo/switch-to-mold-mimalloc)
+- [Fakeroot with Busybox](/todos/fakeroot-busybox)
+- [Version Bumper](/todos/version-bumper)
+- [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
+- [Upgrade Versions of Packages](/todos/upgrade-versions)
 
 ## Guides
 
