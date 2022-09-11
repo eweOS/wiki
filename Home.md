@@ -30,6 +30,7 @@ It's fun.
 - [Currently Usable pacman.conf](/guides/usable-pacman-conf)
 - [Errors FAQ](/guides/errors-faq)
 - [Temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md)
+- [Launch Prebuilt Image](/guides/launch-prebuilt-image)
 
 ## Quick Notes
 
