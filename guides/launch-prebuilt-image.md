@@ -1,5 +1,6 @@
 # Launch Prebuilt Image
 
+You need to download prebuild at [here](https://os-repo.ewe.moe/eweos-images/), extract kernel and disk image.
 
 ```
 #!/bin/bash
