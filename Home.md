@@ -26,6 +26,8 @@ It's fun.
 
 ## Guides
 
+> Attention: these guides are not for end users and can not guarante to be valid.
+
 - [Currently Usable pacman.conf](/guides/usable-pacman-conf)
 - [Errors FAQ](/guides/errors-faq)
 - [Temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md)
