@@ -12,7 +12,7 @@ If you are not preparing for booting inside qemu, you can also simply use
 $ mkdir eweos
 # mount --bind eweos eweos
 ```
-Then, install necessary packages. Get [a usable pacman.conf](https://os-wiki.ewe.moe/guides/usable-pacman-conf) first.
+Then, install necessary packages. Get [a usable pacman.conf](https://os-repo.ewe.moe/eweos/pacman.conf) first.
 
 Assuming that you already saved it as pacman.conf,
 ```
