@@ -8,12 +8,14 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 
 It's fun.
 
-## Contribute to eweOS
+## Useful Links
 
 * :house: [HomePage](https://os.ewe.moe)
 * :notebook_with_decorative_cover: [Wiki](https://os-wiki.ewe.moe)
 * :package: [Repo](https://os-repo.ewe.moe)
 * :hammer: [BuildSystem](https://os-build.ewe.moe)
+
+## Guides
 
 ## TODOs
 
@@ -24,7 +26,7 @@ It's fun.
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
 - [Upgrade Versions of Packages](/todos/upgrade-versions)
 
-## Guides
+## Dev Guides
 
 > Attention: these guides are not for end users and can not guarante to be valid.
 
