@@ -26,7 +26,6 @@ It's fun.
 
 ## Guides
 
-- [Create Non-bootable Disk Image](/guides/create-nbootable-image)
 - [Currently Usable pacman.conf](/guides/usable-pacman-conf)
 - [Errors FAQ](/guides/errors-faq)
 - [Temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md)
