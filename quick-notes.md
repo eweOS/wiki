@@ -25,6 +25,28 @@
 
 - Can be compiled with external `tbb`
 
+## Package Alternatives
+
+- `glibc` : `musl`
+- `gcc` `gcc-libs` : `clang` `llvm`
+- `libtool` : `slibtool`
+- `binutils` : `llvm`
+- `coreutils` : `busybox`
+- `util-linux` : `busybox` (partially)
+- `kmod` : `busybox` (just bin)
+- `systemd` : `dinit`
+- `lld` : `mold` (default)
+- `libudev` : `libudev-zero`
+
+### Work in progress
+
+- `zlib` : `zlib-ng`
+- `openssl` : `libressl`
+- `readline` : `libedit`
+- 
+
+### libtool
+
 ## Architecture
 
 Currently: x86
