@@ -36,14 +36,13 @@
 - `kmod` : `busybox`
 - `systemd` : `dinit`
 - `lld` : `mold` (default)
+- `zlib` : `zlib-ng`
 - `libudev` : `libudev-zero`
 
 ### Work in progress
 
-- `zlib` : `zlib-ng`
 - `openssl` : `libressl`
 - `readline` : `libedit`
-
 
 ## Architecture
 
