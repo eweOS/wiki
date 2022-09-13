@@ -4,3 +4,6 @@ This will be the page of musl introduction and troubleshooting.
 ## undefined reference to {get,set,swap}context
 Musl doesn't implement these functions because they are considered to be deprecated in POSIX standards. However this is still being used, for example, in `libxcrypt`.
 To address this problem, install `libucontext` and add `-lucontext` to compile parameters.
+
+## fatal: library not found: c
+The linker tries to link to musl static libs but failed. You can install `musl-static`, but the better way is to figure out if linking against static libc can be avoided
