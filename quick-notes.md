@@ -28,7 +28,7 @@
 ## Package Alternatives
 
 - `glibc` : `musl`
-- `gcc` `gcc-libs` : `clang` `llvm`
+- `gcc` `gcc-libs` : `clang` `llvm` `llvm-libs`
 - `libtool` : `slibtool`
 - `binutils` : `llvm`
 - `coreutils` : `busybox`
