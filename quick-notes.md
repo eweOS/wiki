@@ -33,7 +33,7 @@
 - `binutils` : `llvm`
 - `coreutils` : `busybox`
 - `util-linux` : `busybox` (partially)
-- `kmod` : `busybox` (just bin)
+- `kmod` : `busybox`
 - `systemd` : `dinit`
 - `lld` : `mold` (default)
 - `libudev` : `libudev-zero`
