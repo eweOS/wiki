@@ -43,9 +43,7 @@
 - `zlib` : `zlib-ng`
 - `openssl` : `libressl`
 - `readline` : `libedit`
-- 
 
-### libtool
 
 ## Architecture
 
