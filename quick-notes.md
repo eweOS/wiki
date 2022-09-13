@@ -47,7 +47,7 @@
 
 ## Architecture
 
-Currently: x86
+Currently: x86_64
 
 Roadmap: arm64 riscv64 (as Tier-1 support)
 
