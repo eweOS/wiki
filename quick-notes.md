@@ -41,8 +41,11 @@
 
 ### Work in progress
 
-- `openssl` : `libressl`
 - `readline` : `libedit`
+
+### Not considered
+
+- `openssl` : `libressl`. It's too hard to maintain sets of patches for unsupported packages.
 
 ## Architecture
 
