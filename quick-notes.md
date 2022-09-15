@@ -25,6 +25,10 @@
 
 - Can be compiled with external `tbb`
 
+### grub
+
+- EFI support requires `objcopy` from `binutils`, consider alternatives.
+
 ## Package Alternatives
 
 - `glibc` : `musl`
