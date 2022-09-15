@@ -29,6 +29,10 @@
 
 - EFI support requires `objcopy` from `binutils`, consider alternatives.
 
+### clover-efi
+
+- Deprecate when EFI is support in grub.
+
 ## Package Alternatives
 
 - `glibc` : `musl`
