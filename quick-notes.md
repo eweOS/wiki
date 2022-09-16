@@ -27,7 +27,9 @@
 
 ### grub
 
-- EFI support requires `objcopy` from `binutils`, consider alternatives.
+- ~~EFI support requires `objcopy` from `binutils`, consider alternatives.~~
+- `binutils-objcopy` is available
+- pxe.h is lost
 
 ### clover-efi
 
@@ -37,6 +39,11 @@
 
 - test failed, also on arch, skipped check
 - a service file can be add, although not on arch.
+
+### binutils again
+
+- Now `binutils-objcopy` is included to build GRUB-efi
+- `binutils-gold` is under consideration
 
 ## Package Alternatives
 
