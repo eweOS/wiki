@@ -33,6 +33,11 @@
 
 - Deprecate when EFI is support in grub.
 
+### aria2
+
+- test failed, also on arch, skipped check
+- a service file can be add, although not on arch.
+
 ## Package Alternatives
 
 - `glibc` : `musl`
