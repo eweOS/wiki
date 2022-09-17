@@ -27,9 +27,9 @@
 
 ### grub
 
-- ~~EFI support requires `objcopy` from `binutils`, consider alternatives.~~
-- `binutils-objcopy` is available
-- pxe.h is lost
+- ~~EFI support requires `objcopy` from `binutils`, consider alternatives.~~ (`binutils-objcopy` is available now)
+- ~~pxe.h is lost~~ (Fixed)
+- Package split: `grub-common` `grub-bios` `grub-efi` `grub-theme-*`
 
 ### clover-efi
 
