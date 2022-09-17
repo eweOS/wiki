@@ -1,5 +1,10 @@
+This guide assumes that you have experience in Arch packaging, using common build tools and familiar with basic use of git.
+
 # Create a working environment
 See [temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md). After installation you can browse repositories as normal. We also have `base-devel` like Arch does, but it's a meta package, and is required when building a package.
+
+# Get permissions
+Contact @yukarichiba in our [matrix space](https://matrix.to/#/#os:ewe.moe), and she will invite you to our GitHub organization.
 
 # Choose repo to place package
 This is the logic of choosing repos (match in order):        
