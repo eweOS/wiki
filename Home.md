@@ -20,7 +20,6 @@ It's fun.
 ## TODOs
 
 - [Create Unified Kernel Image](/todos/uni-kernel-image)
-- [Create Bootable Image](/todos/bootable-image)
 - [Fakeroot with Busybox](/todos/fakeroot-busybox)
 - [Version Bumper](/todos/version-bumper)
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
