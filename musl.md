@@ -7,3 +7,6 @@ To address this problem, install `libucontext` and add `-lucontext` to compile p
 
 ## fatal: library not found: c
 The linker tries to link to musl static libs but failed. You can install `musl-static`, but the better way is to figure out if linking against static libc can be avoided.
+
+## fatal error: 'sys/{queue,cdefs,tree}.h' file not found
+Install `bsd-compat-headers`. Remember also set sys-{queue,cdefs,tree}.h (the one that not found) as depends if you are making a package.
