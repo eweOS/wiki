@@ -3,6 +3,27 @@ This guide assumes that you have experience in Arch packaging, using common buil
 # Create a working environment
 See [temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md). After installation you can browse repositories as normal. We also have `base-devel` like Arch does, but it's a meta package, and is required when building a package.
 
+# Know the basics
+eweOS's main changes from Arch Linux, that affects packaging, are clang/llvm and musl.      
+
+## musl
+When you see `depends=('glibc')`, you can try change it to `depends=('musl')` firstly. This works in the 95% cases approximately. There are also some problems, usually because musl doesn't have some headers, provide such functions or only made a stub. The common troubles and solutions/workarounds are listed in [musl page](https://os-wiki.ewe.moe/musl).
+
+## clang
+Clang and musl is installed by default, and /usr/bin/cc points to clang, so in most cases you don't need to tell build tools you are using it. If you see someone wrote `gcc` in Arch PKGBUILD, simply changing it to `cc` or `clang` is okay. When a package has `depends=('gcc-libs')`, the corresponding depends in llvm is mostly libunwind and libcxx, so changing it to `depends=('llvm-libs')` usually works. See [this page](https://os-wiki.ewe.moe/llvm) for more about clang and llvm.
+
+## mold
+In rare cases you may see mold linker reports an error that it can't read some commands from `xxx.ld` or other things. You can specify the default ld (How to specify default ld? Google it) to lld and add `lld` to makedepends. Gold will be introduced soon, but if you use gold, remember to report in the development group.
+
+## Busybox
+Busybox provides nearly all of coreutils, half of util-linux and some archive tools and filesystem tools. If you don't know where is the command, use `pacman -F /usr/bin/xxx`. Also use it on Arch Linux, if you've installed one, then you can easily figure out what happens. Busybox doesn't provide libraries, so things like `util-linux-libs` should remain the same. We've renamed `bzip2` to `libbz2`. Don't be afraid to miss any dependencies, since the error will also point out what it exactly needs.
+
+## Solving unknown issues
+1. Remember alpine linux and chimera linux are our best neighbors. Check [their build files](https://os-wiki.ewe.moe/Other%20similar%20distros%20and%20projects.md) if you have anything unknown or uncertain.
+2. Search on Google, remember to take keywords musl or clang.
+3. Search the project issues.
+4. Feel free to ask in the group.
+
 # Get permissions
 Contact @yukarichiba in our [matrix space](https://matrix.to/#/#os:ewe.moe), and she will invite you to our GitHub organization.
 
