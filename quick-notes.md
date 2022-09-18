@@ -51,7 +51,7 @@
 - `glibc` : `musl`
 - `gcc` `gcc-libs` : `clang` `llvm` `llvm-libs`
 - `libtool` : `slibtool`
-- `binutils` : `llvm`
+- `binutils` : `llvm` + `binutils-*` (standalone tools)
 - `coreutils` : `busybox`
 - `util-linux` : `busybox` (partially)
 - `kmod` : `busybox`
