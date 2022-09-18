@@ -18,11 +18,20 @@ In rare cases you may see mold linker reports an error that it can't read some c
 ## Busybox
 Busybox provides nearly all of coreutils, half of util-linux and some archive tools and filesystem tools. If you don't know where is the command, use `pacman -F /usr/bin/xxx`. Also use it on Arch Linux, if you've installed one, then you can easily figure out what happens. Busybox doesn't provide libraries, so things like `util-linux-libs` should remain the same. We've renamed `bzip2` to `libbz2`. Don't be afraid to miss any dependencies, since the error will also point out what it exactly needs.
 
+Some busybox commands does not offer some arguments compared to normal ones. Figure out how to use other commands to replace them. Long arguments (such as --compress) are not supported in some commands, replacing them to short ones should work.
+
+## Dinit
+Dinit is not a drop-in replacement for systemd, although they are very similar. See [Configuring services](https://github.com/davmac314/dinit#configuring-services) and [Getting Started Guide](https://github.com/davmac314/dinit/blob/master/doc/getting_started.md) for writing and testing dinit service profiles.
+
+## checks
+Skip checks sometimes. If checks fails with some unimportant reasons, such as you are running in a chroot container (so remember to run again in a virtual machine to prove it), or other things related to clang and musl about the test itself, you can consider to skip them.
+
+For cmake, append -E [regex] to ctest arguments to ignore these tests. For GNU make & configure or automake, things get harder, but you can find parameters to skip partial test in project Readme, or directly look into Makefile or makefile.am, makefile.in, configure, etc. 
+
 ## Others
 1. `/usr/share/doc` is dropped till now, so you can safely remove all commands and dependencies (such as doxygen, docbook-xml, docbook-xsl, etc) generating the doc.
 2. hashes are ignored, so changing all checksums to SKIP. If b2sums exist, change the name to other sums. We will implement automatically writing hashes in the version bump task (nvchecker very likely) and after build.
 3. GPG binary doesn't present. Remove validpgpkeys and asc/sig files in source (they often come with {,sig} or {,asc} ,and SKIP in checksums). This will also be handled in the version bump process.
-4. Ignore checks sometimes. If cmake checks fails with some unimportant reasons, such as you are running in a chroot container (so remember to run again in a virtual machine to prove it), or other things related to clang and musl about the test itself, you can append -E [regex] to ctest arguments to ignore these tests. For make, things get harder
 
 ## Solving unknown issues
 1. Remember alpine linux and chimera linux are our best neighbors. Check [their build files](https://os-wiki.ewe.moe/Other%20similar%20distros%20and%20projects.md) if you have anything unknown or uncertain.
