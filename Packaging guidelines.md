@@ -18,6 +18,12 @@ In rare cases you may see mold linker reports an error that it can't read some c
 ## Busybox
 Busybox provides nearly all of coreutils, half of util-linux and some archive tools and filesystem tools. If you don't know where is the command, use `pacman -F /usr/bin/xxx`. Also use it on Arch Linux, if you've installed one, then you can easily figure out what happens. Busybox doesn't provide libraries, so things like `util-linux-libs` should remain the same. We've renamed `bzip2` to `libbz2`. Don't be afraid to miss any dependencies, since the error will also point out what it exactly needs.
 
+## Others
+1. `/usr/share/doc` is dropped till now, so you can safely remove all commands and dependencies (such as doxygen, docbook-xml, docbook-xsl, etc) generating the doc.
+2. hashes are ignored, so changing all checksums to SKIP. If b2sums exist, change the name to other sums. We will implement automatically writing hashes in the version bump task (nvchecker very likely) and after build.
+3. GPG binary doesn't present. Remove validpgpkeys and asc/sig files in source (they often come with {,sig} or {,asc} ,and SKIP in checksums). This will also be handled in the version bump process.
+4. Ignore checks sometimes. If cmake checks fails with some unimportant reasons, such as you are running in a chroot container (so remember to run again in a virtual machine to prove it), or other things related to clang and musl about the test itself, you can append -E [regex] to ctest arguments to ignore these tests. For make, things get harder
+
 ## Solving unknown issues
 1. Remember alpine linux and chimera linux are our best neighbors. Check [their build files](https://os-wiki.ewe.moe/Other%20similar%20distros%20and%20projects.md) if you have anything unknown or uncertain.
 2. Search on Google, remember to take keywords musl or clang.
