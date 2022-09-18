@@ -14,6 +14,7 @@ It's fun.
 * :notebook_with_decorative_cover: [Wiki](https://os-wiki.ewe.moe)
 * :package: [Repo](https://os-repo.ewe.moe)
 * :hammer: [BuildSystem](https://os-build.ewe.moe)
+* :computer: [TestServer](https://os-test.ewe.moe)
 
 ## Guides
 
