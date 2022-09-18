@@ -30,6 +30,7 @@ It's fun.
 
 - [Temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md)
 - [Launch Prebuilt Image](/guides/launch-prebuilt-image)
+- [Packaging Guidelines](https://os-wiki.ewe.moe/Packaging%20guidelines.md)
 
 ## Quick Notes
 
