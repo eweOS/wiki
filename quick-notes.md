@@ -46,6 +46,14 @@
 - Now `binutils-objcopy` is included to build GRUB-efi
 - `binutils-gold` is under consideration
 
+### filesystem
+
+- Add more groups
+
+### dinit
+
+- Add system groups/users for extra packages
+
 ## Package Alternatives
 
 - `glibc` : `musl`
