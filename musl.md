@@ -10,3 +10,6 @@ The linker tries to link to musl static libs but failed. You can install `musl-s
 
 ## fatal error: 'sys/{queue,cdefs,tree}.h' file not found
 Install `bsd-compat-headers`. Remember also set sys-{queue,cdefs,tree}.h (the one that not found) as depends if you are making a package.
+
+## fatal error: 'fts.h' file not found
+Install `musl-fts`. Remember also set `musl-fts` as makedepends if you are making a package.
