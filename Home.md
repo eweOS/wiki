@@ -24,6 +24,7 @@ It's fun.
 - [Fakeroot with Busybox](/todos/fakeroot-busybox)
 - [Version Bumper](/todos/version-bumper)
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
+- [Quick Notes](/quick-notes)
 
 ## Dev Guides
 
