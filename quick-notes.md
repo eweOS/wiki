@@ -76,11 +76,11 @@
 
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
-- `dbus` : `dbus-broker`
 
 ### Not considered
 
 - `openssl` : `libressl`. It's too hard to maintain sets of patches for unsupported packages.
+- `dbus` : `dbus-broker`. It needs `libsystemd` for `dbus-launcher`.
 
 ## Architecture
 
