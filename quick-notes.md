@@ -31,6 +31,9 @@
 - ~~pxe.h is lost~~ (Fixed)
 - ~~Package split: `grub-common` `grub-bios` `grub-efi` `grub-theme-*`~~ (Finished)
 - EFI installation requires `efibootmanager`
+- Add custom theme, maybe `grub-theme-eweos`?
+- Remove `GNU/Linux` text from bootmenu
+- Add initrd/vmlinuz search options for booster (patch from archlinux)
 
 ### clover-efi
 
@@ -56,7 +59,11 @@
 
 ### seatd
 
-- Seems not support clang 15
+- ~~Seems not support clang 15~~ (Fixed)
+
+### weston
+
+- Can not enter graphic interface, maybe mesa problem?
 
 ## Package Alternatives
 
