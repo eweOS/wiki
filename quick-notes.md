@@ -89,6 +89,17 @@
 - `openssl` : `libressl`. It's too hard to maintain sets of patches for unsupported packages.
 - `dbus` : `dbus-broker`. It needs `libsystemd` for `dbus-launcher`.
 
+## Graphical Interface
+
+Currently works:
+
+- `velox` as WM, use `swc-launch` to start session, with `wterm` terminal.
+
+Currently not works:
+
+- `weston` can not display
+- `sway` need pango and more gnome stuff
+
 ## Architecture
 
 Currently: x86_64
