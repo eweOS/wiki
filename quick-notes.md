@@ -54,6 +54,10 @@
 
 - Add system groups/users for extra packages
 
+### seatd
+
+- Seems not support clang 15
+
 ## Package Alternatives
 
 - `glibc` : `musl`
@@ -71,6 +75,7 @@
 ### Work in progress
 
 - `readline` : `libedit`
+- `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
 
 ### Not considered
 
