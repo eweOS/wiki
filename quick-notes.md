@@ -76,6 +76,7 @@
 
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
+- `dbus` : `dbus-broker`
 
 ### Not considered
 
