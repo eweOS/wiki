@@ -12,4 +12,6 @@
 
 ## Lua
 
+## Ruby
+
 ## Others
