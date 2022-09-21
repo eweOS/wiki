@@ -16,6 +16,7 @@
 ### utmps
 
 - A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit. (Note)
+- `tty2socket` : replace `s6-ipcserverd` (under development)
 
 ### sudo
 
@@ -84,7 +85,6 @@
 
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
-- `tty2socket` : replace `s6-ipcserverd` (under development)
 
 ### Not considered
 
