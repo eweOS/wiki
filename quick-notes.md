@@ -104,7 +104,7 @@ Currently not works:
 - `weston` can not display (segfault on `velox`)
   - Can launch via pixman (software render)
 - `sway` need pango and more gnome stuff
-- Mouse has offset in Proxmox, do not have event in QEMU
+- ~~Mouse has offset in Proxmox, do not have event in QEMU~~ (Fixed)
 
 ## Architecture
 
