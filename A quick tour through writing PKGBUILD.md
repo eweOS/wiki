@@ -71,3 +71,64 @@ Supposing that the source contains a `xxx.tar.gz` (regular formats of archive fi
 The `$srcdir` stands for absolute directory of src and `$pkgdir` stands for that of foo.
 
 Every function, `package` included, starts on directory $srcdir.
+
+# useful templates
+
+## add flags to `configure` / `cmake` / `meson`
+
+When a package needs lots of extra flags in configuring, it's better to define an array:
+
+```
+_activated_modules=(
+  --with-threads
+  --with-file-aio
+  --with-http_ssl_module
+  --with-http_v2_module
+  ...
+)
+```
+
+and then use it in `build()`:
+
+```
+  ./configure \
+    --prefix=/etc/nginx \
+    --sbin-path=/usr/bin/nginx \
+    ${_activated_modules[@]}
+```
+
+## fetch files for a splitted package
+
+If there are too many sub-packages to be splitted from different path patterns, a good choice is to use an array to define them:
+
+```
+FLIST_llvm_lto=(
+    "usr/lib/libLTO.so*"
+    "usr/lib/LLVMgold.so*"
+)
+```
+
+then use a funtion:
+
+```
+_fetchpkg() {
+    PKGBASE="$srcdir/pkgs/$1" && shift
+    mkdir -p $PKGBASE
+    for FILEPATH in $@; do
+        (cd "${srcdir}/PKGDIR" && find $FILEPATH | cpio -pdvmu $PKGBASE) || true
+        (cd "${srcdir}/PKGDIR" && find $FILEPATH -delete) || true
+    done
+}
+```
+
+in `build()` function, you can use it to extract files from these paths to specified directory:
+
+```
+_fetchpkg llvm-lto "${FLIST_llvm_lto[@]}"
+```
+
+finally, to use them in `package()` stages, just move them to `pkgdir`:
+
+```
+mv "$srcdir/pkgs/llvm-lto/usr" "${pkgdir}/usr"
+```
