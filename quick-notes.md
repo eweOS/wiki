@@ -101,7 +101,7 @@ Currently working:
 
 Currently not works:
 
-- `weston` can not display
+- `weston` can not display (segfault on `velox`)
 - `sway` need pango and more gnome stuff
 
 ## Architecture
