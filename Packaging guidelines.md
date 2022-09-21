@@ -1,4 +1,4 @@
-This guide assumes that you have experience in Arch packaging, using common build tools and familiar with basic use of git.
+This guide assumes that you have experience in Arch packaging (if you do not, but have other similar experience,see [Create Packages](https://os-wiki.ewe.moe/A%20quick%20tour%20through%20writing%20PKGBUILD.md)), using common build tools and familiar with basic use of git.
 
 # Create a working environment
 See [temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md). After installation you can browse repositories as normal. We also have `base-devel` like Arch does, but it's a meta package, and is required when building a package.
