@@ -18,6 +18,10 @@
 
 ## Lua
 
+- Spilited Versions of Lua(lua54 lua53 lua52 lua51)
+- luarocks
+- LuaJIT (under consideration)
+
 ## Ruby
 
 ## Others
