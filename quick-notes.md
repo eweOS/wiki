@@ -93,7 +93,11 @@
 
 Currently works:
 
-- `velox` as WM, use `swc-launch` to start session, with `wterm` terminal.
+- `velox` as WM, use `swc-launch` to start session, with `wterm` terminal
+
+Currently working:
+
+- `greetd`: Wait for `rust`
 
 Currently not works:
 
