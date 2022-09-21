@@ -47,7 +47,8 @@
 ### binutils again
 
 - Now `binutils-objcopy` is included to build GRUB-efi
-- `binutils-gold` is under consideration
+- ~~`binutils-gold` is under consideration~~
+- `binutils-gold` is included
 
 ### filesystem
 
@@ -83,6 +84,7 @@
 
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
+- `tty2socket` : replace `s6-ipcserverd` (under development)
 
 ### Not considered
 
