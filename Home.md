@@ -25,6 +25,7 @@ It's fun.
 - [Version Bumper](/todos/version-bumper)
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
 - [(Programming) Language support](/todos/pl-support)
+- [Merge Repo](/todos/merge-repo)
 - [Quick Notes](/quick-notes)
 
 ## Dev Guides
