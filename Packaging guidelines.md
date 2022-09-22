@@ -28,6 +28,10 @@ Skip checks sometimes. If checks fails with some unimportant reasons, such as yo
 
 For cmake, append -E [regex] to ctest arguments to ignore these tests. For GNU make & configure or automake, things get harder, but you can find parameters to skip partial test in project Readme, or directly look into Makefile or makefile.am, makefile.in, configure, etc. 
 
+## meson features
+
+`ewe-meson` has `auto-features=enabled` flags, which enforce all features to be enabled. When a package is at early stages of bootstrapping, you may need to set flags to turn extra features off manually.
+
 ## Others
 1. `/usr/share/doc` is dropped till now, so you can safely remove all commands and dependencies (such as doxygen, docbook-xml, docbook-xsl, etc) generating the doc.
 2. hashes are ignored, so changing all checksums to SKIP. If b2sums exist, change the name to other sums. We will implement automatically writing hashes in the version bump task (nvchecker very likely) and after build.
