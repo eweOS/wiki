@@ -4,6 +4,7 @@
 - ~~Step 2: Build all packages with `mold` and `mimalloc`.~~ (Finished)
 - ~~Step 3: Remove `lld->ld` symlink and replace it with `mold` in `base-devel`.~~ (Finished)
 - Step 4: Add `mimalloc` to `base` and add `lmimalloc` to default `LDFLAGS`, rebuild all packages.
+  - It fails! Most program reports segfault.
 
 ## LTO
 
