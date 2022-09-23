@@ -1,18 +1,5 @@
 # LLVM
 
-## Temporary Note
-
-###  Extra Dependencies of 2nd Round Compile
-
-```
-libffi
-libedit
-git
-libxml2
-ncurses
-libz
-```
-
 ## Special Sub-Packages
 
 `llvm-libs`: `libcxx` `libcxxabi` `libunwind`
