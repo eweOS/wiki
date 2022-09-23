@@ -47,6 +47,12 @@ For cmake, append -E [regex] to ctest arguments to ignore these tests. For GNU m
 Contact @yukarichiba in our [matrix space](https://matrix.to/#/#os:ewe.moe), and she will invite you to our GitHub organization.
 
 # Choose repo to place package
+
+1. `main`.
+2. `testing`.
+
+# Choose repo to place package (deprecated)
+
 This is the logic of choosing repos (match in order):        
 1. `desktop`. The package contains graphical programs, or renders animations, or plays sound, etc. Everything that is usually available only on a system that covers a desktop, should be placed here.
 2. `minimal`. The package is in minimal liveiso. Please discuss in group if you'd like to add a package here.
