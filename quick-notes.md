@@ -16,7 +16,7 @@
 ### utmps
 
 - A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit. (Note)
-- `tty2socket` : replace `s6-ipcserverd` (under development)
+- `tty2socket` : replace `s6-ipcserverd` (~~under development~~ finished)
 
 ### mold
 
