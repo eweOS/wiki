@@ -57,7 +57,7 @@
 
 ### dinit
 
-- Add system groups/users for extra packages
+- ~~Add system groups/users for extra packages~~ (Finished by `opensysusers`)
 
 ### seatd
 
@@ -85,6 +85,7 @@
 
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
+- `systemd-sysuser` : `opensysusers`
 
 ### Not considered
 
