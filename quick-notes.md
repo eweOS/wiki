@@ -99,7 +99,9 @@
 
 Currently works:
 
-- `velox` as WM, use `swc-launch` to start session, with `wterm` terminal
+- `weston`
+  - Can launch via pixman (software render)
+  - Can not launch without pixman
 
 Currently working:
 
@@ -107,8 +109,6 @@ Currently working:
 
 Currently not works:
 
-- `weston` can not display (segfault on `velox`)
-  - Can launch via pixman (software render)
 - `sway` need pango and more gnome stuff
 - ~~Mouse has offset in Proxmox, do not have event in QEMU~~ (Fixed)
 
@@ -119,3 +119,4 @@ Currently: x86_64
 Roadmap: arm64 riscv64 (as Tier-1 support)
 
 - ~~`mold` have no riscv64 support yet.~~ (Now supported)
+- Need more infra for other archs!!!
