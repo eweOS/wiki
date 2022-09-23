@@ -73,6 +73,7 @@ libz
 ## `libunwind` Flags
 
 - `LIBUNWIND_USE_COMPILER_RT` : ON. We use `compiler-rt`.
+- `LIBUNWIND_INSTALL_HEADERS` : ON. We need libunwind headers to compile llvm.
 
 ## `compiler-rt` Flags
 
