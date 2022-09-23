@@ -8,7 +8,8 @@
 
 ## Java
 
-- Currently: download binraries
+- ~~Currently: download binraries~~ (Downloaded)
+- Build Java toolchain
 
 ## Rust
 
