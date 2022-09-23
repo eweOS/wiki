@@ -18,10 +18,6 @@
 - A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit. (Note)
 - `tty2socket` : replace `s6-ipcserverd` (under development)
 
-### sudo
-
-- Can be compiled with utmps.h
-
 ### mold
 
 - Can be compiled with external `tbb`
@@ -69,7 +65,7 @@
 
 ### weston
 
-- Can not enter graphic interface, maybe mesa problem?
+- Can not enter graphic interface (without use `pixman` software backend), maybe mesa problem?
 
 ## Package Alternatives
 
