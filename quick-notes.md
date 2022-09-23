@@ -36,6 +36,10 @@
 - Remove `GNU/Linux` text from bootmenu
 - Add initrd/vmlinuz search options for booster (patch from archlinux)
 
+### efivar
+
+- segfault
+
 ### clover-efi
 
 - Deprecate when EFI is support in grub.
