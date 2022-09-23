@@ -9,6 +9,7 @@
 ## Java
 
 - ~~Currently: download binraries~~ (Downloaded)
+- Use prebuilt jdk to compile latest jdk from source
 - Build Java toolchain
 
 ## Rust
