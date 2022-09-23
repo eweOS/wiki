@@ -38,7 +38,7 @@
 
 ### efivar
 
-- segfault
+- segfault, effected: `grub` `efibootmgr`
 
 ### clover-efi
 
