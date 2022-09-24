@@ -21,7 +21,9 @@
 
 - A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit. (Note)
 - `tty2socket` : replace `s6-ipcserverd` (~~under development~~ finished)
+  - `IPCREMOTEEUID` must be set
 - Still not work, no socket connection
+  - Packages must be compiled with `-lutmps` to use `utmps` features
 
 ### mold
 
