@@ -13,3 +13,6 @@ Install `bsd-compat-headers`. Remember also set sys-{queue,cdefs,tree}.h (the on
 
 ## fatal error: 'fts.h' file not found
 Install `musl-fts`. Remember also set `musl-fts` as makedepends if you are making a package. You may also add `-lfts` to LDFLAGS if you see `undefined symbol: fts_{open,close,read}`
+
+## fatal error: 'crypt.h' file not found
+Install `libxcrypt`. Remember also set `libxcrypt` as makedepends.
