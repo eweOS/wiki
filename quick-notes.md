@@ -2,6 +2,10 @@
 
 ## Packages
 
+### krb5, cyrus-sasl, openldap
+- write service file
+- implement .sysusers .tmpfiles
+
 ### busybox
 
 - ~~remove `halt` `poweroff` `reboot` for `dinit`~~ (Finished)
