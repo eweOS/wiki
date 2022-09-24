@@ -68,6 +68,10 @@
 
 - Can not enter graphic interface (without use `pixman` software backend), maybe mesa problem?
 
+### pam
+
+- Add to `base` group
+
 ## Package Alternatives
 
 - `glibc` : `musl`
