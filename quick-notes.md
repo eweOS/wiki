@@ -11,6 +11,7 @@
 - ~~remove `halt` `poweroff` `reboot` for `dinit`~~ (Finished)
 - ~~remove `lspci` for `pciutils`~~ (Finished)
 - ~~enable `ash` for initramfs~~ (Finished)
+- add depmod script to run after installing modules (see [kmod PKGBUILD](https://github.com/archlinux/svntogit-packages/blob/packages/kmod/trunk/depmod-search.conf))
 
 ### mkinitramfs
 
