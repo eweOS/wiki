@@ -16,3 +16,7 @@ Install `musl-fts`. Remember also set `musl-fts` as makedepends if you are makin
 
 ## fatal error: 'crypt.h' file not found
 Install `libxcrypt`. Remember also set `libxcrypt` as makedepends.
+
+## Notes about utmp
+musl provides dummy implementations.The old PKGBUILD does only removes the headers(utmp.h) but the dummy functions are included in the
+library.They are weak symbols so it causes no problem unless the application using utmp is NOT linked with ``-lutmps``.Considering combining utmps and musl.
