@@ -24,7 +24,8 @@
 - `tty2socket` : replace `s6-ipcserverd` (~~under development~~ ~~finished~~ more compatbile features needed)
   - `IPCREMOTEEUID` must be set
 - Still not work, no socket connection
-  - Packages must be compiled with `-lutmps` to use `utmps` features
+  - Packages must be compiled with `-lutmps` to use `utmps` features\
+  - considering combining with musl itself
 
 ### mold
 
