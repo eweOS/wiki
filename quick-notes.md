@@ -21,7 +21,7 @@
 ### utmps
 
 - A patch is introduced (`compat-path.patch`) to add additional defines to allow build of dinit. (Note)
-- `tty2socket` : replace `s6-ipcserverd` (~~under development~~ finished)
+- `tty2socket` : replace `s6-ipcserverd` (~~under development~~ ~~finished~~ more compatbile features needed)
   - `IPCREMOTEEUID` must be set
 - Still not work, no socket connection
   - Packages must be compiled with `-lutmps` to use `utmps` features
@@ -97,7 +97,8 @@
 
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
-- `systemd-sysuser` : `opensysusers`
+- `systemd-sysuser` : `opensysusers` (substitution is under development)
+- `systemd-tmpfiles` : under development
 
 ### Not considered
 
