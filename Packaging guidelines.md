@@ -38,7 +38,7 @@ For cmake, append -E [regex] to ctest arguments to ignore these tests. For GNU m
 3. GPG binary doesn't present. Remove validpgpkeys and asc/sig files in source (they often come with {,sig} or {,asc} ,and SKIP in checksums). This will also be handled in the version bump process.
 
 ## Solving unknown issues
-1. Remember alpine linux and chimera linux are our best neighbors. Check [their build files](https://os-wiki.ewe.moe/Other%20similar%20distros%20and%20projects.md) if you have anything unknown or uncertain.
+1. Remember alpine linux , Gentoo and chimera linux are our best neighbors. Check [their build files](https://os-wiki.ewe.moe/Other%20similar%20distros%20and%20projects.md) if you have anything unknown or uncertain.
 2. Search on Google, remember to take keywords musl or clang.
 3. Search the project issues.
 4. Feel free to ask in the group.
