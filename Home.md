@@ -23,6 +23,7 @@ It's fun.
 - [Create Unified Kernel Image](/todos/uni-kernel-image)
 - [Version Bumper](/todos/version-bumper)
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
+- [Replace busybox](/todos/replace-busybox)
 - [(Programming) Language support](/todos/pl-support)
 - [Quick Notes](/quick-notes)
 
