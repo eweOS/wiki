@@ -1,0 +1,2 @@
+# The problem
+Many linux distros use the same set of core utilities ,including GNU `coreutils`, user management such as `shadow`, linux common utilities `util-linux`, network management utilities `iproute2` `ntpd` and many others. Busybox offers some of the commands provided above with very small disk usage. However many arguments do not present in busybox version, which makes it painful dealing with Makefiles using these arguments a lot.
