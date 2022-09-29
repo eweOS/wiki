@@ -71,6 +71,7 @@
 ### seatd
 
 - ~~Seems not support clang 15~~ (Fixed)
+- `SIGSEGV` when starting (child process killed after `recvfrom` json)
 
 ### weston
 
