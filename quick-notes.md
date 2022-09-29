@@ -115,10 +115,6 @@ Currently works:
   - Can launch via pixman (software render)
   - Can not launch without pixman
 
-Currently working:
-
-- `greetd`: Wait for `rust`
-
 Currently not works:
 
 - `sway` need pango and more gnome stuff
