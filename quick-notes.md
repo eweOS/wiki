@@ -4,7 +4,6 @@
 
 ### mandoc
 - use standard less as manpager (requiring replace busybox)         
-  see [iglunix](https://github.com/iglunix/iglunix/blob/main/pkgs/mandoc/man.sh)
 
 ### krb5, cyrus-sasl, openldap
 - write service file
