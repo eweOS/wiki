@@ -15,3 +15,5 @@ qemu-system-x86_64 \
 	-device virtio-net,netdev=ewe -netdev user,id=ewe \
 	-device virtio-gpu,addr=3
 ```
+
+Login with username `root` and password `ewe`.
