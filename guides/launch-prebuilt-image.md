@@ -8,7 +8,7 @@ You need to download prebuild at [here](https://os-repo.ewe.moe/eweos-images/), 
 qemu-system-x86_64 \
 	-smp 8 -m 4G -cpu host \
 	-machine type=q35,accel=kvm \
-        -kernel eweOS-rollingrelease.x86_64-1.0.0-5.19.3.kernel \
+        -kernel eweOS-rollingrelease.x86_64-1.0.0-6.0.kernel \
         -nographic \
         -append "console=ttyS0 root=/dev/sda rw" \
        	-hda eweOS-rollingrelease.x86_64-1.0.0 \
