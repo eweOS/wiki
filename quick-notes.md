@@ -2,6 +2,9 @@
 
 ## Packages
 
+### python-kiwi (Build Env)
+- Do not try `xz -l` to detect file info of a raw disk image, it costs too much time.
+
 ### mandoc
 - use standard less as manpager (requiring replace busybox)         
 
