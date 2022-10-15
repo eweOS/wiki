@@ -106,7 +106,7 @@
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
 - `systemd-sysuser` : `opensysusers` (substitution is under development)
-- `systemd-tmpfiles` : under development
+- ~~`systemd-tmpfiles`~~ : `pawprint`, seems to work well
 
 ### Not considered
 
