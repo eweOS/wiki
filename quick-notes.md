@@ -49,7 +49,7 @@
 
 ### efivar
 
-- segfault, effected: `grub` `efibootmgr`
+- ~~segfault, effected: `grub` `efibootmgr`~~ (Fixed)
 
 ### clover-efi
 
