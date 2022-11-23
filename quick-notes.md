@@ -123,7 +123,7 @@ Currently works:
 
 Currently not works:
 
-- `sway` need pango and more gnome stuff
+- ~~`sway` need pango and more gnome stuff~~ (Finished)
 - ~~Mouse has offset in Proxmox, do not have event in QEMU~~ (Fixed)
 
 ## Architecture
