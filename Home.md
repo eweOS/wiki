@@ -20,7 +20,6 @@ It's fun.
 
 ## TODOs
 
-- [Create Unified Kernel Image](/todos/uni-kernel-image)
 - [Version Bumper](/todos/version-bumper)
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
 - [Replace busybox](/todos/replace-busybox)
@@ -33,7 +32,8 @@ It's fun.
 > Attention: these guides are not for end users and can not guarante to be valid.
 
 - [Temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md)
-- [Launch Prebuilt Image](/guides/launch-prebuilt-image)
+- [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/guides/launch-prebuilt-image)
+- [Build Bootable Image](/guides/build-bootable-image)
 - [Packaging Guidelines](https://os-wiki.ewe.moe/Packaging%20guidelines.md)
 
 ## Quick Notes
