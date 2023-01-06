@@ -1,11 +1,17 @@
-# Bootstrap AArch64
+# Bootstrap AArch64 and RISC-V
 
 > Because of difficulties of building packages for different arch, there are some special operations to produce initial toolchain.
 
-## Build from AArch64 environment
+## Crosscompile Scripts
 
-### From OBS environment: archlinuxarm
+See [eweOS/toolchain-cross](https://github.com/eweOS/toolchain-cross).
 
-### From standalone environment: alpine
+- LLVM + Clang + musl + linux-headers + libcxx(-abi)
 
-## Cross-compile from x86_64 environment
+## Current progress
+
+### Packaged
+
+### Built
+
+### WIP
