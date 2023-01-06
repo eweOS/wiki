@@ -24,7 +24,7 @@ It's fun.
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
 - [Replace busybox](/todos/replace-busybox)
 - [(Programming) Language support](/todos/pl-support)
-- [Bootstrap AArch64](/todos/bootstrap-aarch64)
+- [Bootstrap AArch64 and RISC-V](/todos/bootstrap-aarch64)
 - [Quick Notes](/quick-notes)
 
 ## Dev Guides
