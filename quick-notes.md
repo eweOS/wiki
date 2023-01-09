@@ -2,6 +2,9 @@
 
 ## Packages
 
+### python
+- Can not upgrade to 3.11.1: triplet detection error with musl
+
 ### python-kiwi (Build Env)
 - Do not try `xz -l` to detect file info of a raw disk image, it costs too much time.
 
