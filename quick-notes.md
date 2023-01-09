@@ -56,7 +56,7 @@
 
 ### clover-efi
 
-- Deprecate when EFI is support in grub.
+- ~~Deprecate when EFI is support in grub. ~~ (Removed)
 
 ### aria2
 
