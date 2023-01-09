@@ -17,3 +17,8 @@ qemu-system-x86_64 \
 ```
 
 Login with username `root` and password `ewe`.
+
+## NOTICE
+
+It is needed to renew your kernel outside the image after a kernel update. The updated kernel is in ``/usr/lib/modules/VERSION/vmlinuz``. One possible way is to attach the image to a loop device, mount the loop device,
+copy the new kernel out then update your bootstrap script.
