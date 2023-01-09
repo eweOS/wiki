@@ -42,6 +42,7 @@
 ### mold
 
 - Can be compiled with external `tbb`
+- Can not upgrade to 1.9: libLLVM-gold LTO causes segfault
 
 ### grub
 
