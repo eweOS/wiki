@@ -36,11 +36,13 @@
 - `LLVM_ENABLE_LIBCXX` : ON. We'll use libc++.
 - `DLLVM_ENABLE_RTTI` : ON. We'll support EH.
 - `LLVM_ENABLE_FFI` : ON. We'll use `libffi`.
+- `LLVM_ENABLE_LLD` : ON. We'll use `lld` to link LLVM.
 - `LLVM_INSTALL_BINUTILS_SYMLINKS` : ON. We'll use llvm utils to replace GNU binutils.
 - `LLVM_BUILD_LLVM_DYLIB` : ON. We'll build `libllvm` dynlib.
 - `LLVM_INCLUDE_BENCHMARKS` : OFF. We'll temporary disable benchmark.
-- `LLVM_TARGETS_TO_BUILD` : `Native`. Currently we do not consider cross compile.
+- `LLVM_TARGETS_TO_BUILD` : `X86;AArch64;RISCV`. Main supported targets.
 - `LLVM_LINK_LLVM_DYLIB` : ON. Build tools using `libllvm`.
+- `LLVM_BINUTILS_INCDIR` : `$srcdir/binutils-${_binutilsver}/include`. We'll use GNU binutils to generate libLLVMgold.so to provide lto support.
 
 ## `clang` Flags
 
