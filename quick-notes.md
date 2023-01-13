@@ -4,6 +4,7 @@
 
 ### python
 - Can not upgrade to 3.11.1: triplet detection error with musl
+- Split `setuptools` and `pip`
 
 ### python-kiwi (Build Env)
 - Do not try `xz -l` to detect file info of a raw disk image, it costs too much time.
@@ -21,6 +22,7 @@
 - ~~remove `lspci` for `pciutils`~~ (Finished)
 - ~~enable `ash` for initramfs~~ (Finished)
 - add depmod script to run after installing modules (see [kmod PKGBUILD](https://github.com/archlinux/svntogit-packages/blob/packages/kmod/trunk/depmod-search.conf))
+- `segfault` when using `awk`/`diff` in `riscv64`
 
 ### mkinitramfs
 
