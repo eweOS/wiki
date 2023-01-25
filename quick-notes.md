@@ -2,6 +2,9 @@
 
 ## Packages
 
+### pacman
+- Function: copy LICENSE
+
 ### libglvnd
 - Provides `egl`
 
