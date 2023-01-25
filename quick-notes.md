@@ -2,7 +2,7 @@
 
 ## Packages
 
-### mesa
+### libglvnd
 - Provides `egl`
 
 ### python
