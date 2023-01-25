@@ -2,6 +2,9 @@
 
 ## Packages
 
+### rust
+- Make sure `RUSTFLAGS='-C target-feature=-crt-static'` is added.
+
 ### pacman
 - Function: copy LICENSE
 
