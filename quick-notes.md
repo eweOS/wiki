@@ -2,6 +2,9 @@
 
 ## Packages
 
+### mesa
+- Provides `egl`
+
 ### python
 - Can not upgrade to 3.11.1: triplet detection error with musl
 - Split `setuptools` and `pip`
