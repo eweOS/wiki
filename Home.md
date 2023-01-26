@@ -1,4 +1,4 @@
-<img src="/uploads/logo.png" alt="eweOS Logo" width="100" style="float: left; margin-right: 20px;"/>
+<img src="/uploads/logo.png" alt="eweOS Logo" width="100" style="float: left; margin-right: 30px; margin-top: 15px;"/>
 
 ### **Welcome to eweOS wiki!**
 
@@ -10,24 +10,19 @@ It's fun.
 
 ## Useful Links
 
-* :house: [HomePage](https://os.ewe.moe)
-* :notebook_with_decorative_cover: [Wiki](https://os-wiki.ewe.moe)
-* :package: [Repo](https://os-repo.ewe.moe)
-* :hammer: [BuildSystem](https://os-build.ewe.moe)
-* :computer: [TestServer](https://os-test.ewe.moe)
+| :house: [HomePage](https://os.ewe.moe) | :notebook_with_decorative_cover: [Wiki](https://os-wiki.ewe.moe) | :package: [Repo](https://os-repo.ewe.moe) | :hammer: [BuildSystem](https://os-build.ewe.moe) | :computer: [TestServer](https://os-test.ewe.moe) |
 
 ## Guides
 
-## TODOs
+> WIP
 
-- [Version Bumper](/todos/version-bumper)
-- [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
-- [Replace busybox](/todos/replace-busybox)
-- [(Programming) Language support](/todos/pl-support)
-- [Bootstrap AArch64 and RISC-V](/todos/bootstrap-aarch64)
-- [Quick Notes](/quick-notes)
+## Developer Resources
 
-## Dev Guides
+### Dev Topics
+
+| [Networking](/topic/net) | [Desktop Enviroments](/topic/de) | [Programming Languages](/topic/pl) | [Architectures](/topic/arch) | [Infra](/topic/infra) |
+
+### Guides
 
 > Attention: these guides are not for end users and can not guarante to be valid.
 
@@ -36,13 +31,21 @@ It's fun.
 - [Build Bootable Image](/guides/build-bootable-image)
 - [Packaging Guidelines](https://os-wiki.ewe.moe/Packaging%20guidelines.md)
 
-## Quick Notes
+### Dev TODOs
+
+- [Version Bumper](/todos/version-bumper)
+- [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
+- [Replace busybox](/todos/replace-busybox)
+- [(Programming) Language support](/todos/pl-support)
+- [Quick Notes](/quick-notes)
+
+### Dev Quick Notes
 
 [Quick Notes](/quick-notes)
 
 Quick Notes is a rapidly updated notepad for project management of contributors.
 
-## Package Topic
+### Frequently Used Packages Topics
 
 - [musl](/musl)
 - [llvm](/llvm)
