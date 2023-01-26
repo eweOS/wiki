@@ -20,19 +20,19 @@ It's fun.
 
 ### Dev Topics
 
-| [Networking](/topic/net) | [Desktop Enviroments](/topic/de) | [Programming Languages](/topic/pl) | [Architectures](/topic/arch) | [Infra](/topic/infra) |
+| [Networking](/topic/net) | [Desktop Enviroments](/topic/de) | [Programming Languages](/topic/pl) | [Architectures](/topic/arch) | [Kernel](/topic/kernel) | [Infra](/topic/infra) |
 
 > WIP: Transfer Dev TODOs to topics.
 
-### Dev Topics: Packages
+### Dev Topics: Packages Special
 
-| [musl](/musl) | [llvm](/llvm) |
+| [musl](/musl) | [llvm](/llvm) | [rust](/topic/pkg/rust)
 
 ### Guides
 
 > Attention: these guides are not for end users and can not guarante to be valid.
 
-- [Temporary installation guide](https://os-wiki.ewe.moe/temporary-installation-guide.md)
+- [Temporary installation guide](/temporary-installation-guide)
 - [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/guides/launch-prebuilt-image)
 - [Build Bootable Image](/guides/build-bootable-image)
 - [Packaging Guidelines](https://os-wiki.ewe.moe/Packaging%20guidelines.md)
