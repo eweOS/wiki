@@ -20,13 +20,13 @@ It's fun.
 
 ### Dev Topics
 
-| [Networking](/topic/net) | [Desktop Enviroments](/topic/de) | [Programming Languages](/topic/pl) | [Architectures](/topic/arch) | [Kernel](/topic/kernel) | [Infra](/topic/infra) |
+| [Networking](/topic/net) | [Desktop Enviroments](/topic/de) | [Architectures](/topic/arch) | [Kernel](/topic/kernel) | [System Utils](/topic/utils) | [Infra](/topic/infra) |
 
 > WIP: Transfer Dev TODOs to topics.
 
 ### Dev Topics: Packages Special
 
-| [musl](/musl) | [llvm](/llvm) | [rust](/topic/pkg/rust)
+| [musl](/musl) | [llvm](/llvm) | [rust](/topic/pkg/rust) | [python](/topic/pkg/python)
 
 ### Guides
 
