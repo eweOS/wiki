@@ -22,6 +22,12 @@ It's fun.
 
 | [Networking](/topic/net) | [Desktop Enviroments](/topic/de) | [Programming Languages](/topic/pl) | [Architectures](/topic/arch) | [Infra](/topic/infra) |
 
+> WIP: Transfer Dev TODOs to topics.
+
+### Dev Topics: Packages
+
+| [musl](/musl) | [llvm](/llvm) |
+
 ### Guides
 
 > Attention: these guides are not for end users and can not guarante to be valid.
@@ -37,15 +43,9 @@ It's fun.
 - [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
 - [Replace busybox](/todos/replace-busybox)
 - [(Programming) Language support](/todos/pl-support)
-- [Quick Notes](/quick-notes)
 
 ### Dev Quick Notes
 
 [Quick Notes](/quick-notes)
 
 Quick Notes is a rapidly updated notepad for project management of contributors.
-
-### Frequently Used Packages Topics
-
-- [musl](/musl)
-- [llvm](/llvm)
