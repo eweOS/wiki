@@ -4,6 +4,8 @@
 
 eweOS is an musl-based, lightweight, general-purpose Linux distribution, which adopts musl libc and busybox to the latest versions of software with a rolling-release model.
 
+> **Notice**: Wiki restructing is in progress, some pages may not working or missing.
+
 ## Why eweOS
 
 It's fun.
