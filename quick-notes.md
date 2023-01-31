@@ -66,10 +66,6 @@
 
 - ~~segfault, effected: `grub` `efibootmgr`~~ (Fixed)
 
-### clover-efi
-
-- ~~Deprecate when EFI is support in grub. ~~ (Removed)
-
 ### aria2
 
 - test failed, also on arch, skipped check
