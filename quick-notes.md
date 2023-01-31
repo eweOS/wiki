@@ -116,12 +116,12 @@
 - `zlib` : `zlib-ng`
 - `libudev` : `libudev-zero`
 - `systemd-tmpfiles` : `pawprint`
+- `systemd-sysuser` : `catnest`
 
 ### Work in progress
 
 - `readline` : `libedit`
 - `systemd-logind` : (`elogind` or `seatd`) with `libseatd`
-- `systemd-sysuser` : `opensysusers` (substitution is under development)
 
 ### Not considered
 
@@ -132,20 +132,12 @@
 
 Currently works:
 
+- `sway`
+- `wayfire`
 - `weston`
-  - Can launch via pixman (software render)
-  - Can not launch without pixman
-
-Currently not works:
-
-- ~~`sway` need pango and more gnome stuff~~ (Finished)
-- ~~Mouse has offset in Proxmox, do not have event in QEMU~~ (Fixed)
 
 ## Architecture
 
-Currently: x86_64
+Currently: x86_64(Tier 0) arm64(Tier 1) riscv64(Tier 1 WIP)
 
-Roadmap: arm64 riscv64 (as Tier-1 support)
-
-- ~~`mold` have no riscv64 support yet.~~ (Now supported)
 - Need more infra for other archs!!!
