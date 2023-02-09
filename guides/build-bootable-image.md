@@ -1,15 +1,38 @@
+You may need `efistub-bin` from `testing`.
+
 ```
 #!/bin/bash
 
+IMAGE=eweOS-testbuild-x86_64-efi-$(date -Idate).qcow2
+LODEV=/dev/nbd0
+DISKIMAGE=eweOS-rollingrelease.x86_64-1.1.0
+
+echo "Downloading data..."
+
+rm eweOS-rollingrelease*
+
+wget -r -l1 --no-parent -A ".xz" --no-directories https://os-repo.ewe.moe/eweos-images/x86_64/
+
+tar xvf eweOS-rollingrelease.*
+
+rm ./*.xz
+
 echo "Cleaning env..."
 
-sudo umount ./test-os/boot || true
-sudo umount ./test-os/ || true
-./clean.sh
+sudo umount ./mnt/boot || true
+sudo umount ./mnt/ || true
+
+rm ./*.img
+rm $IMAGE
 
 echo "Creating disk..."
 
-dd if=/dev/zero of=testos.img bs=1M count=6000
+qemu-img create -f qcow2 -o compression_type=zstd -o preallocation=metadata $IMAGE 50G
+
+sudo modprobe nbd || true
+
+sudo qemu-nbd -f qcow2 -c $LODEV $IMAGE
+
 (
 echo g
 echo n
@@ -23,60 +46,51 @@ echo 2
 echo  
 echo  
 echo w
-) | fdisk ./testos.img
+) | sudo fdisk $LODEV
 
 echo "Setting up loop device..."
 
-LODEV=`sudo losetup -P -f --show ./testos.img`
 SYSDEV=${LODEV}p2
 BOOTDEV=${LODEV}p1
 
 echo "Formatting loop device..."
 
-sudo mkfs.ext4 ${SYSDEV}
+sudo mkfs.ext4 ${SYSDEV}  -O "-metadata_csum_seed -orphan_file"
 sudo e2label ${SYSDEV} EWE_ROOT
 sudo mkfs.fat -F 32 ${BOOTDEV}
 
 echo "Making mountpoint..."
 
-mkdir -p ./test-os
-sudo mount ${SYSDEV} ./test-os
-sudo mkdir -p ./test-os/boot
-sudo mount ${BOOTDEV} ./test-os/boot
+mkdir -p ./mnt
+sudo mount ${SYSDEV} ./mnt
+sudo mkdir -p ./mnt/boot
+sudo mount ${BOOTDEV} ./mnt/boot
 
-echo "Installing packages..."
-
-sudo pacstrap -C ./pacman.internal.conf ./test-os neofetch ca-certs base dinit linux mkinitramfs vim base-devel efistub
+echo "Installing system..."
+mkdir -p ./mnt-img
+sudo mount $DISKIMAGE ./mnt-img
+cd ./mnt-img
+sudo rsync -avxHAX --progress ./ ../mnt
+cd ..
+sudo umount ./mnt-img
 
 echo "Setting up system..."
 
-echo "eweos-img" | sudo tee ./test-os/etc/hostname
-sudo cp ./pacman.conf ./test-os/etc/pacman.conf
-cat /etc/resolv.conf | grep nameserver | sudo tee ./test-os/etc/resolv.conf
-echo "virtio_net" | sudo tee ./test-os/etc/modules
-sudo ln -s ../modules ./test-os/etc/dinit.d/boot.d
-sudo ln -s ../udhcpc ./test-os/etc/dinit.d/boot.d
-
-echo "" > initsettings.sh
-cat <<EOF >>initsettings.sh
-#!/bin/bash
-genefistub
-
-echo "Changing password to root:ewe ..."
-echo "root:ewe" | chpasswd
-rm ./initsettings.sh
-EOF
-
-sudo cp ./initsettings.sh ./test-os/root
-rm ./initsettings.sh
-
-sudo arch-chroot ./test-os bash -c "cd && chmod +x initsettings.sh && ./initsettings.sh"
+sudo pacman --noconfirm -r ./mnt -U efistub-bin-0.1.0-1-x86_64.pkg.tar.gz
+sudo mkdir -p ./mnt/boot/EFI/BOOT
+sudo cp ./mnt/usr/lib/efistub/BOOTX64.EFI ./mnt/boot/EFI/BOOT/BOOTX64.EFI
 
 sleep 2
 
 echo "Umounting loop devices..."
 
-sudo umount ./test-os/boot
-sudo umount ./test-os
-sudo losetup -d $LODEV
+sudo umount ./mnt/boot
+sudo umount ./mnt
+sudo qemu-nbd -d $LODEV
+
+echo "Compressing qcow2 file"
+
+mv $IMAGE $IMAGE.old
+qemu-img convert -c -O $IMAGE $IMAGE
+rm $IMAGE.old
 ```
