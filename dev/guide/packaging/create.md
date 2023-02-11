@@ -1,0 +1,144 @@
+---
+title: Creating Packages
+description: 
+published: 1
+date: 2023-02-11T16:41:52.957Z
+tags: 
+editor: markdown
+dateCreated: 2023-02-11T16:41:52.957Z
+---
+
+PKGBUILD is actually a type of bash script, which defines basic infomation of the package, and how to build, test and composing build artifacts into packages. You need to be familiar with the common syntax of bash first.
+
+See [PKGBUILD - Arch Wiki](https://wiki.archlinux.org/title/PKGBUILD#Version) for a detailed instructions for writing PKGBUILD.
+
+Let's start with a normal PKGBUILD `jq` first.
+```
+# Maintainer: Aleksana QwQ <me@aleksana.moe>
+# Contributor: Evgeniy Alekseev <arcanis at archlinux dot org>
+# Contributor: Alex Chamberlain <alex at alexchamberlain dot co dot uk>
+# Contributor: Kars Wang <jaklsy at gmail dot com>
+
+pkgname=jq
+pkgver=1.6
+pkgrel=4
+pkgdesc='Command-line JSON processor'
+arch=('x86_64')
+url='https://stedolan.github.io/jq/'
+license=('MIT')
+depends=('musl' 'oniguruma')
+makedepends=('bison' 'flex' 'python')
+source=("https://github.com/stedolan/jq/releases/download/${pkgname}-${pkgver}/${pkgname}-${pkgver}.tar.gz")
+sha512sums=('SKIP')
+
+build() {
+    cd "${pkgname}-${pkgver}"
+    ./configure --prefix=/usr
+    make
+}
+
+check() {
+    cd "${pkgname}-${pkgver}"
+    make check
+}
+
+package() {
+    cd "${pkgname}-${pkgver}"
+    make DESTDIR="${pkgdir}" prefix=/usr install
+    install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
+}
+```
+
+# Basic info
+At the head of this PKGBUILD includes several lines containing maintainers' names and email addresses. 
+- `# Maintainer` means the person will handle issues and upgrades. 
+- `# Contributor` means the person contributed to (directly interacted with the directory where this PKGBUILD is stored) the PKGBUILD and releavant build files, such as patches. It usually means this person was the maintainer of this PKGBUILD, but does not participate in this project, or has't been active for a relatively long time, or has given up maintainence of this package. Contributors are not expected to handle issues and upgrades.
+
+If you are adopting PKGBUILDs from Arch Linux or AUR, It is advised to reserve these information, but change `Maintainer` to `Contributor` to avoid our build bot or users accidentally sending spam mails to them.
+
+Also, you may see many forms of writing email address in Arch official repo. But we need to extract the information for the detail page and build bot（in near future), so please only write `<foo@bar.xxx>` as maintainers' email addresses. Again, the contributors' don't have to change.
+
+# writing depends
+Note that there are two meta packages, `base` and `base-devel`. The dependencies of `base` are not required in `depends` and those of `base-devel` are not required in `makedepends`. Do not include dependencies in `depends` again in `makedepends`, since when making packages both are installed. 
+
+`optdepends` are only noticed when the user install packages. Please write `'package: for doing something'` to make their use cases clear.
+
+# writing sources
+Replace package version in source link with `${pkgver}` to work with automatic updates.
+
+# writing functions
+Supposing that the source contains a `xxx.tar.gz` (regular formats of archive files are automatically unzipped), and it builds a package `foo`, the build directory looks like this
+```
+├── PKGBUILD
+├── xxx.tar.gz
+├── pkg
+│   └── foo
+│       └──...
+└── src
+    ├── xxx.tar.gz -> ../xxx.tar.gz
+    └── yyy (automatically unzipped folder of xxx.tar.gz)
+```
+The `$srcdir` stands for absolute directory of src and `$pkgdir` stands for that of foo.
+
+Every function, `package` included, starts on directory $srcdir.
+
+# useful templates
+
+## add flags to `configure` / `cmake` / `meson`
+
+When a package needs lots of extra flags in configuring, it's better to define an array:
+
+```
+_activated_modules=(
+  --with-threads
+  --with-file-aio
+  --with-http_ssl_module
+  --with-http_v2_module
+  ...
+)
+```
+
+and then use it in `build()`:
+
+```
+  ./configure \
+    --prefix=/etc/nginx \
+    --sbin-path=/usr/bin/nginx \
+    ${_activated_modules[@]}
+```
+
+## fetch files for a splitted package
+
+If there are too many sub-packages to be splitted from different path patterns, a good choice is to use an array to define them:
+
+```
+FLIST_llvm_lto=(
+    "usr/lib/libLTO.so*"
+    "usr/lib/LLVMgold.so*"
+)
+```
+
+then use a funtion:
+
+```
+_fetchpkg() {
+    PKGBASE="$srcdir/pkgs/$1" && shift
+    mkdir -p $PKGBASE
+    for FILEPATH in $@; do
+        (cd "${srcdir}/PKGDIR" && find $FILEPATH | cpio -pdvmu $PKGBASE) || true
+        (cd "${srcdir}/PKGDIR" && find $FILEPATH -delete) || true
+    done
+}
+```
+
+in `build()` function, you can use it to extract files from these paths to specified directory:
+
+```
+_fetchpkg llvm-lto "${FLIST_llvm_lto[@]}"
+```
+
+finally, to use them in `package()` stages, just move them to `pkgdir`:
+
+```
+mv "$srcdir/pkgs/llvm-lto/usr" "${pkgdir}/usr"
+```
