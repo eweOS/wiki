@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T15:16:48.718Z
+date: 2023-02-11T15:20:02.591Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -51,29 +51,29 @@ It's fun.
 
 #### Packages Special
 
-- [musl](/musl) 
-- [llvm](/llvm) 
-- [rust](/topic/pkg/rust)
-- [python](/topic/pkg/python)
+- [musl](/dev/topic/pkgs/musl) 
+- [llvm](/dev/topic/pkgs/llvm) 
+- [rust](/dev/topic/pkgs/rust)
+- [python](/dev/topic/pkgs/python)
 
 ### Developer Guides
 
 > Attention: these guides are not for end users and can not guarante to be valid.
 
-- [Temporary installation guide](/temporary-installation-guide)
-- [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/guides/launch-prebuilt-image)
-- [Build Bootable Image](/guides/build-bootable-image)
-- [Packaging Guidelines](https://os-wiki.ewe.moe/Packaging%20guidelines.md)
+- [Temporary installation guide](/dev/guide/install)
+- [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/dev/guide/launch-kis)
+- [Build Bootable Image](/dev/guide/build-image)
+- [Packaging Guidelines](/dev/guide/packaging)
 
 ### Dev TODOs
 
-- [Version Bumper](/todos/version-bumper)
-- [Switch to mold and mimalloc](/todos/switch-to-mold-mimalloc)
-- [Replace busybox](/todos/replace-busybox)
-- [(Programming) Language support](/todos/pl-support)
+- [Version Bumper](/dev/todo/version-bumper)
+- [Switch to mold and mimalloc](/dev/todo/switch-to-mold-mimalloc)
+- [Replace busybox](/dev/todo/replace-busybox)
+- [(Programming) Language support](/dev/todo/pl-support)
 
 ### Dev Quick Notes
 
-[Quick Notes](/quick-notes)
+[Quick Notes](/dev/quick-notes)
 
 Quick Notes is a rapidly updated notepad for project management of contributors.
