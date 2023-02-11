@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T16:11:10.254Z
+date: 2023-02-11T16:28:01.600Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -58,6 +58,7 @@ It's fun.
 
 #### Toolchain/Runtime
 
+- [musl](/dev/topic/toolchain/musl)
 - [LLVM/Clang](/dev/topic/toolchain/llvm)
 - [Java](/dev/topic/toolchain/java)
 - [Python](/dev/topic/toolchain/python)
@@ -99,4 +100,5 @@ Tier 1 support:
 ### Dev Quick Notes
 
 - [:clipboard: Quick Notes *Quick Notes is a rapidly updated notepad for project management of contributors*](/dev/quick-notes)
+- [:repeat: Software Replacements *Lists and status of alternatives we used in eweOS*](/dev/replacements)
 {.links-list}
