@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T15:30:34.736Z
+date: 2023-02-11T15:44:04.848Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -29,9 +29,24 @@ It's fun.
 
 ## User Guides
 
-> WIP
+> **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news, or, why not becoming a developer of eweOS?
 
 ## Developer Resources
+
+### Developer Guides {.tabset}
+
+> Attention: these guides are not for end users and can not guarante to be valid.
+
+#### Packaging
+
+- [:package: Packaging Guidelines *A brief introduction for packaging in eweOS*](/dev/guide/packaging)
+{.links-list}
+
+#### System Images
+
+- [Temporary installation guide](/dev/guide/install)
+- [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/dev/guide/launch-kis)
+- [Build Bootable Image](/dev/guide/build-image)
 
 ### Dev Topics {.tabset}
 
@@ -41,6 +56,7 @@ It's fun.
 
 #### Desktop
 
+- [Desktop Environment](/dev/topic/desktop/desktop-env)
 - [Multimedia](/dev/topic/desktop/multimedia)
 
 #### Kernel/Driver
@@ -54,7 +70,7 @@ Tier 1 support:
 - [ARM (aarch64)](/dev/topic/arch/arm)
 - [RISC-V (riscv64)](/dev/topic/arch/riscv)
 
-#### Networking
+#### Network/Storage
 
 #### System Utils
 
@@ -68,20 +84,6 @@ Tier 1 support:
 - [llvm](/dev/topic/pkgs/llvm) 
 - [rust](/dev/topic/pkgs/rust)
 - [python](/dev/topic/pkgs/python)
-
-### Developer Guides
-
-> Attention: these guides are not for end users and can not guarante to be valid.
-
-#### Packaging
-
-- [Packaging Guidelines](/dev/guide/packaging)
-
-#### Installation & Images
-
-- [Temporary installation guide](/dev/guide/install)
-- [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/dev/guide/launch-kis)
-- [Build Bootable Image](/dev/guide/build-image)
 
 ### Dev TODOs
 
