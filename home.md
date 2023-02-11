@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T15:52:39.368Z
+date: 2023-02-11T16:11:10.254Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -49,11 +49,19 @@ It's fun.
 - [:cd: Build EFI Disk Image *Tutorial to build bootable EFI Disk Image*](/dev/guide/build-efi-disk-img)
 {.links-list}
 
+#### Discuss & Feedback
+
+- [:fire: Report bugs and give feedbacks *Use GitHub issues to post your bug reports*](https://github.com/eweOS/bugs/issues)
+{.links-list}
+
 ### Dev Topics {.tabset}
 
 #### Toolchain/Runtime
 
-- [Compilers](/dev/topic/toolchain/compilers)
+- [LLVM/Clang](/dev/topic/toolchain/llvm)
+- [Java](/dev/topic/toolchain/java)
+- [Python](/dev/topic/toolchain/python)
+- [Rust](/dev/topic/toolchain/rust)
 
 #### Desktop
 
@@ -80,11 +88,6 @@ Tier 1 support:
 - [Build System](/dev/topic/infra/build-system)
 
 #### Packages Special
-
-- [musl](/dev/topic/pkgs/musl) 
-- [llvm](/dev/topic/pkgs/llvm) 
-- [rust](/dev/topic/pkgs/rust)
-- [python](/dev/topic/pkgs/python)
 
 ### Dev TODOs
 
