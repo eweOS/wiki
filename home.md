@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T15:20:02.591Z
+date: 2023-02-11T15:30:23.759Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -27,7 +27,7 @@ It's fun.
 - [:computer: TestServer *Unstable eweOS web server to previewing*](https://os-test.ewe.moe)
 {.links-list}
 
-## Guides
+## User Guides
 
 > WIP
 
@@ -37,17 +37,30 @@ It's fun.
 
 #### Toolchain/Runtime
 
+- [Compilers](/dev/topic/toolchain/compilers)
+
 #### Desktop
+
+- [Multimedia](/dev/topic/desktop/multimedia)
 
 #### Kernel/Driver
 
 #### Architectures
+
+Tier 0 support:
+- x86_64
+
+Tier 1 support:
+- [ARM64 (aarch64)](/dev/topic/arch/arm)
+- [RISC-V (riscv64)](/dev/topic/arch/riscv)
 
 #### Networking
 
 #### System Utils
 
 #### Infrastructure
+
+- [Build System](/dev/topic/infra/build-system)
 
 #### Packages Special
 
@@ -60,10 +73,15 @@ It's fun.
 
 > Attention: these guides are not for end users and can not guarante to be valid.
 
+#### Packaging
+
+- [Packaging Guidelines](/dev/guide/packaging)
+
+#### Installation & Images
+
 - [Temporary installation guide](/dev/guide/install)
 - [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/dev/guide/launch-kis)
 - [Build Bootable Image](/dev/guide/build-image)
-- [Packaging Guidelines](/dev/guide/packaging)
 
 ### Dev TODOs
 
