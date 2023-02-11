@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T15:44:04.848Z
+date: 2023-02-11T15:52:39.368Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -35,8 +35,6 @@ It's fun.
 
 ### Developer Guides {.tabset}
 
-> Attention: these guides are not for end users and can not guarante to be valid.
-
 #### Packaging
 
 - [:package: Packaging Guidelines *A brief introduction for packaging in eweOS*](/dev/guide/packaging)
@@ -44,9 +42,12 @@ It's fun.
 
 #### System Images
 
-- [Temporary installation guide](/dev/guide/install)
-- [Launch Prebuilt KIS (Kernel+Init+RootFS) Image](/dev/guide/launch-kis)
-- [Build Bootable Image](/dev/guide/build-image)
+> Currently there is no officially built bootable disk image.
+{.is-info}
+
+- [:computer: Boot KIS Image *Tutorial to launch KIS(Kernel Initrd Sysroot) images via QEMU*](/dev/guide/launch-kis)
+- [:cd: Build EFI Disk Image *Tutorial to build bootable EFI Disk Image*](/dev/guide/build-efi-disk-img)
+{.links-list}
 
 ### Dev Topics {.tabset}
 
@@ -94,6 +95,5 @@ Tier 1 support:
 
 ### Dev Quick Notes
 
-[Quick Notes](/dev/quick-notes)
-
-Quick Notes is a rapidly updated notepad for project management of contributors.
+- [:clipboard: Quick Notes *Quick Notes is a rapidly updated notepad for project management of contributors*](/dev/quick-notes)
+{.links-list}
