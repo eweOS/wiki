@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T15:30:23.759Z
+date: 2023-02-11T15:30:34.736Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -51,7 +51,7 @@ Tier 0 support:
 - x86_64
 
 Tier 1 support:
-- [ARM64 (aarch64)](/dev/topic/arch/arm)
+- [ARM (aarch64)](/dev/topic/arch/arm)
 - [RISC-V (riscv64)](/dev/topic/arch/riscv)
 
 #### Networking
