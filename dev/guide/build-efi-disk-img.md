@@ -2,10 +2,10 @@
 title: Build EFI Disk Image
 description: 
 published: 1
-date: 2023-02-11T16:55:10.288Z
+date: 2023-02-13T14:41:32.957Z
 tags: 
 editor: markdown
-dateCreated: 2023-02-11T16:55:10.288Z
+dateCreated: 2023-02-13T14:12:45.490Z
 ---
 
 # Build Bootable EFI Disk Image {.tabset}
@@ -25,7 +25,7 @@ echo "Downloading data..."
 
 rm eweOS-rollingrelease*
 
-wget -r -l1 --no-parent -A ".xz" --no-directories https://os-repo.ewe.moe/eweos-images/x86_64/
+wget -r -l1 --no-parent -A ".xz" --no-directories http://repo.nia.dn42/eweos-images/x86_64/
 
 tar xvf eweOS-rollingrelease.*
 
@@ -105,7 +105,7 @@ sudo qemu-nbd -d $LODEV
 echo "Compressing qcow2 file"
 
 mv $IMAGE $IMAGE.old
-qemu-img convert -c -O $IMAGE $IMAGE
+qemu-img convert -c -O qcow2 $IMAGE.old $IMAGE
 rm $IMAGE.old
 ```
 
