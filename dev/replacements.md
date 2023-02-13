@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-13T14:44:27.556Z
+date: 2023-02-13T14:45:20.178Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -26,7 +26,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `kmod` : `busybox`
 - `systemd` : `dinit`
 - `lld` : `mold` (default)
-- `zlib` : `zlib-ng`
+- `zlib` : `zlib-ng` (Builtin multithreading may cause test failures)
 - `libudev` : `libudev-zero`
 - `systemd-tmpfiles` : `pawprint`
 - `systemd-sysuser` : `catnest`
