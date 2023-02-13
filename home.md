@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-13T14:29:15.397Z
+date: 2023-02-13T14:40:20.818Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -10,7 +10,7 @@ dateCreated: 2023-02-13T14:12:29.050Z
 
 # **Welcome to eweOS wiki!**
 
-<div style="display: inline-block;">
+<div style="display: inline-block; padding-top: 20px;">
 <img src="/logo.png" alt="eweOS Logo" width="100" style="float: left; margin-right: 10px;"/>
 eweOS is an musl-based, lightweight, general-purpose Linux distribution, which adopts musl libc and busybox to the latest versions of software with a rolling-release model.
 </div>
