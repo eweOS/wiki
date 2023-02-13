@@ -1,19 +1,22 @@
 ---
 title: Software Replacements
-description: 
+description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-13T13:44:00.363Z
+date: 2023-02-13T14:44:27.556Z
 tags: 
 editor: markdown
-dateCreated: 2023-02-11T16:47:39.341Z
+dateCreated: 2023-02-13T14:12:40.309Z
 ---
 
-# Software Replacements
+Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
-Some softwares are replaced in eweOS. Here is a incomplete list.
+## Dropped
+
+- `polkit` (maybe?)
 
 ## Replaced
 
+- `x11` : `wayland`
 - `glibc` : `musl`
 - `gcc` `gcc-libs` : `clang` `llvm` `llvm-libs`
 - `libtool` : `slibtool`
