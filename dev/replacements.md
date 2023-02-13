@@ -2,7 +2,7 @@
 title: Software Replacements
 description: 
 published: 1
-date: 2023-02-11T16:47:39.341Z
+date: 2023-02-13T13:44:00.363Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T16:47:39.341Z
@@ -38,3 +38,16 @@ Some softwares are replaced in eweOS. Here is a incomplete list.
 
 - `openssl` : `libressl`. It's too hard to maintain sets of patches for unsupported packages.
 - `dbus` : `dbus-broker`. It needs libsystemd for dbus-launcher.
+
+## Unsupported
+
+### Clang C++23
+
+- `hyprland`
+- `btop`
+
+### musl functions
+
+### busybox features
+
+### other reasons
