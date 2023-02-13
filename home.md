@@ -2,7 +2,7 @@
 title: Homepage
 description: Home
 published: 1
-date: 2023-02-11T16:28:01.600Z
+date: 2023-02-13T13:42:04.506Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-11T15:16:48.718Z
@@ -100,5 +100,5 @@ Tier 1 support:
 ### Dev Quick Notes
 
 - [:clipboard: Quick Notes *Quick Notes is a rapidly updated notepad for project management of contributors*](/dev/quick-notes)
-- [:repeat: Software Replacements *Lists and status of alternatives we used in eweOS*](/dev/replacements)
+- [:repeat: Software Replacements *Lists and status of alternatives we used in eweOS and a list of unsupported softwares*](/dev/replacements)
 {.links-list}
