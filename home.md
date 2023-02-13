@@ -1,8 +1,8 @@
 ---
-title: Homepage
-description: Home
+title: eweOS Wiki
+description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-13T14:27:27.464Z
+date: 2023-02-13T14:29:15.397Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
