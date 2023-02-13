@@ -2,13 +2,11 @@
 title: Quick Notes
 description: 
 published: 1
-date: 2023-02-11T16:48:42.221Z
+date: 2023-02-13T14:46:54.859Z
 tags: 
 editor: markdown
-dateCreated: 2023-02-11T16:48:42.221Z
+dateCreated: 2023-02-13T14:12:34.727Z
 ---
-
-# Quick Notes
 
 ### rust
 - Make sure `RUSTFLAGS='-C target-feature=-crt-static'` is added.
