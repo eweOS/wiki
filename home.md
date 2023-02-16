@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-16T15:54:13.770Z
+date: 2023-02-16T22:04:49.312Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -31,6 +31,9 @@ It's fun.
 ## User Guides
 
 > **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news, or, why not becoming a developer of eweOS?
+
+- [:raising_hand: FAQ *Some frequently asked questions*](/guides/faq)
+{.links-list}
 
 ## Developer Resources
 
