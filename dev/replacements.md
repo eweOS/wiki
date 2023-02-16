@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-16T14:56:05.272Z
+date: 2023-02-16T15:52:09.475Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -46,7 +46,6 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
 ### Clang C++23
 
-- `hyprland`
 - `btop`
 
 ### musl functions
