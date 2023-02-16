@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-13T14:47:41.910Z
+date: 2023-02-16T15:54:13.770Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -39,6 +39,7 @@ It's fun.
 #### Packaging
 
 - [:package: Packaging Guidelines *A brief introduction for packaging in eweOS*](/dev/guide/packaging)
+- [:question: Troubleshooting *Some usual problems with packaging and their solutions*](/dev/guide/troubleshooting)
 {.links-list}
 
 #### System Images
