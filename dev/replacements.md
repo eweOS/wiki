@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-13T14:45:20.178Z
+date: 2023-02-16T14:56:05.272Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -52,5 +52,10 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 ### musl functions
 
 ### busybox features
+
+### requires X11
+
+- `gnome` (building `mutter` without X11 is still WIP)
+- `plasma` (building `plasma-framework` without X11 is still WIP)
 
 ### other reasons
