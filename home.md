@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-16T22:04:49.312Z
+date: 2023-02-16T22:26:28.403Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -106,4 +106,9 @@ Tier 1 support:
 
 - [:clipboard: Quick Notes *Quick Notes is a rapidly updated notepad for project management of contributors*](/dev/quick-notes)
 - [:repeat: Software Replacements *Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares*](/dev/replacements)
+{.links-list}
+
+## See Also
+
+- [:busts_in_silhouette: Similar projects *Other similar distros and projects*](/see-also/similar-projects)
 {.links-list}
