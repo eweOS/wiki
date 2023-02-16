@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-16T15:52:09.475Z
+date: 2023-02-16T22:09:08.068Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -43,10 +43,6 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `dbus` : `dbus-broker`. It needs libsystemd for dbus-launcher.
 
 ## Unsupported
-
-### Clang C++23
-
-- `btop`
 
 ### musl functions
 
