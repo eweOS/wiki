@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-16T22:26:28.403Z
+date: 2023-02-18T12:56:58.810Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -88,6 +88,10 @@ Tier 1 support:
 #### Network/Storage
 
 #### System Utils
+
+- [Bootloader](/dev/topic/sysutils/bootloader)
+- [Shell](/dev/topic/sysutils/shell)
+- [Core Utils](/dev/topic/sysutils/coreutils)
 
 #### Infrastructure
 
