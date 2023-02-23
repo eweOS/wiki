@@ -2,10 +2,10 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-02-11T16:51:44.913Z
+date: 2023-02-23T19:11:43.424Z
 tags: 
 editor: markdown
-dateCreated: 2023-02-11T16:51:44.913Z
+dateCreated: 2023-02-13T14:13:01.262Z
 ---
 
 # LLVM/Clang Toolchain
@@ -76,5 +76,6 @@ dateCreated: 2023-02-11T16:51:44.913Z
 
 ## `compiler-rt` Flags
 
-- `DCOMPILER_RT_BUILD_SANITIZERS` : OFF. Not supported for musl.
-- `DCOMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
+- `COMPILER_RT_BUILD_SANITIZERS` : ON. We need sanitizers.
+- `COMPILER_RT_BUILD_GWP_ASAN` : OFF. But `gwp_asan` needs glibc, it must be disabled.
+- `COMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
