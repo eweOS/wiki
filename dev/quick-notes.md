@@ -2,11 +2,17 @@
 title: Quick Notes
 description: 
 published: 1
-date: 2023-02-13T14:46:54.859Z
+date: 2023-02-24T23:55:11.868Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:34.727Z
 ---
+
+### mimalloc
+- LD_PRELOAD test before linking by default
+
+### llvm-lto
+- Enable lto by default
 
 ### rust
 - Make sure `RUSTFLAGS='-C target-feature=-crt-static'` is added.
