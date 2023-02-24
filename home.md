@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-18T12:56:58.810Z
+date: 2023-02-24T12:31:39.024Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -32,6 +32,7 @@ It's fun.
 
 > **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news, or, why not becoming a developer of eweOS?
 
+- [:computer: Boot Disk Image *Tutorial to launch prebuilt disk images via QEMU*](/guides/boot-diskimage)
 - [:raising_hand: FAQ *Some frequently asked questions*](/guides/faq)
 {.links-list}
 
@@ -47,10 +48,6 @@ It's fun.
 
 #### System Images
 
-> Currently there is no officially built bootable disk image.
-{.is-info}
-
-- [:computer: Boot KIS Image *Tutorial to launch KIS(Kernel Initrd Sysroot) images via QEMU*](/dev/guide/launch-kis)
 - [:cd: Build EFI Disk Image *Tutorial to build bootable EFI Disk Image*](/dev/guide/build-efi-disk-img)
 {.links-list}
 
@@ -102,7 +99,6 @@ Tier 1 support:
 ### Dev TODOs
 
 - [Version Bumper](/dev/todo/version-bumper)
-- [Switch to mold and mimalloc](/dev/todo/switch-to-mold-mimalloc)
 - [Replace busybox](/dev/todo/replace-busybox)
 - [(Programming) Language support](/dev/todo/pl-support)
 
