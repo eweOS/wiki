@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-02-25T04:27:32.510Z
+date: 2023-02-25T04:45:32.334Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -24,6 +24,11 @@ dateCreated: 2023-02-25T04:24:22.548Z
 # Desktop
 
 - [ ] Audio Playback Support
+	- [ ] wireplumber
+  - [ ] pipewire-pulse
+- [ ] Branding
+	- [ ] Default wallpapers
+  - [ ] Artwork resources
 
 # Optimization
 
