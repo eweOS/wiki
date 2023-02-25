@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-18T11:58:53.604Z
+date: 2023-02-25T04:34:39.958Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -30,7 +30,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `libudev` : `libudev-zero`
 - `systemd-tmpfiles` : `pawprint`
 - `systemd-sysuser` : `catnest`
-- `systemd-logind` : `seatd`
+- `systemd-logind` : `seatd` `pam_rundir`
 - `systemd-dbus` : `basu`
 
 ## Work in progress
