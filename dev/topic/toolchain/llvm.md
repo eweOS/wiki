@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-02-25T13:25:05.815Z
+date: 2023-02-25T13:25:30.642Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -38,7 +38,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LLVM_ENABLE_PER_TARGET_RUNTIME_DIR` : OFF. We'll not seperate target dir by default.
 - `LLVM_BUILD_LLVM_C_DYLIB` : ON. We'll build shared libs by default.
 - `LLVM_LINK_LLVM_DYLIB` : ON. We'll also link shared libs.
-- `LLVM_LIBGCC_EXPLICIT_OPT_IN` : ON. We'll use llvm-libgcc to improve compatibility.
+- `LLVM_LIBGCC_EXPLICIT_OPT_IN` : ON. We'll use llvm-libgcc to improve compatibility. (Currently WIP)
 
 ## `llvm` Flags
 
