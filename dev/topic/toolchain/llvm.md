@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-02-23T19:11:43.424Z
+date: 2023-02-25T13:25:05.815Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -76,6 +76,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 
 ## `compiler-rt` Flags
 
-- `COMPILER_RT_BUILD_SANITIZERS` : ON. We need sanitizers.
+- `COMPILER_RT_BUILD_SANITIZERS` : ON. We need sanitizers. (OFF for aarch64)
 - `COMPILER_RT_BUILD_GWP_ASAN` : OFF. But `gwp_asan` needs glibc, it must be disabled.
+- `COMPILER_RT_BUILD_LIBFUZZER` : OFF. Not supported by musl.
 - `COMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
