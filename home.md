@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-24T12:31:39.024Z
+date: 2023-02-25T04:19:43.135Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -96,15 +96,10 @@ Tier 1 support:
 
 #### Packages Special
 
-### Dev TODOs
-
-- [Version Bumper](/dev/todo/version-bumper)
-- [Replace busybox](/dev/todo/replace-busybox)
-- [(Programming) Language support](/dev/todo/pl-support)
-
 ### Dev Quick Notes
 
 - [:clipboard: Quick Notes *Quick Notes is a rapidly updated notepad for project management of contributors*](/dev/quick-notes)
+- [:clipboard: TODO *TODO list*](/dev/todo)
 - [:repeat: Software Replacements *Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares*](/dev/replacements)
 {.links-list}
 
