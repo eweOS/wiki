@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-25T14:39:18.562Z
+date: 2023-02-26T22:12:08.998Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -37,6 +37,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 ## Work in progress
 
 - `readline` : `libedit`
+- `pacman` `makepkg` : `ewepkg`
 
 ## Rejected
 
