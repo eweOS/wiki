@@ -2,7 +2,7 @@
 title: Boot Disk Image with QEMU
 description: Guide to boot prebuilt disk image with QEMU
 published: 1
-date: 2023-02-24T12:44:30.352Z
+date: 2023-02-26T16:19:18.419Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-24T12:44:30.352Z
@@ -14,7 +14,7 @@ dateCreated: 2023-02-24T12:44:30.352Z
 
 Currently, only `x86_64` is supported for disk images.
 
-## Download qcow2 Images
+## Download qcow2 (bootable virtual disk) Images
 
 qcow2 images can be downloaded from any accessable mirror in [Download](https://os.ewe.moe/download) page of eweOS.
 
