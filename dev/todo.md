@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-02-26T00:32:11.239Z
+date: 2023-02-26T16:29:30.928Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -10,7 +10,7 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 # System Image
 
-- [ ] Create bootable Live CD Image
+- [x] Create bootable Live CD Image
 - [ ] Create bootable ISO Image
 
 # Hardware
