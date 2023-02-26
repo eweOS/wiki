@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-02-26T16:29:30.928Z
+date: 2023-02-26T20:48:04.356Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -10,11 +10,17 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 # System Image
 
+- [ ] Create bootable Disk Image for AArch64
 - [x] Create bootable Live CD Image
+  - [ ] Within eweOS
 - [ ] Create bootable ISO Image
+  - [ ] Within eweOS
+- [ ] Compile EFI stub instead of use binary file
 
-# Hardware
+# Hardware / Architecture
+
 - [ ] Split linux-firmware package
+- [ ] Add initial support for RISC-V
 
 # System Utils
 
