@@ -2,11 +2,19 @@
 title: Desktop Environments
 description: 
 published: 1
-date: 2023-02-25T04:59:55.067Z
+date: 2023-02-26T21:27:15.307Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:59:55.067Z
 ---
+
+# Greeters
+
+## tuigreet (greetd-tui)
+
+## gtkgreet (greetd-gtk)
+
+## regreet
 
 # Wayland Compositors
 
@@ -45,3 +53,13 @@ dateCreated: 2023-02-25T04:59:55.067Z
 ## Application Launchers
 
 ### wofi
+
+## Screen Lockers
+
+### swaylock
+
+### gtklock
+
+## Power Menus
+
+### wlogout
