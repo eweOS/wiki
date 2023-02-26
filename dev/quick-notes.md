@@ -2,11 +2,14 @@
 title: Quick Notes
 description: 
 published: 1
-date: 2023-02-24T23:55:11.868Z
+date: 2023-02-26T21:22:27.267Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:34.727Z
 ---
+
+### binutils-objcopy
+- Failed to run on `aarch64`: `can't set BFD default target to `elf64-x86-64': invalid bfd target`
 
 ### mimalloc
 - LD_PRELOAD test before linking by default
@@ -15,10 +18,10 @@ dateCreated: 2023-02-13T14:12:34.727Z
 - Enable lto by default
 
 ### rust
-- Make sure `RUSTFLAGS='-C target-feature=-crt-static'` is added.
+- ~~Make sure `RUSTFLAGS='-C target-feature=-crt-static'` is added.~~ (Added)
 
 ### pacman
-- Function: copy LICENSE
+- Function: auto copy LICENSE
 
 ### libglvnd
 - Provides `egl`
@@ -62,7 +65,7 @@ dateCreated: 2023-02-13T14:12:34.727Z
 ### mold
 
 - Can be compiled with external `tbb`
-- libLLVM-gold LTO causes segfault
+- ~~libLLVM-gold LTO causes segfault~~ (Fixed)
 
 ### grub
 
@@ -72,7 +75,6 @@ dateCreated: 2023-02-13T14:12:34.727Z
 - ~~EFI installation requires `efibootmanager`~~ (Finished)
 - Add custom theme, maybe `grub-theme-eweos`?
 - Remove `GNU/Linux` text from bootmenu
-- Add initrd/vmlinuz search options for booster (patch from archlinux)
 
 ### efivar
 
@@ -89,22 +91,15 @@ dateCreated: 2023-02-13T14:12:34.727Z
 - ~~`binutils-gold` is under consideration~~
 - `binutils-gold` is included
 
-### filesystem
-
-- Add more groups
-
 ### dinit
 
 - ~~Add system groups/users for extra packages~~ (Finished by `opensysusers`)
+- Restruct target services
 
 ### seatd
 
 - ~~Seems not support clang 15~~ (Fixed)
-- `SIGSEGV` when starting (child process killed after `recvfrom` json)
-
-### weston
-
-- Can not enter graphic interface (without use `pixman` software backend), maybe mesa problem?
+- ~~`SIGSEGV` when starting (child process killed after `recvfrom` json)~~ (Fixed)
 
 ### pam
 
