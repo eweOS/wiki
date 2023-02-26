@@ -2,7 +2,7 @@
 title: Boot Disk Image with QEMU
 description: Guide to boot prebuilt disk image with QEMU
 published: 1
-date: 2023-02-26T16:19:18.419Z
+date: 2023-02-26T23:31:57.767Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-24T12:44:30.352Z
@@ -12,7 +12,7 @@ dateCreated: 2023-02-24T12:44:30.352Z
 
 ## Architectures
 
-Currently, only `x86_64` is supported for disk images.
+Currently, only `x86_64` and `aarch64` is supported for disk images.
 
 ## Download qcow2 (bootable virtual disk) Images
 
