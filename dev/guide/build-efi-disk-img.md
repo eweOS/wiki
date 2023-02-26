@@ -2,8 +2,8 @@
 title: Build EFI Disk Image
 description: 
 published: 1
-date: 2023-02-26T16:21:08.621Z
-tags: 
+date: 2023-02-26T23:29:10.567Z
+tags: deprecated
 editor: markdown
 dateCreated: 2023-02-13T14:12:45.490Z
 ---
