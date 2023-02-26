@@ -2,11 +2,15 @@
 title: Build EFI Disk Image
 description: 
 published: 1
-date: 2023-02-16T22:33:39.542Z
+date: 2023-02-26T16:21:08.621Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:45.490Z
 ---
+
+> This guide is **NO LONGER** maintained and will be removed soon.
+{.is-danger}
+
 
 # Build Bootable EFI Disk Image {.tabset}
 
