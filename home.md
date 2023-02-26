@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-02-25T04:19:43.135Z
+date: 2023-02-26T16:24:26.358Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -48,7 +48,8 @@ It's fun.
 
 #### System Images
 
-- [:cd: Build EFI Disk Image *Tutorial to build bootable EFI Disk Image*](/dev/guide/build-efi-disk-img)
+- [:cd: Build EFI LiveUSB Image *Tutorial to build EFI bootable LiveUSB Disk Image from prebuilt squashfs and efistub*](/dev/guide/build-efi-liveusb-img)
+- [~~:cd: Build EFI Disk Image~~ *~~Tutorial to build bootable EFI Disk Image~~ (DEPRECATED)*](/dev/guide/build-efi-disk-img)
 {.links-list}
 
 #### Discuss & Feedback
