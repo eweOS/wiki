@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-02-25T04:45:32.334Z
+date: 2023-02-26T00:29:48.921Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -15,6 +15,8 @@ dateCreated: 2023-02-25T04:24:22.548Z
 # System Utils
 
 - [ ] [Replace busybox](/dev/todo/replace-busybox)
+- [ ] catnest: hook to reload
+- [ ] pawprint: hook to reload
 
 # Languages
 
