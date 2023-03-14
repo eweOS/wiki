@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-03-14T15:39:54.953Z
+date: 2023-03-14T15:42:17.246Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -33,7 +33,6 @@ It's fun.
 > **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news, or, why not becoming a developer of eweOS?
 
 - [:computer: Boot Disk Image *Tutorial to launch prebuilt disk images via QEMU*](/guides/boot-diskimage)
-- [:clipboard: Configuration *Setup Your System*](/guides/configuration)
 - [:package: Software & Configuration *List of supported softwares and tutorials to configure them*](/guides/softwares)
 - [:raising_hand: FAQ *Some frequently asked questions*](/guides/faq)
 {.links-list}
