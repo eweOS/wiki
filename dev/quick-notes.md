@@ -2,7 +2,7 @@
 title: Quick Notes
 description: 
 published: 1
-date: 2023-02-26T21:22:27.267Z
+date: 2023-03-21T10:10:57.680Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:34.727Z
@@ -47,6 +47,7 @@ dateCreated: 2023-02-13T14:12:34.727Z
 - ~~enable `ash` for initramfs~~ (Finished)
 - add depmod script to run after installing modules (see [kmod PKGBUILD](https://github.com/archlinux/svntogit-packages/blob/packages/kmod/trunk/depmod-search.conf))
 - `segfault` when using `awk`/`diff` in `riscv64`
+- `date` does not support timezone formatting, causing test failure
 
 ### mkinitramfs
 
