@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-03-14T15:57:00.398Z
+date: 2023-04-05T03:41:52.603Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -64,6 +64,7 @@ It's fun.
 
 - [musl](/dev/topic/toolchain/musl)
 - [LLVM/Clang](/dev/topic/toolchain/llvm)
+- [Lua](/dev/topic/toolchain/lua)
 - [Java](/dev/topic/toolchain/java)
 - [Python](/dev/topic/toolchain/python)
 - [Rust](/dev/topic/toolchain/rust)
