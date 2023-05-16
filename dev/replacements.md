@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-02-26T22:12:08.998Z
+date: 2023-05-16T21:36:05.072Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -54,7 +54,8 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
 ### requires X11
 
-- `gnome` (building `mutter` without X11 is still WIP)
+- `gnome` (building `mutter` without X11 is still WIP, elogind is required)
 - `plasma` (building `plasma-framework` without X11 is still WIP)
+- `xfce4` is a possible replacement since it [do not need elogind](https://www.antixforum.com/forums/topic/removing-libelogind0-testers-needed/)
 
 ### other reasons
