@@ -2,7 +2,7 @@
 title: musl libc
 description: 
 published: 1
-date: 2023-05-24T10:11:28.781Z
+date: 2023-05-24T13:36:23.118Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-24T08:55:41.848Z
@@ -20,8 +20,8 @@ Solution: Add `D_LARGEFILE64_SOURCE` to `CFLAGS`/`CXXFLAGS` (will also be remove
 
 Here is a list of observed and fixed package for this issue, issues/PRs may be submitted to upstream:
 
-- libpciaccess
-- libbsd
+- libpciaccess (fixed in master)
+- libbsd (fixed in master)
 - llvm
 - efivar
 - btop
