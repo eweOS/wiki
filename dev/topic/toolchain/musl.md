@@ -2,7 +2,7 @@
 title: musl libc
 description: 
 published: 1
-date: 2023-05-24T14:04:44.287Z
+date: 2023-05-24T14:06:50.373Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-24T08:55:41.848Z
@@ -25,6 +25,6 @@ Here is a list of observed and fixed package for this issue, issues/PRs may be s
 - llvm
 - efivar (fixed)
 - btop (exist PR)
-- acl
+- acl (fixed)
 - nginx
 - perl-module-build-tiny
