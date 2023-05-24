@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-05-16T21:45:24.816Z
+date: 2023-05-24T17:16:03.084Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -30,7 +30,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `libudev` : `libudev-zero`
 - `systemd-tmpfiles` : `pawprint`
 - `systemd-sysuser` : `catnest`
-- `systemd-logind` : `seatd` `pam_rundir`
+- `systemd-logind` : `seatd` `elogind`
 - `systemd-dbus` : `basu`
 - `oss` `pulseaudio` `jack` `alsa`(partially) : `pipewire` `wireplumber`
 
@@ -54,9 +54,8 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
 ### requires X11
 
-- `gnome` (building `mutter` without X11 is still WIP, elogind is required (try to remove?))
+- `gnome` (building `mutter` without X11 is still WIP)
 - `plasma` (building `plasma-framework` without X11 is still WIP)
 - `xfce4` (x11 is required)
-- `lxde` is a possible replacement since it [do not need elogind](https://www.antixforum.com/forums/topic/removing-libelogind0-testers-needed/)
 
 ### other reasons
