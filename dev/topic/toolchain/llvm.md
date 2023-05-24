@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-02-25T13:25:30.642Z
+date: 2023-05-24T08:57:19.397Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -27,6 +27,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 ## Common Flags
 
 - `CMAKE_BUILD_TYPE` : Release.
+- `CMAKE_CXX_FLAGS` : `-D_LARGEFILE64_SOURCE`. Fix for musl, which drops LFS64 interfaces
 - `LLVM_ENABLE_PROJECTS` :
   - `lld` for `lld` package. (Default `ld` currently)
   - `clang` for `clang` package. (Default `cc`)
