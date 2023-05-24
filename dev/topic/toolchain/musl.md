@@ -2,7 +2,7 @@
 title: musl libc
 description: 
 published: 1
-date: 2023-05-24T08:55:41.848Z
+date: 2023-05-24T08:56:03.801Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-24T08:55:41.848Z
@@ -12,7 +12,7 @@ dateCreated: 2023-05-24T08:55:41.848Z
 
 # Troubleshooting
 
-## `no member named '{syscall_name}64'` || ``
+## `no member named '{syscall_name}64'` || `imcomplete type '{syscall_name}64'`
 
 From 1.2.4, musl deprecates all LFS64 interfaces.
 
