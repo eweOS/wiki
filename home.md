@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-05-22T06:26:25.555Z
+date: 2023-05-30T20:29:46.827Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -95,7 +95,7 @@ Tier 1 support:
 
 #### Infrastructure
 
-- [Build System](/dev/topic/infra/build-system)
+- [New Build System](/dev/topic/infra/build-system)
 - [Automatic Workflow](/dev/topic/infra/auto-workflow)
 
 #### Packages Special
