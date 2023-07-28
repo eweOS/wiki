@@ -63,7 +63,7 @@ Contact @yukarichiba in our [matrix space](https://matrix.to/#/#os:ewe.moe), and
 
 # Submit the package
 _Note: A script is available [here](https://github.com/eweOS/useful-scripts/blob/main/pkg-submit/pkg-submit.sh), but may not be stable._         
-Assuming that you've successfully created a package, and got permissons.        
+Assuming that you've successfully created a package, and got permissions.        
 Firstly, clone the repo `packages`.
 ```
 git clone git@github.com:eweOS/packages.git
