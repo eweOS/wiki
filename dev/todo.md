@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-03-14T16:04:35.901Z
+date: 2023-07-31T17:18:35.630Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -19,8 +19,8 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 # Hardware / Architecture
 
-- [ ] Split linux-firmware package
-- [ ] Add initial support for RISC-V
+- [x] Split linux-firmware package
+- [x] Add initial support for RISC-V
 
 # System Utils
 
@@ -35,18 +35,18 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 # Desktop
 
-- [ ] Audio Playback Support
-	- [ ] wireplumber
-  - [ ] pipewire-pulse
-  - [ ] alsa-libs
+- [x] Audio Playback Support
+	- [x] wireplumber
+  - [x] pipewire-pulse
+  - [x] alsa-libs
 - [ ] Branding
 	- [ ] Default wallpapers
   - [ ] Artwork resources
 
 # Optimization
 
-- [ ] Enable default LTO
-- [ ] Enable default mimalloc
+- [x] Enable default LTO
+- [x] Enable default mimalloc
 
 # Infra
 
