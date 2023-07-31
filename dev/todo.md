@@ -2,11 +2,18 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-07-31T17:18:35.630Z
+date: 2023-07-31T17:22:59.598Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
 ---
+
+# Build System
+
+- [ ] Add aarch64 workers
+- [ ] Add riscv64 workers
+- [ ] Workflow: add /recheck command
+- [ ] Workflow: delete merged PRs
 
 # System Image
 
@@ -16,6 +23,7 @@ dateCreated: 2023-02-25T04:24:22.548Z
 - [ ] Create bootable ISO Image
   - [ ] Within eweOS
 - [ ] Compile EFI stub instead of use binary file
+- [ ] Create bootable image with desktop support
 
 # Hardware / Architecture
 
@@ -27,6 +35,8 @@ dateCreated: 2023-02-25T04:24:22.548Z
 - [ ] [Replace busybox](/dev/todo/replace-busybox)
 - [ ] catnest: hook to reload
 - [ ] pawprint: hook to reload
+- [ ] dinit: redesign system services
+- [ ] dinit: add user services
 
 # Languages
 
@@ -42,6 +52,8 @@ dateCreated: 2023-02-25T04:24:22.548Z
 - [ ] Branding
 	- [ ] Default wallpapers
   - [ ] Artwork resources
+- [ ] Add standalone session for eweOS
+  - [ ] choose a default compositor
 
 # Optimization
 
