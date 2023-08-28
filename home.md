@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-05-30T20:29:46.827Z
+date: 2023-08-28T14:47:15.358Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -111,4 +111,5 @@ Tier 1 support:
 
 - [:package: Subprojects *Projects developed and used by eweOS*](/see-also/subprojects)
 - [:busts_in_silhouette: Similar projects *Other similar distros and projects*](/see-also/similar-projects)
+- [:information: Github Repos *Information about repositories at GitHub*](/see-also/github-repos)
 {.links-list}
