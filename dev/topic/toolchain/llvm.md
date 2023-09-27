@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-09-27T15:42:33.147Z
+date: 2023-09-27T15:43:57.512Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -65,6 +65,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 
 - `LIBCXX_HAS_MUSL_LIBC` : ON. Use `musl`.
 - `LIBCXX_USE_COMPILER_RT` : ON. 
+- `LIBCXX_INSTALL_LIBRARY_DIR` : `lib`. We install libcxx/abi into `/usr/lib`.
 - `LIBCXX_INCLUDE_TESTS` : OFF. Currently we don't need tests.
 - `LIBCXX_INCLUDE_BENCHMARKS` : OFF. We'll temporary disable benchmark.
 - `LIBCXXABI_USE_LLVM_UNWINDER` : ON. We use `libc++abi` for C++ ABI.
