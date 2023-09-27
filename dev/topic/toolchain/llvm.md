@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-05-24T08:57:19.397Z
+date: 2023-09-27T15:42:33.147Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -31,9 +31,10 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LLVM_ENABLE_PROJECTS` :
   - `lld` for `lld` package. (Default `ld` currently)
   - `clang` for `clang` package. (Default `cc`)
-  - `compiler-rt` `libcxx` `libcxxabi` `libunwind` are integrated into `llvm-libs`.
-    - `compiler-rt` & `libunwind` are included from `llvm-libgcc`, so remove them from list. (Currently disabled)
+  - `compiler-rt` is integrated into `llvm-libs`
   - `libclc` `openmp` `lldb` are extra libs.
+- `DLLVM_ENABLE_RUNTIMES`:
+  - `libcxx` `libcxxabi` `libunwind` are integrated into `llvm-libs`
 - `LLVM_DEFAULT_TARGET_TRIPLE` : `$CHOST`.
 - `LLVM_HOST_TRIPLE` : `$CHOST`.
 - `LLVM_ENABLE_PER_TARGET_RUNTIME_DIR` : OFF. We'll not seperate target dir by default.
@@ -51,7 +52,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LLVM_INSTALL_BINUTILS_SYMLINKS` : ON. We'll use llvm utils to replace GNU binutils.
 - `LLVM_BUILD_LLVM_DYLIB` : ON. We'll build `libllvm` dynlib.
 - `LLVM_INCLUDE_BENCHMARKS` : OFF. We'll temporary disable benchmark.
-- `LLVM_TARGETS_TO_BUILD` : `X86;AArch64;RISCV`. Main supported targets.
+- `LLVM_TARGETS_TO_BUILD` : `X86;AArch64;RISCV;WebAssembly;AMDGPU`. Main supported targets, with AMDGPU and WebAssembly support.
 - `LLVM_LINK_LLVM_DYLIB` : ON. Build tools using `libllvm`.
 - `LLVM_BINUTILS_INCDIR` : `$srcdir/binutils-${_binutilsver}/include`. We'll use GNU binutils to generate libLLVMgold.so to provide lto support.
 
@@ -77,7 +78,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 
 ## `compiler-rt` Flags
 
-- `COMPILER_RT_BUILD_SANITIZERS` : ON. We need sanitizers. (OFF for aarch64)
+- `COMPILER_RT_BUILD_SANITIZERS` : ON. We need sanitizers. (OFF for aarch64 and riscv64)
 - `COMPILER_RT_BUILD_GWP_ASAN` : OFF. But `gwp_asan` needs glibc, it must be disabled.
 - `COMPILER_RT_BUILD_LIBFUZZER` : OFF. Not supported by musl.
 - `COMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
