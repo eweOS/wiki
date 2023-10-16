@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-08-28T14:48:14.448Z
+date: 2023-10-16T01:35:26.570Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -78,11 +78,13 @@ It's fun.
 
 #### Architectures
 
-Tier 0 support:
+Tier 0 support (Full Main Repo, Testing Repo):
 - x86_64
 
-Tier 1 support:
+Tier 1 support (Main Repo, Testing Repo):
 - [ARM (aarch64)](/dev/topic/arch/arm)
+
+Tier 1.5 support (Main Repo, WIP Testing Repo):
 - [RISC-V (riscv64)](/dev/topic/arch/riscv)
 
 #### Network/Storage
