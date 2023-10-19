@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T06:16:20.472Z
+date: 2023-10-19T06:19:47.044Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -21,7 +21,7 @@ It's fun.
 
 ## Useful Links
 
-- [:house: HomePage *Homepage of eweOS project*](https://os.ewe.moe)
+- [:house: Home Page *Home page of eweOS project*](https://os.ewe.moe)
 - [:notebook_with_decorative_cover: Wiki *This website, some tutorials and info about eweOS project*](https://os-wiki.ewe.moe)
 - [:package: Repo *Download eweOS packages, system images and resources for developers*](https://os-repo.ewe.moe)
 - [:hammer: BuildSystem *An automatic and open platform for eweOS developers to build packages*](https://os-build.ewe.moe)
@@ -30,7 +30,7 @@ It's fun.
 
 ## User Guides
 
-> **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news, or, why not becoming a developer of eweOS?
+> **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news.
 
 - [:computer: Boot Disk Image *Tutorial to launch prebuilt disk images via QEMU*](/guides/boot-diskimage)
 - [:package: Software & Configuration *List of supported softwares and tutorials to configure them*](/guides/softwares)
