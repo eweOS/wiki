@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T06:19:47.044Z
+date: 2023-10-19T06:22:36.728Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -39,7 +39,7 @@ It's fun.
 
 ## Developer Resources
 
-### Developer Guides
+### Guides
 
 ### {.tabset}
 
@@ -51,8 +51,7 @@ It's fun.
 
 #### System Images
 
-- [:cd: Build EFI LiveUSB Image *Tutorial to build EFI bootable LiveUSB Disk Image from prebuilt squashfs and efistub*](/dev/guide/build-efi-liveusb-img)
-- [~~:cd: Build EFI Disk Image~~ *~~Tutorial to build bootable EFI Disk Image~~ (DEPRECATED)*](/dev/guide/build-efi-disk-img)
+- [:cd: Build EFI Live USB Image *Tutorial to build EFI bootable Live USB Disk Image from prebuilt `squashfs` and `efistub`*](/dev/guide/build-efi-liveusb-img)
 {.links-list}
 
 #### Discuss & Feedback
@@ -60,11 +59,11 @@ It's fun.
 - [:fire: Report bugs and give feedbacks *Use GitHub issues to post your bug reports*](https://github.com/eweOS/bugs/issues)
 {.links-list}
 
-### Development Topics
+### Topics
 
 ### {.tabset}
 
-#### Toolchain/Runtime
+#### Toolchain & Runtime
 
 - [musl](/dev/topic/toolchain/musl)
 - [LLVM/Clang](/dev/topic/toolchain/llvm)
@@ -78,7 +77,7 @@ It's fun.
 - [Desktop Environment](/dev/topic/desktop/desktop-env)
 - [Multimedia](/dev/topic/desktop/multimedia)
 
-#### Kernel/Driver
+#### Kernel & Driver
 
 #### Architectures
 
