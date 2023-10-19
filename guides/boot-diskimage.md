@@ -2,19 +2,19 @@
 title: Boot Disk Image with QEMU
 description: Guide to boot prebuilt disk image with QEMU
 published: 1
-date: 2023-02-26T23:31:57.767Z
+date: 2023-10-19T07:32:46.806Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-24T12:44:30.352Z
 ---
 
-# Download Image
+## Download Image
 
-## Architectures
+### Architectures
 
 Currently, only `x86_64` and `aarch64` is supported for disk images.
 
-## Download qcow2 (bootable virtual disk) Images
+### Download qcow2 (bootable virtual disk) Images
 
 qcow2 images can be downloaded from any accessable mirror in [Download](https://os.ewe.moe/download) page of eweOS.
 
@@ -27,7 +27,7 @@ There are three files in a bundle:
 - `eweOS-{RELEASE_TYPE}.{ARCH}-{VERSION}-{IMAGE_TYPE}-Build{BUILD_CODE}.packages`
   - A list of installed packages
 
-# Configure and boot Your VM
+## Configure and boot Your VM
 
 The following script can be used to boot eweOS, with hardware graphic acceleration and EFI boot support.
 
@@ -49,6 +49,6 @@ qemu-system-x86_64 \
 	-display gtk,gl=on
 ```
 
-# Usage
+## Usage
 
 The default username and password for eweOS disk image is `ewe:ewe`
