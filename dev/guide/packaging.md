@@ -2,7 +2,7 @@
 title: Packaging Guideline
 description: 
 published: 1
-date: 2023-10-19T06:35:05.003Z
+date: 2023-10-19T06:36:04.656Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:50.481Z
@@ -26,5 +26,5 @@ If one cannot decide to split or not, just leave it as one large package for now
 
 This is already covered in Arch packaging guidelines. We re-emphasize:
 
-> **Do not diminish the security or validity of a package** (e.g. by removing a checksum check or by removing PGP signature verification), because an upstream release is broken or suddenly lacks a certain feature (e.g. PGP signature missing for a new release)
+> **Do not diminish the security or validity of a package** (e.g. by removing a checksum check or by removing PGP signature verification), because an upstream release is broken or suddenly lacks a certain feature (e.g. PGP signature missing for a new release).
 
