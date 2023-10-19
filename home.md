@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T07:49:02.024Z
+date: 2023-10-19T07:51:02.885Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -45,7 +45,7 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 
 #### Contribution
 
-- [:book: Contributing Guide *Rules and formats for every contribution*](/dev/guide/contribution)
+- :book: [Contributing Guide](/dev/guide/contribution) - Rules and formats for every contribution
 
 ### Topics
 
