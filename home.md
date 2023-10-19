@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T07:36:37.120Z
+date: 2023-10-19T07:49:02.024Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -12,98 +12,74 @@ dateCreated: 2023-02-13T14:12:29.050Z
 
 <div style="display: inline-block; padding-top: 20px;">
 <img src="/logo.png" alt="eweOS Logo" width="100" style="float: left; margin-right: 10px;"/>
-eweOS is an musl-based, lightweight, general-purpose Linux distribution, which adopts musl libc and busybox to the latest versions of software with a rolling-release model.
+eweOS is an musl-based, lightweight, general-purpose Linux distribution, which adopts musl libc and busybox to the latest versions of software with a rolling-release model. Also, it's fun!
 </div>
-
-## Why eweOS
-
-It's fun.
 
 ## Useful Links
 
-- [:house: Home Page *Home page of eweOS project*](https://os.ewe.moe)
-- [:notebook_with_decorative_cover: Wiki *This website, some tutorials and info about eweOS project*](https://os-wiki.ewe.moe)
-- [:package: Repo *Download eweOS packages, system images and resources for developers*](https://os-repo.ewe.moe)
-- [:hammer: Build System *An automatic and open platform for eweOS developers to build packages*](https://os-build.ewe.moe)
-- [:computer: Test Server *Unstable eweOS web server to previewing*](https://os-test.ewe.moe)
-{.links-list}
+- :house: [Home Page](https://os.ewe.moe) - Home page of eweOS project
+- :notebook_with_decorative_cover: [Wiki](https://os-wiki.ewe.moe) - This website, some tutorials and info about eweOS project
+- :package: [Repo](https://os-repo.ewe.moe) - Download eweOS packages, system images and resources for developers
+- :hammer: [Build System](https://os-build.ewe.moe) - An automatic and open platform for eweOS developers to build packages
+- :computer: [Test Server](https://os-test.ewe.moe) - Unstable eweOS web server for showcasing
 
 ## User Guides
 
 > **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news.
 
-- [:computer: Boot Disk Image *Tutorial to launch prebuilt disk images via QEMU*](/guides/boot-diskimage)
-- [:package: Software & Configuration *List of supported softwares and tutorials to configure them*](/guides/softwares)
-- [:raising_hand: FAQ *Some frequently asked questions*](/guides/faq)
-- [:fire: Report bugs and give feedbacks *Use GitHub issues to post your bug reports*](https://github.com/eweOS/bugs/issues)
-{.links-list}
+- :computer: [Boot Disk Image](/guides/boot-diskimage) - Tutorial to launch prebuilt disk images via QEMU
+- :package: [Software & Configuration](/guides/softwares) - List of supported softwares and tutorials to configure them
+- :raising_hand: [FAQ](/guides/faq) - Some frequently asked questions
+- :fire: [Report bugs and give feedbacks](https://github.com/eweOS/bugs/issues) - Use GitHub issues to post your bug reports
 
 ## Developer Resources
 
 ### Guides
 
-### {.tabset}
+- **Packaging**
+  - :package: [Packaging Guidelines](/dev/guide/packaging) - Brief introduction for packaging in eweOS
+  - :question: [Troubleshooting](/dev/guide/troubleshooting) - Common problems and solutions
 
-#### Packaging
-
-- [:package: Packaging Guidelines *A brief introduction for packaging in eweOS*](/dev/guide/packaging)
-- [:question: Troubleshooting *Some usual problems with packaging and their solutions*](/dev/guide/troubleshooting)
-{.links-list}
-
-#### System Images
-
-- [:cd: Build EFI Live USB Image *Tutorial to build EFI bootable Live USB Disk Image from prebuilt `squashfs` and `efistub`*](/dev/guide/build-efi-liveusb-img)
-{.links-list}
+- **System Images**
+	- :cd: [Build EFI Live USB Image](/dev/guide/build-efi-liveusb-img) - Tutorial to build EFI bootable Live USB Disk Image from prebuilt `squashfs` and `efistub`
 
 #### Contribution
 
 - [:book: Contributing Guide *Rules and formats for every contribution*](/dev/guide/contribution)
-{.links-list}
 
 ### Topics
 
-### {.tabset}
-
-#### Toolchain & Runtime
-
+- **Toolchain & Runtime**
 [musl](/dev/topic/toolchain/musl) • [LLVM/Clang](/dev/topic/toolchain/llvm) • [Lua](/dev/topic/toolchain/lua) • [Java](/dev/topic/toolchain/java) • [Python](/dev/topic/toolchain/python) • [Rust](/dev/topic/toolchain/rust)
 
-#### Desktop
-
+- **Desktop**
 [Desktop Environment](/dev/topic/desktop/desktop-env) • [Multimedia](/dev/topic/desktop/multimedia)
 
-#### Kernel & Driver
+- **Kernel & Driver**
 
-#### Architectures
-
+- **Architectures**
 Tier 0 support (Full Main Repo, Testing Repo, Workflow): x86_64
-
 Tier 1 support (90% Main Repo, Testing Repo, Workflow): [ARM (aarch64)](/dev/topic/arch/arm)
-
 Tier 1.5 support (Main Repo, WIP Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/riscv)
 
-#### Network/Storage
+- **Network/Storage**
 
-#### System Utils
+- **System Utilities**
+[Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utilities](/dev/topic/sysutils/coreutils)
 
-[Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utils](/dev/topic/sysutils/coreutils)
-
-#### Infrastructure
-
+- **Infrastructure**
 [New Build System](/dev/topic/infra/build-system) • [Automatic Workflow](/dev/topic/infra/auto-workflow)
 
-#### Packages Special
+- **Packages Special**
 
 ### Development Quick Notes
 
-- [:clipboard: Quick Notes *Quick Notes is a rapidly updated notepad for project management of contributors*](/dev/quick-notes)
-- [:clipboard: TODO *TODO list*](/dev/todo)
-- [:repeat: Software Replacements *Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares*](/dev/replacements)
-{.links-list}
+- :clipboard: [Quick Notes](/dev/quick-notes) - Rapidly updated notepad for project management of contributors
+- :clipboard: [TODO](/dev/todo) - To-do list
+- :repeat: [Software Replacements](/dev/replacements) - Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 
 ## See Also
 
-- [:package: Subprojects *Projects developed and used by eweOS*](/see-also/subprojects)
-- [:busts_in_silhouette: Similar projects *Other similar distros and projects*](/see-also/similar-projects)
-- [:information_source: Github Repos *Information about repositories at GitHub*](/see-also/github-repos)
-{.links-list}
+- :package: [Subprojects](/see-also/subprojects) - Projects developed and used by eweOS
+- :busts_in_silhouette: [Similar projects](/see-also/similar-projects) - Other similar distros and projects
+- :information_source: [Github Repos](/see-also/github-repos) - Information about repositories at GitHub
