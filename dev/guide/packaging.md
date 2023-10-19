@@ -2,7 +2,7 @@
 title: Packaging Guideline
 description: 
 published: 1
-date: 2023-10-19T06:25:30.449Z
+date: 2023-10-19T06:35:05.003Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:50.481Z
@@ -18,7 +18,7 @@ Unlike Arch Linux, which is a x86_64-only distro as for now, eweOS is a cross-pl
 
 While we don't split packages as much as Debian does (for example, [their FFmpeg source package](https://packages.debian.org/source/sid/ffmpeg) produces both `lib<name><version>` and `lib<name>-dev` packages), we split packages according to functionality and best effort. For example, our `pacman` is split into 4 packages (`libalpm`, `pacman`, `makepkg` and `repo-tools`), each with distinct usage.
 
-Another metric of splitting is its applicable architecture. `makepkg` and `repo-tools` are simply scripts, so they are marked `arch=(any)`. Documents (except for man pages, they should ship with relevant packages) should package separately, suffixed with `-doc`.
+Another metric of splitting is packages' applicable architectures. `makepkg` and `repo-tools` are simply scripts, so they are marked `arch=(any)`. Documents (except for man pages, they should ship with relevant packages) should package separately, suffixed with `-doc`.
 
 If one cannot decide to split or not, just leave it as one large package for now and discuss with eweOS developers.
 
