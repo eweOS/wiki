@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T07:03:15.868Z
+date: 2023-10-19T07:36:37.120Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -66,50 +66,31 @@ It's fun.
 
 #### Toolchain & Runtime
 
-- [musl](/dev/topic/toolchain/musl)
-- [LLVM/Clang](/dev/topic/toolchain/llvm)
-- [Lua](/dev/topic/toolchain/lua)
-- [Java](/dev/topic/toolchain/java)
-- [Python](/dev/topic/toolchain/python)
-- [Rust](/dev/topic/toolchain/rust)
-{.links-list}
+[musl](/dev/topic/toolchain/musl) • [LLVM/Clang](/dev/topic/toolchain/llvm) • [Lua](/dev/topic/toolchain/lua) • [Java](/dev/topic/toolchain/java) • [Python](/dev/topic/toolchain/python) • [Rust](/dev/topic/toolchain/rust)
 
 #### Desktop
 
-- [Desktop Environment](/dev/topic/desktop/desktop-env)
-- [Multimedia](/dev/topic/desktop/multimedia)
-{.links-list}
+[Desktop Environment](/dev/topic/desktop/desktop-env) • [Multimedia](/dev/topic/desktop/multimedia)
 
 #### Kernel & Driver
 
 #### Architectures
 
-Tier 0 support (Full Main Repo, Testing Repo, Workflow):
-- x86_64
-{.links-list}
+Tier 0 support (Full Main Repo, Testing Repo, Workflow): x86_64
 
-Tier 1 support (90% Main Repo, Testing Repo, Workflow):
-- [ARM (aarch64)](/dev/topic/arch/arm)
-{.links-list}
+Tier 1 support (90% Main Repo, Testing Repo, Workflow): [ARM (aarch64)](/dev/topic/arch/arm)
 
-Tier 1.5 support (Main Repo, WIP Testing Repo):
-- [RISC-V (riscv64)](/dev/topic/arch/riscv)
-{.links-list}
+Tier 1.5 support (Main Repo, WIP Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/riscv)
 
 #### Network/Storage
 
 #### System Utils
 
-- [Bootloader](/dev/topic/sysutils/bootloader)
-- [Shell](/dev/topic/sysutils/shell)
-- [Core Utils](/dev/topic/sysutils/coreutils)
-{.links-list}
+[Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utils](/dev/topic/sysutils/coreutils)
 
 #### Infrastructure
 
-- [New Build System](/dev/topic/infra/build-system)
-- [Automatic Workflow](/dev/topic/infra/auto-workflow)
-{.links-list}
+[New Build System](/dev/topic/infra/build-system) • [Automatic Workflow](/dev/topic/infra/auto-workflow)
 
 #### Packages Special
 
