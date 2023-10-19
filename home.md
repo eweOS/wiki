@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T06:22:36.728Z
+date: 2023-10-19T06:50:34.965Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -35,6 +35,7 @@ It's fun.
 - [:computer: Boot Disk Image *Tutorial to launch prebuilt disk images via QEMU*](/guides/boot-diskimage)
 - [:package: Software & Configuration *List of supported softwares and tutorials to configure them*](/guides/softwares)
 - [:raising_hand: FAQ *Some frequently asked questions*](/guides/faq)
+- [:fire: Report bugs and give feedbacks *Use GitHub issues to post your bug reports*](https://github.com/eweOS/bugs/issues)
 {.links-list}
 
 ## Developer Resources
@@ -54,9 +55,9 @@ It's fun.
 - [:cd: Build EFI Live USB Image *Tutorial to build EFI bootable Live USB Disk Image from prebuilt `squashfs` and `efistub`*](/dev/guide/build-efi-liveusb-img)
 {.links-list}
 
-#### Discuss & Feedback
+#### Contribution
 
-- [:fire: Report bugs and give feedbacks *Use GitHub issues to post your bug reports*](https://github.com/eweOS/bugs/issues)
+- [:book: Contributing Guide *Rules and formats for every contribution*](/dev/guide/contribution)
 {.links-list}
 
 ### Topics
