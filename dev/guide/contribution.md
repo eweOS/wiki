@@ -1,14 +1,14 @@
 ---
-title: Contribution
+title: Contributing Guide
 description: 
 published: 1
-date: 2023-10-19T06:47:52.080Z
+date: 2023-10-19T06:51:01.121Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-19T06:47:52.080Z
 ---
 
-# Contribution
+# Contributing Guide
 
 Before your contribution, here's some rules that needs to adhere.
 
