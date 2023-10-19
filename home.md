@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-16T01:37:33.381Z
+date: 2023-10-19T06:14:30.818Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -58,7 +58,8 @@ It's fun.
 - [:fire: Report bugs and give feedbacks *Use GitHub issues to post your bug reports*](https://github.com/eweOS/bugs/issues)
 {.links-list}
 
-### Dev Topics {.tabset}
+
+### Development Topics {.tabset}
 
 #### Toolchain/Runtime
 
