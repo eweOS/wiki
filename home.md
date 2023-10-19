@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T07:51:36.174Z
+date: 2023-10-19T07:56:02.768Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -41,9 +41,8 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 - **System Images**
 	- :cd: [Build EFI Live USB Image](/dev/guide/build-efi-liveusb-img) - Tutorial to build EFI bootable Live USB Disk Image from prebuilt `squashfs` and `efistub`
 
-#### Contribution
-
-- :book: [Contributing Guide](/dev/guide/contribution) - Rules and formats for every contribution
+- **Contribution**
+	- :book: [Contributing Guide](/dev/guide/contribution) - Rules and formats for every contribution
 
 ### Topics
 
