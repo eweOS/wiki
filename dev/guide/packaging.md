@@ -2,7 +2,7 @@
 title: Packaging Guideline
 description: 
 published: 1
-date: 2023-10-19T06:17:50.668Z
+date: 2023-10-19T06:18:57.198Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:50.481Z
@@ -12,7 +12,7 @@ eweOS' packaging is similar to Arch and other pacman-based distros. While most o
 
 ## Architectures
 
-Unlike Arch Linux, which is a x86_64-only distro as for now, eweOS is a cross-platform distro. Therefore, the `arch` array should contain *the intersection of all currently supported architectures `(x86_64 aarch64 riscv64)`" and architectures the package itself supports* if the package is platform-dependent. Otherwise, only use `any`.
+Unlike Arch Linux, which is a x86_64-only distro as for now, eweOS is a cross-platform distro. Therefore, the `arch` array should contain *the intersection* of all currently supported architectures `(x86_64 aarch64 riscv64)` *and* architectures the package itself supports, if the package is platform-dependent. Otherwise, use `arch=(any)`.
 
 ## Split packages
 
