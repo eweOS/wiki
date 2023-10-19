@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T06:14:30.818Z
+date: 2023-10-19T06:16:20.472Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -39,7 +39,9 @@ It's fun.
 
 ## Developer Resources
 
-### Developer Guides {.tabset}
+### Developer Guides
+
+### {.tabset}
 
 #### Packaging
 
@@ -58,8 +60,9 @@ It's fun.
 - [:fire: Report bugs and give feedbacks *Use GitHub issues to post your bug reports*](https://github.com/eweOS/bugs/issues)
 {.links-list}
 
+### Development Topics
 
-### Development Topics {.tabset}
+### {.tabset}
 
 #### Toolchain/Runtime
 
@@ -103,7 +106,7 @@ Tier 1.5 support (Main Repo, WIP Testing Repo):
 
 #### Packages Special
 
-### Dev Quick Notes
+### Development Quick Notes
 
 - [:clipboard: Quick Notes *Quick Notes is a rapidly updated notepad for project management of contributors*](/dev/quick-notes)
 - [:clipboard: TODO *TODO list*](/dev/todo)
