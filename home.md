@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T06:50:34.965Z
+date: 2023-10-19T07:03:15.868Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -24,8 +24,8 @@ It's fun.
 - [:house: Home Page *Home page of eweOS project*](https://os.ewe.moe)
 - [:notebook_with_decorative_cover: Wiki *This website, some tutorials and info about eweOS project*](https://os-wiki.ewe.moe)
 - [:package: Repo *Download eweOS packages, system images and resources for developers*](https://os-repo.ewe.moe)
-- [:hammer: BuildSystem *An automatic and open platform for eweOS developers to build packages*](https://os-build.ewe.moe)
-- [:computer: TestServer *Unstable eweOS web server to previewing*](https://os-test.ewe.moe)
+- [:hammer: Build System *An automatic and open platform for eweOS developers to build packages*](https://os-build.ewe.moe)
+- [:computer: Test Server *Unstable eweOS web server to previewing*](https://os-test.ewe.moe)
 {.links-list}
 
 ## User Guides
@@ -72,11 +72,13 @@ It's fun.
 - [Java](/dev/topic/toolchain/java)
 - [Python](/dev/topic/toolchain/python)
 - [Rust](/dev/topic/toolchain/rust)
+{.links-list}
 
 #### Desktop
 
 - [Desktop Environment](/dev/topic/desktop/desktop-env)
 - [Multimedia](/dev/topic/desktop/multimedia)
+{.links-list}
 
 #### Kernel & Driver
 
@@ -84,12 +86,15 @@ It's fun.
 
 Tier 0 support (Full Main Repo, Testing Repo, Workflow):
 - x86_64
+{.links-list}
 
 Tier 1 support (90% Main Repo, Testing Repo, Workflow):
 - [ARM (aarch64)](/dev/topic/arch/arm)
+{.links-list}
 
 Tier 1.5 support (Main Repo, WIP Testing Repo):
 - [RISC-V (riscv64)](/dev/topic/arch/riscv)
+{.links-list}
 
 #### Network/Storage
 
@@ -98,11 +103,13 @@ Tier 1.5 support (Main Repo, WIP Testing Repo):
 - [Bootloader](/dev/topic/sysutils/bootloader)
 - [Shell](/dev/topic/sysutils/shell)
 - [Core Utils](/dev/topic/sysutils/coreutils)
+{.links-list}
 
 #### Infrastructure
 
 - [New Build System](/dev/topic/infra/build-system)
 - [Automatic Workflow](/dev/topic/infra/auto-workflow)
+{.links-list}
 
 #### Packages Special
 
