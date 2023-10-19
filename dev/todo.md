@@ -2,20 +2,20 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-07-31T17:22:59.598Z
+date: 2023-10-19T07:28:04.525Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
 ---
 
-# Build System
+## Build System
 
 - [ ] Add aarch64 workers
 - [ ] Add riscv64 workers
 - [ ] Workflow: add /recheck command
 - [ ] Workflow: delete merged PRs
 
-# System Image
+## System Image
 
 - [ ] Create bootable Disk Image for AArch64
 - [x] Create bootable Live CD Image
@@ -25,12 +25,12 @@ dateCreated: 2023-02-25T04:24:22.548Z
 - [ ] Compile EFI stub instead of use binary file
 - [ ] Create bootable image with desktop support
 
-# Hardware / Architecture
+## Hardware / Architecture
 
 - [x] Split linux-firmware package
 - [x] Add initial support for RISC-V
 
-# System Utils
+## System Utils
 
 - [ ] [Replace busybox](/dev/todo/replace-busybox)
 - [ ] catnest: hook to reload
@@ -38,12 +38,12 @@ dateCreated: 2023-02-25T04:24:22.548Z
 - [ ] dinit: redesign system services
 - [ ] dinit: add user services
 
-# Languages
+## Languages
 
 - [ ] Bootstrap basic Python package groups
 - [ ] Bootstrap basic Java package groups
 
-# Desktop
+## Desktop
 
 - [x] Audio Playback Support
 	- [x] wireplumber
@@ -55,16 +55,16 @@ dateCreated: 2023-02-25T04:24:22.548Z
 - [ ] Add standalone session for eweOS
   - [ ] choose a default compositor
 
-# Optimization
+## Optimization
 
 - [x] Enable default LTO
 - [x] Enable default mimalloc
 
-# Infra
+## Infra
 
 - [ ] [Version Bumper](/dev/todo/version-bumper)
 - [ ] keyring
 
-# Wiki
+## Wiki
 
 - [x] Page to list all eweOS github projects
