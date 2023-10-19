@@ -2,13 +2,11 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-10-19T07:51:02.885Z
+date: 2023-10-19T07:51:36.174Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
 ---
-
-<h1>Welcome to eweOS wiki!</h1>
 
 <div style="display: inline-block; padding-top: 20px;">
 <img src="/logo.png" alt="eweOS Logo" width="100" style="float: left; margin-right: 10px;"/>
