@@ -2,29 +2,29 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-09-27T16:51:39.825Z
+date: 2023-10-19T07:54:20.388Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
 ---
 
-# LLVM/Clang Toolchain
+## LLVM/Clang Toolchain
 
-## Special Sub-Packages
+### Special Sub-Packages
 
-`llvm-libs`: `libcxx` `libcxxabi` `libunwind`
-> These packages are installed in minimal system since most programs depend on them.
+- `llvm-libs`: `libcxx` `libcxxabi` `libunwind`
+	- These packages are installed in minimal system since most programs depend on them.
 
-`llvm-lto`: `libLTO.so*`
-> LTO lib. Required by linkers.
+- `llvm-lto`: `libLTO.so*`
+	- LTO lib. Required by linkers.
 
-`clang`: `compiler-rt`
-> `compiler-rt` is needed by clang.
+- `clang`: `compiler-rt`
+	- `compiler-rt` is needed by clang.
 
-`unknown`: `libLLVM*.a`
-> llvm-static libs, used to bootstrap `rust`.
+- `unknown`: `libLLVM*.a`
+	- llvm-static libs, used to bootstrap `rust`.
 
-## Common Flags
+### Common Flags
 
 - `CMAKE_BUILD_TYPE` : Release.
 - `CMAKE_CXX_FLAGS` : `-D_LARGEFILE64_SOURCE`. Fix for musl, which drops LFS64 interfaces
@@ -42,7 +42,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LLVM_LINK_LLVM_DYLIB` : ON. We'll also link shared libs.
 - `LLVM_LIBGCC_EXPLICIT_OPT_IN` : ON. We'll use llvm-libgcc to improve compatibility. (Currently WIP)
 
-## `llvm` Flags
+### `llvm` Flags
 
 - `LLVM_INSTALL_UTILS` : ON. We'll install llvm utils.
 - `LLVM_ENABLE_LIBCXX` : ON. We'll use libc++.
@@ -56,12 +56,12 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LLVM_LINK_LLVM_DYLIB` : ON. Build tools using `libllvm`.
 - `LLVM_BINUTILS_INCDIR` : `$srcdir/binutils-${_binutilsver}/include`. We'll use GNU binutils to generate libLLVMgold.so to provide lto support.
 
-## `clang` Flags
+### `clang` Flags
 
 - `CLANG_DEFAULT_CXX_STDLIB` : `libc++`. We use `libc++` for C++ lib.
 - `CLANG_DEFAULT_RTLIB` : `compiler-rt`. We use `compiler-rt`.
 
-## `libcxx/abi` Flags
+### `libcxx/abi` Flags
 
 - `LIBCXX_HAS_MUSL_LIBC` : ON. Use `musl`.
 - `LIBCXX_USE_COMPILER_RT` : ON. 
@@ -73,13 +73,13 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LIBCXX_USE_COMPILER_RT` : ON. We use `compiler-rt`.
 - `LIBCXXABI_USE_COMPILER_RT` : ON. We use `compiler-rt`.
 
-## `libunwind` Flags
+### `libunwind` Flags
 
 - `LIBUNWIND_INSTALL_LIBRARY_DIR` : `lib`. We install libunwind into `/usr/lib`.
 - `LIBUNWIND_USE_COMPILER_RT` : ON. We use `compiler-rt`.
 - `LIBUNWIND_INSTALL_HEADERS` : ON. We need libunwind headers to compile llvm.
 
-## `compiler-rt` Flags
+### `compiler-rt` Flags
 
 - `COMPILER_RT_BUILD_SANITIZERS` : ON. We need sanitizers. (OFF for aarch64 and riscv64)
 - `COMPILER_RT_BUILD_GWP_ASAN` : OFF. But `gwp_asan` needs glibc, it must be disabled.
