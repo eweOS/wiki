@@ -2,7 +2,7 @@
 title: makepkg Helpers
 description: 
 published: 1
-date: 2023-11-23T14:28:12.803Z
+date: 2023-11-24T01:44:37.409Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-23T14:27:37.678Z
@@ -60,3 +60,12 @@ dateCreated: 2023-11-23T14:27:37.678Z
 # checkers
 
 ## directory checker
+
+in `lint` stage, if `pkgdir` contains these directories, directory checker would throw an error:
+
+- /lib
+- /lib64
+- /usr/lib64
+- /bin
+- /sbin
+- /var/run
