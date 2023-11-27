@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2023-11-27T05:52:55.229Z
+date: 2023-11-27T06:01:31.148Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -13,37 +13,41 @@ dateCreated: 2023-11-24T01:41:21.463Z
 ```plantuml
 @startuml
 
-single: Single User Mode (recovery)
-early_detect: Detect running env
-early_mount: Mount /proc /sys ...
-early_cgroups: Mount cgroups
-early_pre.target: Basic env for early stages
-mdev: Mount and expand /dev
-early_modules: Probe kernel modules
-early_devices.target: Essential devices are detected
-early_rootrw: Set root partition to be writable
-early_fs.target: All essential local filesystems are mounted
-early_fstab: Read and mount /etc/fstab
-early_hostname: Read /etc/hostname and set hostname
-early_tty: Spawn tty on serial port
-early_sysctl: Read and apply /etc/sysctl.conf
-pawprint: Generate tmpfiles
-catnest: Generate initial users/groups
-utmpd: User status log service
-wtmpd: User status log service
-early_sysutils: All sysutils are loaded and running
-syslogd: System logging daemon
-early_console.target: Early console is spawned and showed up
-early.target: Early stage initialization is completed
-rc.target: Run startup scripts
-network.target: Network initialization is completed
-dbus: dbus (system session)
-elogind: Session manager
-ntpd: Network time sync
-greetd: Greeter
-login.target: System is now prepared for user to login
-system: All system services are launched
-boot: All services are launched
+state single #lightblue: Single User Mode (recovery)
+state early_detect: Detect running env
+state early_mount: Mount /proc /sys ...
+state early_cgroups: Mount cgroups
+state early_pre.target: Basic env for early stages
+state mdev: Mount and expand /dev
+state early_modules: Probe kernel modules
+state early_devices.target: Essential devices are detected
+state early_rootrw: Set root partition to be writable
+state early_fs.target: All essential local filesystems are mounted
+state early_fstab: Read and mount /etc/fstab
+state early_net: Setup lo interface and init network config
+state early_hostname: Read /etc/hostname and set hostname
+state early_tty: Spawn tty on serial port
+state early_sysctl: Read and apply /etc/sysctl.conf
+state pawprint: Generate tmpfiles
+state catnest: Generate initial users/groups
+state utmpd: User status log service
+state wtmpd: User status log service
+state early_sysutils: All sysutils are loaded and running
+state syslogd: System logging daemon
+state early_console.target: Early console is spawned and showed up
+state early.target: Early stage initialization is completed
+state rc.target: Run startup scripts
+state network.target: Network initialization is completed
+state dbus #white: dbus (system session)
+state udhcpc #white: DHCP service
+state elogind #white: Session manager
+state ntpd #white: Network time sync
+state greetd #white: Greeter
+state login.target: System is now prepared for user to login
+state system: All system services are launched
+state boot: All services are launched
+state boot.d #lightgrey: All services in /etc/dinit.d/boot.d 
+state system.boot.d #lightgrey: All services in /usr/lib/dinit/system/boot.d
 
 
 [*] --> single
@@ -110,6 +114,8 @@ elogind -[dotted]-> login.target
 rc.target --> greetd
 elogind --> greetd
 greetd -[dotted]-> login.target
+system.boot.d --> system
+boot.d --> boot
 
 @enduml
 ```
