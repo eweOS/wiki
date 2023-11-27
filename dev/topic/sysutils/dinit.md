@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2023-11-27T05:47:31.193Z
+date: 2023-11-27T05:50:25.358Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -63,9 +63,9 @@ early_modules --> mdev
 early_devices.target --> early_hostname
 early_devices.target --> early_net
 early_devices.target --> early_fstab
-early_rootrw --> early_fstab
-early_rootrw --> early_fs.target
-early_fstab --> early_fs.target
+early_rootrw -[bold]-> early_fstab
+early_rootrw -[bold]-> early_fs.target
+early_fstab -[bold]-> early_fs.target
 early_devices.target --> early_fs.target
 early_fs.target --> syslogd
 early_fs.target --> pawprint
@@ -77,10 +77,10 @@ early_tty --> early_console.target
 early_fs.target --> catnest
 early_fs.target --> utmpd
 early_fs.target --> wtmpd
-catnest --> utmpd
-catnest --> wtmpd
-pawprint --> utmpd
-pawprint --> wtmpd
+catnest -[dotted]> utmpd
+catnest -[dotted]-> wtmpd
+pawprint -[dotted]-> utmpd
+pawprint -[dotted]-> wtmpd
 catnest --> early_sysutils
 pawprint --> early_sysutils
 syslogd --> early_sysutils
@@ -102,7 +102,7 @@ network.target --> ntpd
 ntpd --> login.target
 network.target --> system
 login.target --> system
-system --> boot
+system -[dotted]-> boot
 rc.target --> dbus
 dbus --> login.target
 dbus --> elogind
