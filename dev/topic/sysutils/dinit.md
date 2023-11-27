@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2023-11-27T06:01:31.148Z
+date: 2023-11-27T06:04:42.216Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -51,7 +51,7 @@ state system.boot.d #lightgrey: All services in /usr/lib/dinit/system/boot.d
 
 
 [*] --> single
-single --> [*]
+single --> early_detect
 [*] --> early_detect
 early_detect --> early_mount
 early_mount --> early_cgroups
