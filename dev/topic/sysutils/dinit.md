@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2023-11-27T05:43:38.081Z
+date: 2023-11-27T05:47:31.193Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
