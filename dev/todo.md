@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2023-10-19T07:28:04.525Z
+date: 2023-11-27T06:20:24.976Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -10,10 +10,9 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 ## Build System
 
-- [ ] Add aarch64 workers
-- [ ] Add riscv64 workers
+- [x] Add aarch64 workers
+- [x] Add riscv64 workers
 - [ ] Workflow: add /recheck command
-- [ ] Workflow: delete merged PRs
 
 ## System Image
 
@@ -62,7 +61,7 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 ## Infra
 
-- [ ] [Version Bumper](/dev/todo/version-bumper)
+- [x] [Version Bumper](/dev/todo/version-bumper)
 - [ ] keyring
 
 ## Wiki
