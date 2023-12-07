@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-10-19T07:00:00.979Z
+date: 2023-12-07T03:49:06.209Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -33,6 +33,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `systemd-logind` : `seatd` `elogind`
 - `systemd-dbus` : `basu`
 - `oss` `pulseaudio` `jack` `alsa`(partially) : `pipewire` `wireplumber`
+- `iptable` : `nftable`
 
 ## Work in progress
 
