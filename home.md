@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-11-27T06:05:55.414Z
+date: 2023-12-07T03:23:42.598Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -68,7 +68,7 @@ Tier 1.5 support (Main Repo, Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/r
 [Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utilities](/dev/topic/sysutils/coreutils) • [dinit](/dev/topic/sysutils/dinit)
 
 - **Packaging**
-[makepkg Helpers](/dev/topic/packaging/makepkg-helpers)
+[makepkg Helpers](/dev/topic/packaging/makepkg-helpers) • [PKGBUILD templates](/dev/topic/packaging/pkgbuild-templates)
 
 - **Infrastructure**
 [New Build System](/dev/topic/infra/build-system) • [Automatic Workflow](/dev/topic/infra/auto-workflow)
