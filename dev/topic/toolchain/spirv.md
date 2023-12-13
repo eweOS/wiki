@@ -2,7 +2,7 @@
 title: SPIR-V
 description: Standard Portable Intermediate Representation
 published: 1
-date: 2023-12-13T07:28:01.659Z
+date: 2023-12-13T07:28:53.239Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-13T07:28:01.659Z
@@ -19,3 +19,6 @@ dateCreated: 2023-12-13T07:28:01.659Z
 
 ## Order 2
 - `spirv-llvm-translator`: 17.0.0 (17.0.0 for `llvm`)
+
+## Order 3
+- `libclc`: 17.0.6 (same as `llvm`)
