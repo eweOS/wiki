@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-12-13T07:24:04.985Z
+date: 2023-12-13T07:51:45.000Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -56,13 +56,16 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 [QT](/dev/topic/graphics/qt) • [GTK](/dev/topic/graphics/gtk)
 
 - **Kernel & Driver**
+*WIP*
 
 - **Architectures**
 Tier 0 support (Full Main Repo, Testing Repo, Workflow): x86_64
 Tier 1 support (90% Main Repo, Testing Repo, Workflow): [ARM (aarch64)](/dev/topic/arch/arm)
 Tier 1.5 support (Main Repo, Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/riscv)
+Community support (eweOS-ports): -
 
 - **Network/Storage**
+*WIP*
 
 - **System Utilities**
 [Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utilities](/dev/topic/sysutils/coreutils) • [dinit](/dev/topic/sysutils/dinit)
@@ -73,13 +76,22 @@ Tier 1.5 support (Main Repo, Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/r
 - **Infrastructure**
 [New Build System](/dev/topic/infra/build-system) • [Automatic Workflow](/dev/topic/infra/auto-workflow)
 
+- **Security**
+*WIP*
+
 - **Packages Special**
+*WIP*
 
 ### Development Quick Notes
 
 - :clipboard: [Quick Notes](/dev/quick-notes) - Rapidly updated notepad for project management of contributors
 - :clipboard: [TODO](/dev/todo) - To-do list
 - :repeat: [Software Replacements](/dev/replacements) - Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
+
+## Legal & Contracts
+
+- [Code of Conduct]()
+*WIP*
 
 ## See Also
 
