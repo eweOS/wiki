@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2023-12-19T06:55:18.927Z
+date: 2023-12-19T07:12:31.878Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -138,3 +138,16 @@ Snapshot policy:
 {.is-warning}
 
 Repo selectors do not provide contents of repositories but redirections for optimized servers based on IP address and/or other rules based on users' requests.
+
+## DN42 Access
+
+eweOS provides official repositories in DN42 and also serves community repo servers in DN42.
+
+> Currently we are considering serving eweOS contents in a standalone domain. This is currently WIP.
+{.is-warning}
+
+### Rsync Server (DN42)
+
+### Official Repo Server (DN42)
+
+- Main Repo Server: `repo.nia.dn42`
