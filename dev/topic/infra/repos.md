@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2023-12-19T07:12:31.878Z
+date: 2023-12-19T08:56:15.451Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -31,19 +31,19 @@ Managed by: `Members`
 
 This repository is maintained by users in eweOS community and only provides `PKGBUILD` with source files instead of binaries to avoid potential legal issues.
 
-## device/platform specific repos
-
-Location: `<TODO>`
-Managed by: `PackageManagers`
-
-These repositories is maintained by developers of eweOS team to provide device/platform-specific packages and/or customized packages optimized for specific devices/platforms.
-
 ## ports repos
 
 Location: `/eweos-ports/<arch>/{main,testing}`
 Managed by: `PortManagers`
 
 These repositories should not be regarded as parts of eweOS repositories since extra architectures are not officially supported by eweOS. However, eweOS allows users to apply for submitting extra architectures maintained by themselves and request eweOS official repo servers to serve these repositories.
+
+### device/platform specific repos
+
+Location: `/eweos-ports/platforms/<platform>/<arch>`
+Managed by: `PackageManagers`
+
+These repositories is maintained by developers of eweOS team to provide device/platform-specific packages and/or customized packages optimized for specific devices/platforms.
 
 # Repo Servers
 
