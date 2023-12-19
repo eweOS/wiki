@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2023-12-19T06:27:07.760Z
+date: 2023-12-19T06:55:18.927Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -81,12 +81,60 @@ repo_snapshot -[dotted]-> repo_community_tier1
 
 ## Rsync Server
 
+> rsync servers are currently WIP
+{.is-warning}
+
+> rsync server for eweOS is currently only available for official servers and community tier-1 servers.
+{.is-info}
+
+- Main Rsync Server: `os-repo-rsync.ewe.moe`
+- Backup Rsync Server: `os-repo-rsync-backup.ewe.moe`
+
+rsync policy:
+- every 15min, rsync servers would check repositories of build system and sync the contents of each repo.
+
 ## Official Repo Server
+
+- Main Repo Server: `os-repo.ewe.moe`
+- Backup Repo Server: `os-repo-backup.ewe.moe`
+
+These servers do not provide rsync service and would be placed at the bottom of the pacman mirrorlist to recommend local mirrors.
 
 ## Community Repo Server
 
+The list of community repo servers can be found at [here](https://os.ewe.moe/download).
+
 ### Community Tier 1 Repo Server
+
+A community tier-1 repo server must:
+
+- provides rsync to downstream tier-2 repo servers
+- have at least 100Mbps (upload) network connection
+- have available and responsive person of contact (PoC)
+- sync at least `main` and `testing` repo from official rsync server
+- have 100GB free disk space remained after a full sync
+- provide services for all users and downstream community repo servers without exception policies
 
 ### Community Tier 2 Repo Server
 
+A community tier-2 repo server must:
+
+- sync at least one architecture of `main` repo
+
 ## Snapshot Repo Server
+
+This server provides daily incremental snapshots for eweOS `main` repo.
+
+Snapshot policy:
+
+- a incremental snapshot of current `main` repository is taken at 00:00 CST everyday except the first day of each month.
+  - a full snapshot of current `main` repository is taken at 00:00 CST every first day of each month.
+  - the incremental snapshot would be based on the full snapshot
+- snapshots older than 12 months would be deleted
+
+## Repo Selector
+
+> repo selector is currently WIP
+{.is-warning}
+
+Repo selectors do not provide contents of repositories but redirections for optimized servers based on IP address and/or other rules based on users' requests.
