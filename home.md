@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2023-12-19T05:32:35.505Z
+date: 2023-12-28T09:09:04.523Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -74,7 +74,7 @@ Community support (eweOS-ports): -
 [makepkg Helpers](/dev/topic/packaging/makepkg-helpers) • [PKGBUILD templates](/dev/topic/packaging/pkgbuild-templates)
 
 - **Infrastructure**
-[New Build System](/dev/topic/infra/build-system) • [Automatic Workflow](/dev/topic/infra/auto-workflow) • [Repositories](/dev/topic/infra/repos)
+[Automatic Workflow](/dev/topic/infra/auto-workflow) • [Repositories](/dev/topic/infra/repos)
 
 - **Security**
 *WIP*
