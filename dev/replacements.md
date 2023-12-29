@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-12-07T03:49:06.209Z
+date: 2023-12-29T04:53:35.031Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -35,14 +35,11 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `oss` `pulseaudio` `jack` `alsa`(partially) : `pipewire` `wireplumber`
 - `iptable` : `nftable`
 
-## Work in progress
-
-- `readline` : `libedit`
-
 ## Rejected
 
 - `openssl` : `libressl`. It's too hard to maintain sets of patches for unsupported packages.
 - `dbus` : `dbus-broker`. It needs libsystemd for dbus-launcher.
+- `readline` : `libedit`. `bash` requires `readline`
 
 ## Unsupported
 
