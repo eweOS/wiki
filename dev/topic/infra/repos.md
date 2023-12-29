@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2023-12-19T08:56:15.451Z
+date: 2023-12-29T04:20:42.399Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -151,3 +151,7 @@ eweOS provides official repositories in DN42 and also serves community repo serv
 ### Official Repo Server (DN42)
 
 - Main Repo Server: `repo.nia.dn42`
+
+## Setup a eweOS mirror
+
+See [Setup a eweOS mirror](/dev/topic/infra/repos/setup-mirror)
