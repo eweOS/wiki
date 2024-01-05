@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2024-01-05T09:46:41.515Z
+date: 2024-01-05T09:47:37.876Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -132,3 +132,5 @@ boot.user --> local.user.boot.d
 ## Ordinary Services
 
 # User Services
+
+User service is started by `dinit-userservd` via PAM from `greetd`.
