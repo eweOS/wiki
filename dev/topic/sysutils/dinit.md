@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2023-11-27T06:04:42.216Z
+date: 2024-01-05T09:46:41.515Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -48,6 +48,9 @@ state system: All system services are launched
 state boot: All services are launched
 state boot.d #lightgrey: All services in /etc/dinit.d/boot.d 
 state system.boot.d #lightgrey: All services in /usr/lib/dinit/system/boot.d
+state boot.user #lightblue: User service entrypoint
+state global.user.boot.d #lightgrey: All services in /usr/lib/dinit/user/boot.d
+state local.user.boot.d #lightgrey: All services in ~/.config/dinit.d/boot.d
 
 
 [*] --> single
@@ -116,7 +119,9 @@ elogind --> greetd
 greetd -[dotted]-> login.target
 system.boot.d --> system
 boot.d --> boot
-
+greetd -[dotted]-> boot.user
+boot.user --> global.user.boot.d
+boot.user --> local.user.boot.d
 @enduml
 ```
 
