@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2023-12-29T05:55:08.635Z
+date: 2024-01-08T04:03:26.683Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -35,6 +35,10 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `oss` `pulseaudio` `jack` `alsa`(partially) : `pipewire` `wireplumber`
 - `iptable` : `nftable`
 - `cdrtools` : `libisoburn`
+
+## WIP
+
+- `grub` : `limine`
 
 ## Rejected
 
