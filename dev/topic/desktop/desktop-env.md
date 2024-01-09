@@ -2,7 +2,7 @@
 title: Desktop Environments
 description: 
 published: 1
-date: 2023-08-18T08:59:35.174Z
+date: 2024-01-09T02:30:24.234Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:59:55.067Z
@@ -14,38 +14,21 @@ Here is a list of packages with official support (or plans to support). Each com
 
 Currently we use `greetd` and its greeter implimentations.
 
-## tuigreet (greetd-tui)
-
-> Currently we use this program as our default greeter in cli-only images.
-{.is-info}
-
-`tuigreet` is a simple greeter impl for `greetd` with terminal ui.
-
-## regreet
-
-> Currently we use this program as our default greeter in GUI-enabled images.
-{.is-info}
+|Package|Feature|Support|
+|-------|-------|-------|
+|`greetd-tui`|CLI|Y(Default CLI Greeter)|
+|`greetd-gtk`|GTK3|Y|
+|`greetd-regreet`|GTK4|Y|
 
 # Wayland Compositors
 
-## wayfire
-
-> Currently we use wayfire as our default compositor.
-{.is-info}
-
-## sway
-
-## hyprland
-
-## cage
-
-# Desktop Environment Libraries
-
-## wlroots
-
-## dfl
-
-## kf5
+|Package|Type|Feature|Support|
+|-------|----|-------|-------|
+|`wayfire`|Stacking|`wlroots`|Y|
+|`sway`|Tiling|`wlroots`|Y|
+|`cage`|Kiosk||Y (for greeters)|
+|`hyprland`|Tiling|`wlroots`|Y|
+|`weston`|Stacking||demo only|
 
 # Desktop Applications
 
