@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2024-01-05T09:47:37.876Z
+date: 2024-01-12T02:38:04.941Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -42,6 +42,7 @@ state dbus #white: dbus (system session)
 state udhcpc #white: DHCP service
 state elogind #white: Session manager
 state ntpd #white: Network time sync
+state plymouth.boot #white: Plymouth hide splash
 state greetd #white: Greeter
 state login.target: System is now prepared for user to login
 state system: All system services are launched
@@ -105,8 +106,10 @@ rc.target --> login.target
 rc.target --> udhcpc
 udhcpc -[dotted]-> network.target
 rc.target --> ntpd
+rc.target --> plymouth.boot
 network.target --> ntpd
 ntpd -[dotted]-> login.target
+plymouth.boot -[dotted]-> login.target
 network.target --> system
 login.target --> system
 system --> boot
