@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2023-12-29T04:20:42.399Z
+date: 2024-01-15T07:15:17.863Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -55,6 +55,7 @@ These repositories is maintained by developers of eweOS team to provide device/p
 
 state build_system #lightblue: eweOS Build System
 state repo_build_system #lightblue: Repo of build system
+state image_build_system #lightblue: Repo of image build system
 state repo_rsync_main #white: Official Rsync server (Main)
 state repo_rsync_backup #white: Official Rsync server (Backup)
 state repo_official_main: Official repo server (main)
@@ -64,6 +65,9 @@ state repo_community_tier2: Repo of community repo server (tier 2)
 state repo_snapshot: Snapshot repo server
 
 build_system --> repo_build_system
+image_build_system --> repo_rsync_main
+image_build_system --> repo_rsync_backup
+image_build_system --> repo_snapshot
 repo_build_system --> repo_rsync_main
 repo_build_system --> repo_rsync_backup
 repo_build_system --> repo_snapshot
