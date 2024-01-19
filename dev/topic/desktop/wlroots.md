@@ -2,11 +2,13 @@
 title: wlroots
 description: 
 published: 1
-date: 2024-01-19T09:12:20.312Z
+date: 2024-01-19T09:17:00.436Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-19T08:46:33.172Z
 ---
+
+wlroots current version: 0.17.1
 
 |compositor|system wlroots allowed|subproject wlroots allowed|use system wlroots|description|
 |--|--|--|--|
