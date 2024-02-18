@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2024-01-19T04:34:49.407Z
+date: 2024-02-18T08:23:25.982Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -14,7 +14,7 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 ## System Image
 
-- [ ] Automated ISO generation
+- [x] Automated ISO generation
 
 ## Hardware / Architecture
 
@@ -42,7 +42,7 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 ## Optimization
 
-- [ ] Enable default LTO
+- [x] Enable default LTO
 - [ ] Enable default mimalloc
 
 ## Infra
