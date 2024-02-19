@@ -2,7 +2,7 @@
 title: Troubleshooting
 description: Some usual problems with packaging and their solutions
 published: 1
-date: 2023-02-16T22:21:23.698Z
+date: 2024-02-19T06:17:22.405Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T22:21:23.698Z
@@ -47,5 +47,5 @@ musl provides dummy implementations.The old PKGBUILD does only removes the heade
 
 - `SIGSEGV` when running rust programs
 
-Make sure `RUSTFLAGS='-C target-feature=-crt-static'` is added.
+~~Make sure `RUSTFLAGS='-C target-feature=-crt-static'` is added.~~ (Patch applied)
 
