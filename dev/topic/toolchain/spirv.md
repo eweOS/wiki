@@ -1,8 +1,8 @@
 ---
-title: SPIR-V
-description: Standard Portable Intermediate Representation
+title: Vulkan / SPIR-V
+description: Vulkan / Standard Portable Intermediate Representation
 published: 1
-date: 2024-02-21T09:45:17.361Z
+date: 2024-02-21T09:48:47.823Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-13T07:28:01.659Z
