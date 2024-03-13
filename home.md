@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2024-02-21T09:49:30.023Z
+date: 2024-03-13T09:01:28.264Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -82,6 +82,9 @@ Community support (eweOS-ports): -
 
 - **Packages Special**
 *WIP*
+
+- **Compatibility**
+[musl vs glibc](/dev/topic/compat/musl-glibc) • [clang vs gcc](/dev/topic/compat/clang-gcc) • [dinit vs systemd](/dev/topic/compat/dinit-systemd) • [libudev-zero vs systemd-udev](/dev/topic/compat/libudevzero-systemdudev)
 
 ### Development Quick Notes
 
