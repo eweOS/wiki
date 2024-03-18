@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-01-08T09:57:18.640Z
+date: 2024-03-18T07:31:42.330Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -12,7 +12,6 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
 ## Dropped
 
-- `polkit` (maybe?)
 
 ## Replaced
 
@@ -30,7 +29,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `libudev` : `libudev-zero`
 - `systemd-tmpfiles` : `pawprint`
 - `systemd-sysuser` : `catnest`
-- `systemd-logind` : `seatd` `elogind`
+- `systemd-logind` : `seatd`
 - `systemd-dbus` : `basu`
 - `oss` `pulseaudio` `jack` `alsa`(partially) : `pipewire` `wireplumber`
 - `iptable` : `nftable`
