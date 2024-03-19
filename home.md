@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2024-03-13T09:01:28.264Z
+date: 2024-03-19T06:28:52.006Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -50,6 +50,7 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 [musl](/dev/topic/toolchain/musl) • [LLVM/Clang](/dev/topic/toolchain/llvm) • [Lua](/dev/topic/toolchain/lua) • [Java](/dev/topic/toolchain/java) • [Python](/dev/topic/toolchain/python) • [Rust](/dev/topic/toolchain/rust) • [Vulkan/SPIR-V](/dev/topic/toolchain/vulkan-spirv)
 
 - **Desktop**
+[eweOS Desktop Environment](/dev/topic/desktop/ewe-desktop-env)
 [Desktop Environment](/dev/topic/desktop/desktop-env) • [Multimedia](/dev/topic/desktop/multimedia)
 [wlroots](/dev/topic/desktop/wlroots)
 
