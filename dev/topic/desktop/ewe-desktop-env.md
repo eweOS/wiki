@@ -2,7 +2,7 @@
 title: eweOS Desktop Environment
 description: 
 published: 1
-date: 2024-03-19T06:47:15.168Z
+date: 2024-03-19T06:47:48.513Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T06:33:26.157Z
@@ -32,6 +32,10 @@ Most of them are preinstalled in live ISO.
 - `papirus-icon-theme`: as icon theme.
 
 ## Applications
+
+### launcher
+
+- `rofi`: as popup launcher
 
 ### bar
 
