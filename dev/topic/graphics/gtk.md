@@ -2,7 +2,7 @@
 title: GTK
 description: 
 published: 1
-date: 2023-12-29T02:27:50.559Z
+date: 2024-03-19T09:34:48.581Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-28T09:51:15.677Z
@@ -25,3 +25,10 @@ dateCreated: 2023-12-28T09:51:15.677Z
 - `pangomm-gtk3` : 2.46.3 (API 1.4)
 - `atkmm` (no longer needed in GTK4): 2.28.3 (API 1.6)
 - `gtkmm3` : Latest
+
+# Troubleshoot
+
+## Hardware Acceleration
+
+Known issue: bad renders on `virtio-gpu` of qemu.
+Solution:  `GSK_RENDERER=cairo`.
