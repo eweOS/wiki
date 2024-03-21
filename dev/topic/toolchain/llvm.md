@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2024-03-21T07:07:48.168Z
+date: 2024-03-21T09:19:23.211Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -88,3 +88,9 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `COMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
 
 ## WASI cxx/cxxabi
+
+## Upgrade Checklist
+
+- [Vulkan/SPIR-V](https://os-wiki.ewe.moe/dev/topic/toolchain/vulkan-spirv)
+- rust
+- mesa
