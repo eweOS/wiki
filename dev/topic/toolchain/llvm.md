@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2023-10-19T07:54:20.388Z
+date: 2024-03-21T07:07:48.168Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -78,6 +78,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LIBUNWIND_INSTALL_LIBRARY_DIR` : `lib`. We install libunwind into `/usr/lib`.
 - `LIBUNWIND_USE_COMPILER_RT` : ON. We use `compiler-rt`.
 - `LIBUNWIND_INSTALL_HEADERS` : ON. We need libunwind headers to compile llvm.
+- `LIBUNWIND_ENABLE_FRAME_APIS` : ON. We need frame apis to be compatible with libgcc.
 
 ### `compiler-rt` Flags
 
@@ -85,3 +86,5 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `COMPILER_RT_BUILD_GWP_ASAN` : OFF. But `gwp_asan` needs glibc, it must be disabled.
 - `COMPILER_RT_BUILD_LIBFUZZER` : OFF. Not supported by musl.
 - `COMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
+
+## WASI cxx/cxxabi
