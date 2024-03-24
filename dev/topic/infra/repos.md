@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2024-01-15T07:15:17.863Z
+date: 2024-03-24T07:16:11.878Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -92,7 +92,7 @@ repo_snapshot -[dotted]-> repo_community_tier1
 {.is-info}
 
 - Main Rsync Server: `os-repo-rsync.ewe.moe`
-- Backup Rsync Server: `os-repo-rsync-backup.ewe.moe`
+- Backup Rsync Server: `os-repo-rsync-bak.ewe.moe`
 
 rsync policy:
 - every 15min, rsync servers would check repositories of build system and sync the contents of each repo.
@@ -100,7 +100,7 @@ rsync policy:
 ## Official Repo Server
 
 - Main Repo Server: `os-repo.ewe.moe`
-- Backup Repo Server: `os-repo-backup.ewe.moe`
+- Backup Repo Server: `os-repo-bak.ewe.moe`
 
 These servers do not provide rsync service and would be placed at the bottom of the pacman mirrorlist to recommend local mirrors.
 
