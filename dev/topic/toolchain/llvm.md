@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2024-03-21T09:19:23.211Z
+date: 2024-03-26T14:49:49.156Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -46,7 +46,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 
 - `LLVM_INSTALL_UTILS` : ON. We'll install llvm utils.
 - `LLVM_ENABLE_LIBCXX` : ON. We'll use libc++.
-- `DLLVM_ENABLE_RTTI` : ON. We'll support EH.
+- `LLVM_ENABLE_RTTI` : ON. We'll support EH.
 - `LLVM_ENABLE_FFI` : ON. We'll use `libffi`.
 - `LLVM_ENABLE_LLD` : ON. We'll use `lld` to link LLVM.
 - `LLVM_INSTALL_BINUTILS_SYMLINKS` : ON. We'll use llvm utils to replace GNU binutils.
