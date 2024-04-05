@@ -2,7 +2,7 @@
 title: Lua
 description: Information about Lua toolchain
 published: 1
-date: 2023-07-27T19:05:35.146Z
+date: 2024-04-05T06:52:18.530Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-05T04:51:15.362Z
@@ -14,7 +14,7 @@ The standalone Lua interpreter and Lua libraries are included in `lua5x` package
 
 | Version    | 5.0 | 5.1 | 5.2 | 5.3 | 5.4 |
 |------------|-----|-----|-----|-----|-----|
-| Supported? | X   | \*  | X   | X   | V   |
+| Supported? | X   | V   | X   | X   | V   |
 
 - `V`: Lua with luarocks
 - `*`: Lua only
@@ -41,3 +41,7 @@ Modules are splited by version. There is a special `common` directory, in which 
 
 luarocks are provided in `luarocks5x` packages. Executable files are renamed as `luarocks-5x` and
 `luarocks-admin-5x`.
+
+## Module Packaging
+
+Some Lua modules are available in eweOS repository, with prefix `lua5x-`.
