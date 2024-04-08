@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2024-04-08T15:16:59.392Z
+date: 2024-04-08T15:43:11.742Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -47,6 +47,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `LLVM_INSTALL_UTILS` : ON. We'll install llvm utils.
 - `LLVM_ENABLE_LIBCXX` : ON. We'll use libc++.
 - `LLVM_ENABLE_FFI` : ON. We'll use `libffi`.
+- `LLVM_ENABLE_RTTI` : ON. Some programs like qt6-tools requires RTTI features.
 - `LLVM_ENABLE_LLD` : ON. We'll use `lld` to link LLVM.
 - `LLVM_INSTALL_BINUTILS_SYMLINKS` : ON. We'll use llvm utils to replace GNU binutils.
 - `LLVM_BUILD_LLVM_DYLIB` : ON. We'll build `libllvm` dynlib.
