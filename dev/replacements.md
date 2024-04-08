@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-03-20T08:17:52.267Z
+date: 2024-04-08T12:29:35.732Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -17,6 +17,8 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
 ## Dropped
 
+- `polkit`: requires elogind
+- `qt5`: too old
 
 ## Replaced
 
