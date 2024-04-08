@@ -2,7 +2,7 @@
 title: PKGBUILD Templates
 description: 
 published: 1
-date: 2024-04-08T09:23:59.512Z
+date: 2024-04-08T09:27:37.142Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T03:25:04.800Z
@@ -29,7 +29,7 @@ pkgrel=1
 arch=(x86_64 aarch64 riscv64)
 url='https://www.qt.io'
 license=(GPL3 LGPL3 FDL custom)
-pkgdesc='An implementation of the Language Server Protocol'
+pkgdesc='DESCR'
 _pkgfn=${pkgname/6-/}-everywhere-src-$_qtver
 depends=(qt6-base DEPENDS)
 makedepends=(cmake git ninja MAKEDEPENDS)
