@@ -2,7 +2,7 @@
 title: Packaging Guideline
 description: 
 published: 1
-date: 2023-10-19T06:36:04.656Z
+date: 2024-04-11T10:30:53.054Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:50.481Z
@@ -28,3 +28,26 @@ This is already covered in Arch packaging guidelines. We re-emphasize:
 
 > **Do not diminish the security or validity of a package** (e.g. by removing a checksum check or by removing PGP signature verification), because an upstream release is broken or suddenly lacks a certain feature (e.g. PGP signature missing for a new release).
 
+## Naming convention
+
+### Generic Packages
+
+- with binaries (`/usr/bin`): software-name
+example: `bash`
+- without binaries (`/usr/bin`):
+	- libraries (`/usr/lib`): `lib` + software-name / or software-name (if commonly used)
+  		example: `libdrm` `pangomm`
+  		- possible multi-version libraries: + `version` 
+          example: `libidn2`
+      		- version for another package: + `-package-name`
+              example: `glibmm-gtk3`
+  - documents (`/usr/share/doc`): software-name + `-doc`
+
+DO NOT USE:
+
+- software-name + `-dev / -devel`: except `-devel` for groups like `base-devel`
+- software-name + `-major-and-minor-version`: except they co-exists in our system
+
+### Topics
+
+`WIP`
