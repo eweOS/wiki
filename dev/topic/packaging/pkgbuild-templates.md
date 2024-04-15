@@ -2,7 +2,7 @@
 title: PKGBUILD Templates
 description: 
 published: 1
-date: 2024-04-08T09:27:37.142Z
+date: 2024-04-15T03:13:57.449Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T03:25:04.800Z
@@ -13,6 +13,41 @@ dateCreated: 2023-12-07T03:25:04.800Z
 ## python
 
 ## perl
+
+```
+# Maintainer: Your Name <you@example.com>
+
+pkgname=perl-module-name
+pkgver=x.xx
+pkgrel=1
+pkgdesc="DESCR"
+arch=('any')
+url="https://search.cpan.org/dist/MODULE-NAME"
+license=('GPL' 'PerlArtistic')
+depends=('perl')
+options=('!emptydirs')
+source=("https://www.cpan.org/authors/id/perl-module-name.tar.gz")
+sha256sums=('SUMS')
+
+build() {
+  cd $pkgname-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd $pkgname-$pkgver
+  make test
+}
+
+package() {
+  cd XML-SAX-Base-$pkgver
+  make install DESTDIR="$pkgdir"
+
+  find "$pkgdir" -name '.packlist' -delete
+  find "$pkgdir" -name '*.pod' -delete
+}
+```
 
 # Desktop Components
 
