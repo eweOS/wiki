@@ -2,7 +2,7 @@
 title: PKGBUILD Templates
 description: 
 published: 1
-date: 2024-04-15T03:13:57.449Z
+date: 2024-04-23T17:48:58.290Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T03:25:04.800Z
@@ -41,7 +41,7 @@ check() {
 }
 
 package() {
-  cd XML-SAX-Base-$pkgver
+  cd $pkgname-$pkgver
   make install DESTDIR="$pkgdir"
 
   find "$pkgdir" -name '.packlist' -delete
