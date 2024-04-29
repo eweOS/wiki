@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2024-04-29T08:39:41.943Z
+date: 2024-04-29T09:00:25.387Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -93,10 +93,9 @@ Community support (eweOS-ports): -
 - :clipboard: [TODO](/dev/todo) - To-do list
 - :repeat: [Software Replacements](/dev/replacements) - Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 
-## Legal & Contracts
+## Community
 
-- [Code of Conduct]()
-*WIP*
+- [Community Membership](/community/membership)
 
 ## See Also
 
