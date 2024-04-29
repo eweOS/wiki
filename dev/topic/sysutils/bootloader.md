@@ -2,7 +2,7 @@
 title: Bootloader
 description: 
 published: 1
-date: 2024-01-09T05:58:21.247Z
+date: 2024-04-29T08:45:12.620Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-26T16:25:19.855Z
@@ -38,27 +38,3 @@ limine-mkconfig > /boot/limine.cfg
 ```
 
 `limine-mkconfig` would only read kernels located at `/usr/lib/modules/` AND belongs to packages installed by pacman. Single user mode menu options will also be generated.
-
-# EFI Stub
-
-EFI stub is used for `minimal` livecd image for eweOS since it's simple enough.
-
-## Install
-
-Install `efistub-tools`:
-
-```
-pacman -S efistub-tools
-```
-
-## Config
-
-Modify kernel cmdline options from `/etc/kernel/cmdline`.
-
-## Update
-
-```
-genefistub
-```
-
-`efistub-tools` will generate an EFI file located at `/boot/EFI/BOOT/BOOT{X64,AA64,RISCV64}.EFI`.
