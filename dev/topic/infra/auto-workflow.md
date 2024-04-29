@@ -2,13 +2,11 @@
 title: Automatic Workflow
 description: 
 published: 1
-date: 2024-04-29T08:48:46.426Z
+date: 2024-04-29T09:10:45.937Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-22T06:27:51.050Z
 ---
-
-# Build System Automation
 
 # GitHub Automations
 
@@ -51,3 +49,11 @@ location: https://github.com/eweOS/iso/actions
 {.is-info}
 
 location: `https://github.com/eweOS/workflow/tree/pkginfo-$arch`
+
+# Repository Automations
+
+## Build System --> Sync Server
+
+## Sync Server --> Official Mirror
+
+## Image Build System --> Official Mirror
