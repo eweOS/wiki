@@ -2,7 +2,7 @@
 title: Automatic Workflow
 description: 
 published: 1
-date: 2023-12-07T04:00:19.323Z
+date: 2024-04-29T08:48:46.426Z
 tags: 
 editor: markdown
 dateCreated: 2023-05-22T06:27:51.050Z
@@ -37,3 +37,17 @@ container:
 - `master`: `ghcr.io/eweos/docker:master`
 - `buildenv`: `ghcr.io/eweos/docker:master-->buildenv`
 - `updatecheck`: `ghcr.io/eweos/docker:master-->updatecheck`
+
+## ISO Image Creation
+
+> cron: '0 0 */3 * *'
+{.is-info}
+
+location: https://github.com/eweOS/iso/actions
+
+## Update list of packages
+
+> cron: '0 0 * * *'
+{.is-info}
+
+location: `https://github.com/eweOS/workflow/tree/pkginfo-$arch`
