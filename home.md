@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2024-03-19T06:28:52.006Z
+date: 2024-04-29T08:39:41.943Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -25,7 +25,7 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 
 > **WIP**: Currently, eweOS is too early to be used in production and primary devices. Please wait patiently for our latest news.
 
-- :computer: [Boot Disk Image](/guides/boot-diskimage) - Tutorial to launch prebuilt disk images via QEMU
+- :computer: [Boot ISO Image from QEMU](/guides/qemu-boot-isoimage) - Tutorial to launch prebuilt iso images via QEMU
 - :package: [Software & Configuration](/guides/softwares) - List of supported softwares and tutorials to configure them
 - :raising_hand: [FAQ](/guides/faq) - Some frequently asked questions
 - :fire: [Report bugs and give feedbacks](https://github.com/eweOS/bugs/issues) - Use GitHub issues to post your bug reports
