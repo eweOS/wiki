@@ -2,20 +2,55 @@
 title: Contributing Guide
 description: 
 published: 1
-date: 2023-10-19T07:21:57.769Z
+date: 2024-04-29T09:31:17.710Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-19T06:47:52.080Z
 ---
 
-Before your contribution, here's some rules that needs to adhere.
+# Contribution Guideline
 
-## Commit and Pull Request Format
+## Where to Contribute
 
-### [eweOS/packages](https://github.com/eweOS/packages)
+Most of eweOS development takes place at [eweOS package repository](https://github.com/eweOS/packages). To change or create a package, you should fork the repository first.
+
+eweOS package repository contains multiple branches, with each PKGBUILD file assigned to a branch.
+
+
+## Upgrade/Modify an Existing Package
+
+Simply create a pull request to eweOS package repository.
+
+For upgrading, the commit message should be like:
 
 ```
-[<pkgname>] <pkgver>: <brief description>
+[<pkgname>] <pkgver>-<pkgrel>: new upstream version
+
+<optional long description>
+```
+
+You could refer to this [pull request](https://github.com/eweOS/packages/pull/169).
+
+## Create New Packages
+
+To create new packages, you should create an issue in eweOS package repository with title like:
+
+```
+[<pkgname>] <pkgver>: new package
+```
+
+Add link to your fork of eweOS package repository and specify a branch in the issue. The maintainer will check it (and maybe require changes).
+
+Your branch should contains only one commit with message like
+
+```
+[<newpkg>] <pkgver>-1: init package
+```
+
+## General Commit Format
+
+```
+[<pkgname>] <pkgver>-<pkgrel>: <brief description>
 
 <optional long description>
 ```
@@ -33,23 +68,5 @@ Upstream merged and fixed: https://github.com/...
 Adding a new package:
 
 ```
-[newpkg] 1.0.0-1: initial packaging
+[newpkg] 1.0.0-1: init package
 ```
-
-## Members
-
-(This is an early draft and execution may vary accordingly while we remain small)
-
-To apply for new member, you need to be:
-
-- at least contributed to the eweOS development: new packages, bug fixes, wiki entries, etc., and
-- at least sponsorships from at least two of the existing members, and
-- more than 2/3 of the current members voting in favour of your joining
-
-If you are rejected by some members during the sponsorship process, please mention it in further discussions asking for sponsorship.
-
-Members remain their positions unless:
-
-- they decide to leave eweOS voluntarily, or
-- half of the current members voting against one's membership, or
-- they don't show activity (PRs, issues, wikis) on the project for 6 months.
