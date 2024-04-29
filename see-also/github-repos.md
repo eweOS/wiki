@@ -2,7 +2,7 @@
 title: GitHub Repositories
 description: A list of repositories in github.
 published: 1
-date: 2024-04-29T09:01:42.971Z
+date: 2024-04-29T09:03:18.559Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-28T15:08:17.011Z
@@ -45,6 +45,14 @@ This repo contains Dockerfiles for docker image creation.
 ### `bugs`: Bug Tracking System
 
 This repo manages bugs reports for eweOS.
+
+### `kernel-config`: Default kernel config
+
+This repo provides default kernel config for eweOS.
+
+### `artwork`: Artwork files
+
+This repo contains eweOS-related artworks.
 
 ## Package Repositories
 
