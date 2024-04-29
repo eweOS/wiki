@@ -2,7 +2,7 @@
 title: Contributing Guide
 description: 
 published: 1
-date: 2024-04-29T09:31:17.710Z
+date: 2024-04-29T09:32:02.796Z
 tags: 
 editor: markdown
 dateCreated: 2023-10-19T06:47:52.080Z
@@ -12,10 +12,9 @@ dateCreated: 2023-10-19T06:47:52.080Z
 
 ## Where to Contribute
 
-Most of eweOS development takes place at [eweOS package repository](https://github.com/eweOS/packages). To change or create a package, you should fork the repository first.
+Most of eweOS development takes place at [eweOS package repository](https://github.com/eweOS/packages). To modify or create a package, you should fork the repository first.
 
-eweOS package repository contains multiple branches, with each PKGBUILD file assigned to a branch.
-
+eweOS package repository contains multiple branches, with each PKGBUILD file assigned to one.
 
 ## Upgrade/Modify an Existing Package
 
