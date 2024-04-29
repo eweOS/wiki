@@ -2,13 +2,11 @@
 title: Community Membership
 description: About community membership
 published: 1
-date: 2024-04-29T09:02:21.689Z
+date: 2024-04-29T09:36:13.583Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-29T09:02:21.689Z
 ---
-
-## Membership
 
 (This is an early draft and execution may vary accordingly while we remain small)
 
