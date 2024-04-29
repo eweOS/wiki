@@ -2,7 +2,7 @@
 title: GitHub Repositories
 description: A list of repositories in github.
 published: 1
-date: 2023-08-28T15:08:17.011Z
+date: 2024-04-29T09:01:42.971Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-28T15:08:17.011Z
@@ -30,11 +30,11 @@ All related workflows for GitHub Actions will be stored and executed here.
 
 This repo contains source codes for eweOS internal infra, including repo server, testing server and automation services.
 
-### `Web`: Main Website Codes
+### `web`: Main Website Codes
 
 This repo contains codes for our [homepage](https://os.ewe.moe).
 
-### `Images`: System Image Generation Configurations
+### `iso`: System Image Generation Configurations
 
 This repo contains configurations for eweOS disk/installation image creation.
 
