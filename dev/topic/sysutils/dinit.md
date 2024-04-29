@@ -2,11 +2,14 @@
 title: dinit
 description: 
 published: 1
-date: 2024-03-26T14:49:00.707Z
+date: 2024-04-29T09:28:50.879Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
 ---
+
+> dinit service files is maintained in [eweOS/dinit-services](https://github.com/eweOS/dinit-services/)
+{.is-info}
 
 # bootflow
 
