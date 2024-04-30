@@ -2,7 +2,7 @@
 title: PKGBUILD Templates
 description: 
 published: 1
-date: 2024-04-23T17:48:58.290Z
+date: 2024-04-30T05:47:34.829Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T03:25:04.800Z
@@ -115,3 +115,31 @@ package() {
 ```
 
 ## KDE Framework
+
+```
+# Maintainer: Your Name <you@example.com>
+
+_compname=COMPNAME
+pkgname=k$_compname
+pkgver=6.1.0
+pkgrel=1
+pkgdesc='DESCR'
+arch=(x86_64 aarch64 riscv64)
+url='https://community.kde.org/Frameworks'
+license=(LGPL-2.0-only LGPL-3.0-only)
+depends=(qt6-base DEPS)
+makedepends=(extra-cmake-modules qt6-tools MAKEDEPS)
+groups=(kf6)
+source=(https://download.kde.org/stable/frameworks/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('SUMS')
+
+build() {
+  cmake -B build -S $pkgname-$pkgver \
+    -DBUILD_TESTING=OFF
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+}
+```
