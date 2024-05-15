@@ -2,7 +2,7 @@
 title: FAQ
 description: Some frequently asked questions
 published: 1
-date: 2024-05-15T05:48:59.507Z
+date: 2024-05-15T05:49:19.044Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T22:06:46.826Z
@@ -35,8 +35,6 @@ dateCreated: 2023-02-16T22:06:46.826Z
 - **User Friendliness**: Developers is users. Users need to be developers.
 
 ## Installation
-
-### 
 
 ## Packages
 
