@@ -2,7 +2,7 @@
 title: FAQ
 description: Some frequently asked questions
 published: 1
-date: 2024-05-15T05:46:34.352Z
+date: 2024-05-15T05:48:59.507Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T22:06:46.826Z
@@ -22,6 +22,8 @@ dateCreated: 2023-02-16T22:06:46.826Z
 
 - **Security**: We are lacking of developers.
 
+- **Hardware Compatibility**: Devices in developers' hands are more likely to work.
+
 - **Integrity**: You need to get rolled with your system.
 
 ### What is not expected
@@ -33,6 +35,8 @@ dateCreated: 2023-02-16T22:06:46.826Z
 - **User Friendliness**: Developers is users. Users need to be developers.
 
 ## Installation
+
+### 
 
 ## Packages
 
