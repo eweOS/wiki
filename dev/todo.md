@@ -2,11 +2,15 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2024-02-18T08:23:25.982Z
+date: 2024-05-17T10:19:53.305Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
 ---
+
+> **This list is for long-term ideas only. There is an monthly updating list of TODO in hackmd instead**:
+> [HackMD Link](https://hackmd.io/6pWHEy-bQh2ZIu9VPEZCEQ)
+{.is-info}
 
 ## Build System
 
