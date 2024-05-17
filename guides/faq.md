@@ -2,7 +2,7 @@
 title: FAQ
 description: Some frequently asked questions
 published: 1
-date: 2024-05-15T05:53:53.618Z
+date: 2024-05-17T10:08:27.437Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T22:06:46.826Z
@@ -32,7 +32,7 @@ dateCreated: 2023-02-16T22:06:46.826Z
 
 - **Cross-distro Compatibility**: We just don't care.
 
-- **User Friendliness**: Developers is users. Users need to be developers.
+- **User Friendliness**: Developers are users. Users need to be developers.
 
 ## Installation
 
