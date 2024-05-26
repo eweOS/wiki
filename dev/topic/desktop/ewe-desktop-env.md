@@ -2,7 +2,7 @@
 title: eweOS Desktop Environment
 description: 
 published: 1
-date: 2024-03-19T06:49:27.601Z
+date: 2024-05-26T13:23:44.267Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-19T06:33:26.157Z
@@ -37,13 +37,11 @@ Most of them are preinstalled in live ISO.
 
 ## Applications
 
-### launcher
+### desktop and widgets
 
 - `rofi`: as popup launcher
-
-### bar
-
 - `waybar`: as system-wide toolbar.
+- `swww`: as wallpaper manager.
 
 ### notification
 
@@ -53,10 +51,32 @@ Most of them are preinstalled in live ISO.
 
 - `foot`: as terminal.
 
-### wallpaper
-
-- `swww`: as wallpaper manager.
-
 ### browser
 
 - `firefox`: as browser
+
+### input method
+
+- `fcitx5`: as input method framework
+- `fcitx5-chinese-addons`: as Chinese input method framework
+
+### screenshot
+
+> all-in-one command: `grim -g "$(slurp)" - | swappy -f -`
+
+- `slurp`: to select part of screen
+- `grim`: to do the screenshot
+- `swappy`: to edit screenshot
+
+### monitor management
+
+- `wdisplays`: for GUI
+- `kanshi`: for daemonized monitor configuration
+
+# Configurations
+
+WIP
+
+# Packaged out-of-box configuration
+
+WIP
