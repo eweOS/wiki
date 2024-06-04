@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-04-08T12:29:35.732Z
+date: 2024-06-04T13:33:29.253Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -43,10 +43,9 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `cdrtools` : `libisoburn`
 - `grub` : `limine`⚠️
 - `ninja`: `samurai`
+- `gettext`: `gettext-tiny`
 
 ## WIP
-
-- `gettext`: `gettext-tiny`
 
 ## Rejected
 
