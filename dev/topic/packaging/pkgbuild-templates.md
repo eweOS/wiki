@@ -2,7 +2,7 @@
 title: PKGBUILD Templates
 description: 
 published: 1
-date: 2024-04-30T05:47:34.829Z
+date: 2024-06-07T04:25:11.708Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T03:25:04.800Z
@@ -142,4 +142,18 @@ build() {
 package() {
   DESTDIR="$pkgdir" cmake --install build
 }
+```
+
+## Special
+
+### xvfb-run alternative for wayland:
+
+```
+export XDG_RUNTIME_DIR="$PWD/runtime-dir" WAYLAND_DISPLAY=wayland-5
+
+mkdir -p -m 700 "$XDG_RUNTIME_DIR"
+weston --backend=headless-backend.so --socket=$WAYLAND_DISPLAY --idle-time=0 &
+_w=$!
+
+trap "kill $_w; wait" EXIT
 ```
