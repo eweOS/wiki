@@ -2,7 +2,7 @@
 title: Packaging Guideline
 description: 
 published: 1
-date: 2024-04-11T10:30:53.054Z
+date: 2024-06-13T15:51:31.753Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:50.481Z
@@ -32,9 +32,9 @@ This is already covered in Arch packaging guidelines. We re-emphasize:
 
 ### Generic Packages
 
-- with binaries (`/usr/bin`): software-name
+- with executable files (`/usr/bin`): software-name
 example: `bash`
-- without binaries (`/usr/bin`):
+- without executable files (`/usr/bin`):
 	- libraries (`/usr/lib`): `lib` + software-name / or software-name (if commonly used)
   		example: `libdrm` `pangomm`
   		- possible multi-version libraries: + `version` 
