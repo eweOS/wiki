@@ -2,7 +2,7 @@
 title: LLVM/Clang
 description: 
 published: 1
-date: 2024-04-08T15:43:11.742Z
+date: 2024-06-16T02:57:41.981Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:13:01.262Z
@@ -86,6 +86,7 @@ dateCreated: 2023-02-13T14:13:01.262Z
 - `COMPILER_RT_BUILD_GWP_ASAN` : OFF. But `gwp_asan` needs glibc, it must be disabled.
 - `COMPILER_RT_BUILD_LIBFUZZER` : OFF. Not supported by musl.
 - `COMPILER_RT_BUILD_XRAY` : OFF. Not supported for musl.
+- `COMPILER_RT_CRT_USE_EH_FRAME_REGISTRY` : OFF. Avoid a bug of mold.
 
 ## WASI cxx/cxxabi
 
