@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2024-04-29T09:28:50.879Z
+date: 2024-07-27T14:51:23.790Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -29,7 +29,6 @@ state early_fs.target: All essential local filesystems are mounted
 state early_fstab: Read and mount /etc/fstab
 state early_net: Setup lo interface and init network config
 state early_hostname: Read /etc/hostname and set hostname
-state early_tty: Spawn tty on serial port
 state early_sysctl: Read and apply /etc/sysctl.conf
 state pawprint: Generate tmpfiles
 state catnest: Generate initial users/groups
@@ -37,7 +36,6 @@ state utmpd: User status log service
 state wtmpd: User status log service
 state early_sysutils: All sysutils are loaded and running
 state syslogd: System logging daemon
-state early_console.target: Early console is spawned and showed up
 state early.target: Early stage initialization is completed
 state rc.target: Run startup scripts
 state network.target: Network initialization is completed
@@ -84,7 +82,6 @@ early_fs.target --> early_sysctl
 early_devices.target --> early_sysctl
 early_fs.target --> early_tty
 early_devices.target --> early_tty
-early_tty --> early_console.target
 early_fs.target --> catnest
 early_fs.target --> utmpd
 early_fs.target --> wtmpd
@@ -97,7 +94,6 @@ pawprint --> early_sysutils
 syslogd --> early_sysutils
 utmpd --> early_sysutils
 wtmpd --> early_sysutils
-early_console.target --> early.target
 early_net --> early.target
 early_hostname --> early.target
 early_sysutils --> early.target
