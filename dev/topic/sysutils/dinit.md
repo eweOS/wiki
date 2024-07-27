@@ -2,7 +2,7 @@
 title: dinit
 description: 
 published: 1
-date: 2024-07-27T14:51:23.790Z
+date: 2024-07-27T14:52:03.877Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-24T01:41:21.463Z
@@ -117,7 +117,6 @@ dbus -[dotted]-> login.target
 dbus --> seatd
 seatd -[dotted]-> login.target
 rc.target --> greetd
-elogind --> greetd
 greetd -[dotted]-> login.target
 system.boot.d --> system
 boot.d --> boot
