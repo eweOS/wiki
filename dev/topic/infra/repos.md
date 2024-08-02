@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2024-08-02T14:42:01.329Z
+date: 2024-08-02T14:44:55.065Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -58,8 +58,8 @@ state repo_build_system #lightblue: Repo of build system
 state image_build_system #orange: image build system (GitHub)
 state ci_build_system #orange: eweOS Git CI (GitHub)
 state docker_build_system #orange: docker build system (GitHub)
-state repo_object_storage #lightblue: Repo of Object Storage (Cloudflare, Oracle)
-state repo_docker #lightblue: Container Registry (GitHub)
+state repo_object_storage: Repo of Object Storage (Cloudflare, Oracle)
+state repo_docker: Container Registry (GitHub)
 state repo_rsync_main #white: Official Rsync server (Main)
 state repo_rsync_backup #white: Official Rsync server (Backup)
 state repo_official_main: Official repo server (main)
