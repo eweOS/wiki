@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2024-07-21T08:30:25.920Z
+date: 2024-08-02T14:42:01.329Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -24,7 +24,7 @@ Managed by: `PackageManagers`
 
 This repository provides unstable/transitional packages in testing stage. Default `pacman.conf` disables this repository and should only enable for developers.
 
-## `eur` repo
+## `eur` repo (WIP)
 
 Location: `/eweos/eur`
 Managed by: `Members`
@@ -53,10 +53,13 @@ These repositories is maintained by developers of eweOS team to provide device/p
 ```plantuml
 @startuml
 
-state build_system #lightblue: eweOS Build System
+state build_system #orange: eweOS Build System
 state repo_build_system #lightblue: Repo of build system
-state image_build_system #lightblue: Repo of image build system (GitHub)
+state image_build_system #orange: image build system (GitHub)
+state ci_build_system #orange: eweOS Git CI (GitHub)
+state docker_build_system #orange: docker build system (GitHub)
 state repo_object_storage #lightblue: Repo of Object Storage (Cloudflare, Oracle)
+state repo_docker #lightblue: Container Registry (GitHub)
 state repo_rsync_main #white: Official Rsync server (Main)
 state repo_rsync_backup #white: Official Rsync server (Backup)
 state repo_official_main: Official repo server (main)
@@ -70,6 +73,9 @@ image_build_system --> repo_object_storage
 repo_object_storage --> repo_rsync_main
 repo_object_storage --> repo_rsync_backup
 repo_object_storage --> repo_snapshot
+repo_object_storage --> docker_build_system
+docker_build_system --> repo_docker
+repo_docker --> ci_build_system
 repo_build_system --> repo_rsync_main
 repo_build_system --> repo_rsync_backup
 repo_build_system --> repo_snapshot
@@ -101,10 +107,10 @@ rsync policy:
 
 ## Official Repo Server
 
-- Main Repo Server: `os-repo.ewe.moe`
-- Backup Repo Server: `os-repo-bak.ewe.moe`
+- Luxembourg, EU, Repo Server: `os-repo-lu.ewe.moe`
+- Wuhan, China, Repo Server: `os-repo-cn.ewe.moe`
 
-These servers do not provide rsync service and would be placed at the bottom of the pacman mirrorlist to recommend local mirrors.
+These servers would be placed at the bottom of the pacman mirrorlist to recommend local mirrors.
 
 ## Community Repo Server
 
@@ -129,14 +135,19 @@ A community tier-2 repo server must:
 
 ## Snapshot Repo Server
 
-This server provides daily incremental snapshots for eweOS `main` repo.
+This server provides daily incremental snapshots for eweOS `main` `testing` and `images` repo.
 
-Snapshot policy:
+Repo Snapshot policy:
 
-- a incremental snapshot of current `main` repository is taken at 00:00 CST everyday except the first day of each month.
-  - a full snapshot of current `main` repository is taken at 00:00 CST every first day of each month.
+- a incremental snapshot of current repository is taken at 00:00 CST everyday except the first day of each month.
+  - a full snapshot of current repository is taken at 00:00 CST every first day of each month.
   - the incremental snapshot would be based on the full snapshot
-- snapshots older than 12 months would be deleted
+- snapshots older than 2 months would be deleted
+
+Image Snapshot policy:
+
+- a incremental snapshot of current image repository is taken at 00:30 CST everyday.
+- snapshots older than 15 days would be deleted
 
 ## Repo Selector
 
