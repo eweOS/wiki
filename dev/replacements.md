@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-06-04T13:33:29.253Z
+date: 2024-09-03T02:54:06.698Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -42,7 +42,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `iptable` : `nftable`⚠️
 - `cdrtools` : `libisoburn`
 - `grub` : `limine`⚠️
-- `ninja`: `samurai`
+- `ninja`: `samurai` (partially)
 - `gettext`: `gettext-tiny`
 
 ## WIP
