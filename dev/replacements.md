@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-10-15T05:33:48.652Z
+date: 2024-10-15T05:35:06.071Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -25,6 +25,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `x11` : `wayland`⚠️
 - `glibc` : `musl` `musl-*` `gcompat`
 - `gcc` `gcc-libs` : `clang` `llvm` `llvm-libs`
+- `gfortran` : `flang`
 - `libtool` : `slibtool`
 - `binutils` : `llvm` + `binutils-*` (standalone tools)
 - `coreutils` : `busybox`
