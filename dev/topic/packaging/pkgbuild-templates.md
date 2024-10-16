@@ -2,7 +2,7 @@
 title: PKGBUILD Templates
 description: 
 published: 1
-date: 2024-06-07T04:25:11.708Z
+date: 2024-10-16T07:00:37.004Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T03:25:04.800Z
@@ -76,7 +76,6 @@ build() {
   export CMARGS=(
     -DCMAKE_INSTALL_PREFIX=/usr
     -DCMAKE_BUILD_TYPE=RelWithDebInfo
-    -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON
     -DCMAKE_MESSAGE_LOG_LEVEL=STATUS
   )
 
@@ -91,6 +90,12 @@ build() {
     -DINSTALL_MKSPECSDIR=lib/qt6/mkspecs
     -DINSTALL_EXAMPLESDIR=share/doc/qt6/examples
   )
+
+  if check_option lto y; then
+    CMARGS+=(-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON)
+  else
+    FEATUREARGS+=(-DFEATURE_ltcg=OFF)
+  fi
 
   cmake -B build -S $_pkgfn -G Ninja \
     "${CMARGS[@]}" \
