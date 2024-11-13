@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2024-10-05T14:26:05.795Z
+date: 2024-11-13T09:22:59.291Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -70,7 +70,7 @@ Community support (eweOS-ports): -
 *WIP*
 
 - **System Utilities**
-[Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utilities](/dev/topic/sysutils/coreutils) • [dinit](/dev/topic/sysutils/dinit)
+[Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utilities](/dev/topic/sysutils/coreutils) • [dinit](/dev/topic/sysutils/dinit) • [catnest (sysusers)](/dev/topic/sysutils/catnest)
 
 - **Packaging**
 [makepkg Helpers](/dev/topic/packaging/makepkg-helpers) • [PKGBUILD templates](/dev/topic/packaging/pkgbuild-templates) • [Meta Packages](/dev/topic/packaging/metapackages)
