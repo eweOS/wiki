@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2024-08-02T14:44:55.065Z
+date: 2024-11-29T09:42:46.074Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -62,10 +62,9 @@ state repo_object_storage: Repo of Object Storage (Cloudflare, Oracle)
 state repo_docker: Container Registry (GitHub)
 state repo_rsync_main #white: Official Rsync server (Main)
 state repo_rsync_backup #white: Official Rsync server (Backup)
-state repo_official_main: Official repo server (main)
-state repo_official_backup: Official repo server (backup)
-state repo_community_tier1: Repo of community repo server (tier 1)
-state repo_community_tier2: Repo of community repo server (tier 2)
+state repo_official: Official repo servers
+state repo_community_tier1: Repo of community repo servers (tier 1)
+state repo_community_tier2: Repo of community repo servers (tier 2)
 state repo_snapshot: Snapshot repo server
 
 build_system --> repo_build_system
@@ -79,10 +78,8 @@ repo_docker --> ci_build_system
 repo_build_system --> repo_rsync_main
 repo_build_system --> repo_rsync_backup
 repo_build_system --> repo_snapshot
-repo_rsync_main --> repo_official_main
-repo_rsync_backup -[dotted]-> repo_official_main
-repo_rsync_main --> repo_official_backup
-repo_rsync_backup -[dotted]-> repo_official_backup
+repo_rsync_main --> repo_official
+repo_rsync_backup -[dotted]-> repo_official
 repo_rsync_main --> repo_community_tier1
 repo_rsync_backup -[dotted]-> repo_community_tier1
 repo_community_tier1 --> repo_community_tier2
@@ -108,6 +105,7 @@ rsync policy:
 ## Official Repo Server
 
 - Luxembourg, EU, Repo Server: `os-repo-lu.ewe.moe`
+- St. Louis, United States, Repo Server: `os-repo-us.ewe.moe`
 - Wuhan, China, Repo Server: `os-repo-cn.ewe.moe`
 
 These servers would be placed at the bottom of the pacman mirrorlist to recommend local mirrors.
