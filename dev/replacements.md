@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-10-15T05:35:06.071Z
+date: 2024-12-16T15:16:17.853Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -68,7 +68,7 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
 - `gnome` (building `mutter` without X11 is still WIP)
 - `plasma` (building `plasma-framework` without X11 is still WIP)
-- `xfce4` (x11 is required)
 - `alacritty` (needs xcb)
+- `libreoffice` (requires X11)
 
 ### other reasons
