@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-12-16T15:16:17.853Z
+date: 2024-12-16T15:20:33.065Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -70,5 +70,10 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `plasma` (building `plasma-framework` without X11 is still WIP)
 - `alacritty` (needs xcb)
 - `libreoffice` (requires X11)
+
+### incompatible with `libudev-zero`
+
+- libgudev
+- k3b
 
 ### other reasons
