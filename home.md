@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2024-11-13T09:22:59.291Z
+date: 2024-12-26T04:57:43.684Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -63,7 +63,7 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 - **Architectures**
 Tier 0 support (Full Main Repo, Testing Repo, Workflow): x86_64
 Tier 1 support (90% Main Repo, Testing Repo, Workflow): [ARM (aarch64)](/dev/topic/arch/arm)
-Tier 1.5 support (Main Repo, Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/riscv)
+Tier 1.5 support (Main Repo, Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/riscv) [LoongArch64 (loongarch64)](/dev/topic/arch/loongarch)
 Community support (eweOS-ports): -
 
 - **Network/Storage**
