@@ -2,7 +2,7 @@
 title: Vulkan / SPIR-V
 description: Vulkan / Standard Portable Intermediate Representation
 published: 1
-date: 2025-01-15T02:52:32.273Z
+date: 2025-01-15T03:17:16.243Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-13T07:28:01.659Z
@@ -18,6 +18,7 @@ dateCreated: 2023-12-13T07:28:01.659Z
 - `spirv-tools`: 2024.4.rc2+1.4.304 (sdk-1.4.304 for `spirv-headers`)
 - `vulkan-volk`: 1.4.304
 - `vulkan-icd-loader` 1.4.304
+- `shaderc`: 2024.4
 
 ## Order 2
 - `spirv-llvm-translator`: 18.1.4 (18.1.4 for `llvm`)
