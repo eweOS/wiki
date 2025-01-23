@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2024-12-16T15:20:33.065Z
+date: 2025-01-23T18:32:38.041Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -10,8 +10,8 @@ dateCreated: 2023-02-13T14:12:40.309Z
 
 Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 
-> item with ℹ️: NOT drop-in replacement, config compatitable
-> item with ⚠️: NOT drop-in replacement, config NOT compatitable
+> item with ℹ️: NOT drop-in replacement, config compatible
+> item with ⚠️: NOT drop-in replacement, config NOT compatible
 {.is-info}
 
 
