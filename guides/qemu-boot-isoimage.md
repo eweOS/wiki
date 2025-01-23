@@ -2,7 +2,7 @@
 title: Boot ISO Image from QEMU
 description: Launch prebuilt eweOS iso images from QEMU
 published: 1
-date: 2024-04-29T09:00:25.762Z
+date: 2025-01-23T18:49:32.845Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-29T08:43:11.737Z
@@ -12,7 +12,7 @@ dateCreated: 2024-04-29T08:43:11.737Z
 
 ### Architectures
 
-Currently, only `x86_64` and `aarch64` is supported for iso images.
+Currently, only `x86_64` and `aarch64` are supported for iso images.
 
 ### Download ISO Images
 
