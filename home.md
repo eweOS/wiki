@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2024-12-26T04:57:43.684Z
+date: 2025-01-31T17:37:29.441Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -51,7 +51,9 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 
 - **Desktop**
 [eweOS Desktop Environment](/dev/topic/desktop/ewe-desktop-env)
-[Desktop Environment](/dev/topic/desktop/desktop-env) • [Multimedia](/dev/topic/desktop/multimedia) • [Fonts](/dev/topic/desktop/fonts)
+[Desktop Environment](/dev/topic/desktop/desktop-env)
+[Multimedia](/dev/topic/desktop/multimedia)
+[Fonts](/dev/topic/desktop/fonts)
 [wlroots](/dev/topic/desktop/wlroots)
 
 - **Graphics**
@@ -66,8 +68,10 @@ Tier 1 support (90% Main Repo, Testing Repo, Workflow): [ARM (aarch64)](/dev/top
 Tier 1.5 support (Main Repo, Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/riscv) [LoongArch64 (loongarch64)](/dev/topic/arch/loongarch)
 Community support (eweOS-ports): -
 
-- **Network/Storage**
-*WIP*
+- **Network**
+[ifupdown-ng](/dev/topic/network/ifupdown-ng) [NetworkManager](/dev/topic/network/NetworkManager)
+
+- **Storage**
 
 - **System Utilities**
 [Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utilities](/dev/topic/sysutils/coreutils) • [dinit](/dev/topic/sysutils/dinit) • [catnest (sysusers)](/dev/topic/sysutils/catnest)
