@@ -2,7 +2,7 @@
 title: NetworkManager
 description: 
 published: 1
-date: 2025-02-08T17:16:35.571Z
+date: 2025-02-08T17:19:03.007Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-31T17:38:13.370Z
@@ -11,8 +11,6 @@ dateCreated: 2025-01-31T17:38:13.370Z
 # NetworkManager
 
 NetworkManager is a *standard Linux network configuration tool suite* and has been a default option in many distros.
-
-Status: WIP.
 
 ## Installation
 
