@@ -2,7 +2,7 @@
 title: NetworkManager
 description: 
 published: 1
-date: 2025-02-08T17:04:38.717Z
+date: 2025-02-08T17:16:35.571Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-31T17:38:13.370Z
@@ -32,13 +32,15 @@ sudo dinitctl enable networkmanager
 
 ---
 
-To avoid causing some problems, `ethtool` is also **recommended** to install:
+Additionally, `ethtool` is also *recommended* to install:
 
 ```shell
 sudo pacman -Sy ethtool
 ```
 
-See also: [The commit in packages/busybox](https://github.com/JulianDroske/eweos-packages/commit/d85c42a47ed2e81d6b5f4df06de3f464bfb3f6f1)
+Without this tool, the script `mdev-helper-settle-nics` in package `busybox` may misbehave, resulting in unexpected network interface names.
+
+See also: [The commit in packages/busybox](https://github.com/eweOS/packages/commit/570d860717f0b86bb5c84140fa6b8e7002287520)
 
 
 ## Status
