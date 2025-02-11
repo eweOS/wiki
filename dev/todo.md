@@ -2,14 +2,13 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2024-05-17T10:19:53.305Z
+date: 2025-02-11T07:28:01.136Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
 ---
 
-> **This list is for long-term ideas only. There is an monthly updating list of TODO in hackmd instead**:
-> [HackMD Link](https://hackmd.io/6pWHEy-bQh2ZIu9VPEZCEQ)
+> **This is an idea list, not a work plan.** The inclusion of an idea does not guarantee that it will be picked up by a developer.
 {.is-info}
 
 ## Build System
@@ -17,8 +16,6 @@ dateCreated: 2023-02-25T04:24:22.548Z
 - [ ] Add more aarch64/riscv64 workers
 
 ## System Image
-
-- [x] Automated ISO generation
 
 ## Hardware / Architecture
 
