@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T13:15:58.835Z
+date: 2025-02-11T14:40:18.263Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -11,11 +11,36 @@ dateCreated: 2023-02-25T04:24:22.548Z
 > **This is an idea list, not a work plan.** The inclusion of an idea does not guarantee that it will be picked up by a developer.
 {.is-info}
 
-## System Image
-
-## Hardware / Architecture
-
 ## System Utils
+
+### EKMS (DKMS for eweOS)
+
+DKMS is not eweOS-compatible, and a new, eweOS-compatible mechanism needs to be written in order to manage kernel modules.
+
+<details>
+  <summary>More Info</summary>
+
+#### Tasks
+
+- Design a manager to build, install and remove kernel modules automatically
+- Integrate it with pacman to trigger actions on package operations (kernel upgrades, module package installs/removals).
+- Write testing and documentation
+
+#### Expected Outcome
+
+- A fully functional EKMS system that allows eweOS users to easily build, install, and manage kernel modules
+
+#### Required Skills
+
+- POSIX Shell
+- C Programming
+
+#### Useful Links
+
+- [DKMS Source Repo](https://github.com/dell/dkms)
+- [AKMS Source Repo (alpine's Kernel Module Support)](https://github.com/jirutka/akms)
+
+</details>
 
 ### Implement Library API for Turnstile
 
@@ -85,18 +110,34 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
   
 ## Languages
 
-## Desktop
+#### Package openjdk (latest version)
 
-**Creation of Desktop Artwork**
+Since there is no pre-compiled version of openjdk for musl for the riscv64 architecture, eweOS has not yet packaged the latest version of openjdk on riscv64. Since openjdk 24 will be released soon, packaging it will predictably require some patches and modifications.
 
 <details>
   <summary>More Info</summary>
-  
-  
+
+#### Tasks
+
+- Upgrade the openjdk in eweOS to the latest version (24).
+- Build the latest version of the openjdk for the riscv64 architecture in eweOS.
+- (Optional) Upstream related patches if possible.
+
+#### Expected Outcome
+
+- A working openjdk (latest version) on riscv64 for eweOS
+
+#### Required Skills
+
+- C++
+- Java
+- Software packaging
+
+#### Useful Links
+
+- [Current version (23) of openjdk in eweOS](https://github.com/eweOS/packages/tree/java23-openjdk)
 
 </details>
-
-## Optimization
 
 ## Infra
 
@@ -133,10 +174,33 @@ Currently, Open Build Service is used by eweOS as building system. We found its 
   
 #### eweOS User Repository (EUR)
 
+Similar to ArchLinux, eweOS also plans to build a User Repository, which we will call EUR. The difference is that instead of using the AURweb scheme, we want to write our own distributed repo management system, where the code will be hosted in the user's own git repo. This means that we'll also need a corresponding EUR Helper.
+
 <details>
   <summary>More Info</summary>
   
-  
+#### Tasks
+
+- Write a workflow for parsing the contents of .SRCINFO and structuring it (e.g. json).
+- Write a set of workflows that use the above tools to automatically scan distributed git repositories against a list and update structured data.
+- Choose one:
+  - Write a set of AURweb-compatible api's to make EUR compatible with the existing AUR Helper.
+  - Write a EUR Helper that provide the same basic functionality as the AUR Helper, such as searching, downloading, and building.
+
+#### Expected Outcome
+
+- A usable, auto-refreshing repository of EUR metadata from distributed git repositories.
+- Any User Repository helper that works.
+
+#### Required Skills
+
+- GitHub workflow
+- python, javascript, bash, or any suitable programming language
+
+#### Useful Links
+
+- [AURweb repo](https://gitlab.archlinux.org/archlinux/aurweb)
+- [A proposed draft of EUR design](https://hackmd.io/@yukarichiba/By3uVDW71x)
 
 </details>
   
@@ -171,14 +235,34 @@ This aims to setup an automatic testing infra based on OpenQA and write correspo
 </details>
 
 ## Wiki
+#### Creating, editing and organizing of wiki content
 
-**Creating, editing and organizing of wiki content**
-
-
+Currently the eweOS Wiki is still not organised in a neat way and lacks a lot of guidance for users and developers. The lack of guidance on some key steps has led to users having to seek help from community developers to install or configure eweOS, and the lack of documentation has left contributors with no way to get started with eweOS packages, infrastructure, and workflows.
 
 <details>
   <summary>More Info</summary>
   
-  
+#### Tasks
+
+- Write guides about eweOS installation on the Wiki
+- Write guides about eweOS configuration for a graphical desktop and/or command line environment
+- Improve the table of contents and chapter structure of the Wiki.
+- Write packaging guidelines for developers on different package topics (e.g. programming languages like Python, Perl, Go, or build tools like CMake or meson).
+
+#### Expected Outcome
+
+- Improvements and contributions to the Wiki as described above
+
+#### Required Skills
+
+- Markdown
+- Basics about the system maintenance of Linux distros
+- PKGBUILD-based packaging (required to write the wiki for developers)
+- One or more programming languages (required to write the wiki for corresponding topics)
+
+#### Useful Links
+
+- [Arch installation guide (Some of this applies to eweOS as well)](https://wiki.archlinux.org/title/Installation_guide)
+- eweOS wiki pages on this site
 
 </details>
