@@ -2,7 +2,7 @@
 title: FAQ
 description: Some frequently asked questions
 published: 1
-date: 2024-05-17T10:08:27.437Z
+date: 2025-02-11T08:46:06.648Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T22:06:46.826Z
@@ -38,7 +38,7 @@ dateCreated: 2023-02-16T22:06:46.826Z
 
 ## Packages
 
-### How to install `<pkgname requires deprecated/unavailable package>`
+### How to install packages which requires glibc or something deprecated
 
 Use `flatpak`.
 
