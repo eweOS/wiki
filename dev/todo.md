@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T12:38:51.507Z
+date: 2025-02-11T12:43:08.829Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -89,6 +89,13 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 
 **Creation of Desktop Artwork**
 
+<details>
+  <summary>More Info</summary>
+  
+  
+
+</details>
+
 ## Optimization
 
 ## Infra
@@ -124,6 +131,24 @@ Currently, Open Build Service is used by eweOS as building system. We found its 
 
 </details>
   
+#### eweOS User Repository (EUR)
+
+<details>
+  <summary>More Info</summary>
+  
+  
+
+</details>
+  
 ## Wiki
 
 **Creating, editing and organizing of wiki content**
+
+
+
+<details>
+  <summary>More Info</summary>
+  
+  
+
+</details>
