@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2025-01-31T17:37:29.441Z
+date: 2025-02-11T08:50:05.418Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -50,7 +50,6 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 [musl](/dev/topic/toolchain/musl) • [LLVM/Clang](/dev/topic/toolchain/llvm) • [Lua](/dev/topic/toolchain/lua) • [Java](/dev/topic/toolchain/java) • [Python](/dev/topic/toolchain/python) • [Rust](/dev/topic/toolchain/rust) • [Vulkan/SPIR-V](/dev/topic/toolchain/vulkan-spirv)
 
 - **Desktop**
-[eweOS Desktop Environment](/dev/topic/desktop/ewe-desktop-env)
 [Desktop Environment](/dev/topic/desktop/desktop-env)
 [Multimedia](/dev/topic/desktop/multimedia)
 [Fonts](/dev/topic/desktop/fonts)
@@ -60,18 +59,18 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 [QT](/dev/topic/graphics/qt) • [GTK](/dev/topic/graphics/gtk)
 
 - **Kernel & Driver**
-*WIP*
+[Kernel](/dev/topic/kernel)
 
 - **Architectures**
-Tier 0 support (Full Main Repo, Testing Repo, Workflow): x86_64
-Tier 1 support (90% Main Repo, Testing Repo, Workflow): [ARM (aarch64)](/dev/topic/arch/arm)
+Tier 1 support (Main Repo, Testing Repo, Workflow): x86_64, [ARM (aarch64)](/dev/topic/arch/arm)
 Tier 1.5 support (Main Repo, Testing Repo): [RISC-V (riscv64)](/dev/topic/arch/riscv) [LoongArch64 (loongarch64)](/dev/topic/arch/loongarch)
-Community support (eweOS-ports): -
+Community support (eweOS ports):
 
 - **Network**
 [ifupdown-ng](/dev/topic/network/ifupdown-ng) [NetworkManager](/dev/topic/network/NetworkManager)
 
 - **Storage**
+*WIP*
 
 - **System Utilities**
 [Bootloader](/dev/topic/sysutils/bootloader) • [Shell](/dev/topic/sysutils/shell) • [Core Utilities](/dev/topic/sysutils/coreutils) • [dinit](/dev/topic/sysutils/dinit) • [catnest (sysusers)](/dev/topic/sysutils/catnest)
@@ -99,6 +98,10 @@ Community support (eweOS-ports): -
 ## Community
 
 - [Community Membership](/community/membership)
+
+## Activities
+
+- [Google Summer of Code 2025](/activities/gsoc)
 
 ## See Also
 
