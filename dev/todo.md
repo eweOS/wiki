@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T07:35:09.631Z
+date: 2025-02-11T07:59:37.687Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -12,6 +12,8 @@ dateCreated: 2023-02-25T04:24:22.548Z
 {.is-info}
 
 ## Build System
+
+**Improve PKGBUILD parsing in Open Build System**
 
 ## System Image
 
