@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T12:17:42.008Z
+date: 2025-02-11T12:38:51.507Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -22,6 +22,9 @@ dateCreated: 2023-02-25T04:24:22.548Z
 Systemd integrates systemd-logind to track user sessions and seats, providing both D-Bus API and C API (through libsystemd) for querying these information. Many desktop applications, such as polkit and wireplumber, depend on the API. elogind implements these APIs but it's split from systemd source and thus unreliable and dirty. Without systemd, eweOS integrates turnstile to manage user session and per-session service managers. But it doesn't come with APIs to query these information.
 
 This aims to communicate with the upstream of turnstile (Chimera Linux) and implement a necessary set of APIs to get turnstile supporting most Linux desktop applications. To keep compatible with programs relying on libsystemd/elogind-style API, a wrapper library may be required as well.
+
+<details>
+  <summary>More Info</summary>
 
 #### Tasks
 
@@ -49,9 +52,14 @@ This aims to communicate with the upstream of turnstile (Chimera Linux) and impl
 - [Manpage of systemd-logind C API](https://www.man7.org/linux/man-pages/man3/sd-login.3.html)
 - [Documentation of ConsoleKit2](https://consolekit2.github.io/ConsoleKit2/)
 
+</details>
+  
 ### GRand Unified Boot Config Generator
 
 GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-boot is another bootloader popular among devboards and we want to support it as well. This aims to implement a generic framework, which evaluates some scripts to check available boot entries and create configuration for them, like `grub-mkconfig`. The difference is that GRUBCG is designed to support multiple different bootloaders.
+
+<details>
+  <summary>More Info</summary>
 
 #### Tasks
 
@@ -73,6 +81,8 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 - [(Archived) Configuration Generator for Limine](https://github.com/AnErrupTion/LimineLinuxDeploy)
 - [u-boot-menu maintained by Debian](https://salsa.debian.org/debian/u-boot-menu)
 
+</details>
+  
 ## Languages
 
 ## Desktop
@@ -86,6 +96,9 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 ### Improve PKGBUILD Parser in Open Build System
 
 Currently, Open Build Service is used by eweOS as building system. We found its pacman support, especially the PKGBUILD parser implemented in Perl with mostly regex, is quite flaky and lacks of bash features. This aims to improve the PKGBUILD parser to provide better compatibility with ArchLinux-like packaging convention.
+
+<details>
+  <summary>More Info</summary>
 
 #### Tasks
 
@@ -109,6 +122,8 @@ Currently, Open Build Service is used by eweOS as building system. We found its 
 - [Implementation of PKGBUILD parser in Open Build Service](https://github.com/openSUSE/obs-build/blob/master/Build/Arch.pm)
 - [Comments in an array break the parser](https://github.com/eweOS/packages/pull/1082/commits/7e7e99b9cdef8915ebe28e1491ddb41d1a34d163)
 
+</details>
+  
 ## Wiki
 
 **Creating, editing and organizing of wiki content**
