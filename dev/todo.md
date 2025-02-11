@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T07:59:37.687Z
+date: 2025-02-11T07:59:59.957Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -29,7 +29,7 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 ## Desktop
 
-**Artworks**
+**Creation of Desktop Artwork**
 
 ## Optimization
 
