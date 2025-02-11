@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T14:42:18.801Z
+date: 2025-02-11T14:47:42.829Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -10,6 +10,9 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 > **This is an idea list, not a work plan.** The inclusion of an idea does not guarantee that it will be picked up by a developer.
 {.is-info}
+
+> These ideas can be selected as [eweOS GSoC 2025](https://os-wiki.ewe.moe/activities/gsoc) project proposals.
+{.is-success}
 
 ## System Utils
 
