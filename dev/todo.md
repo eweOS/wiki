@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T12:43:08.829Z
+date: 2025-02-11T13:15:49.515Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -140,6 +140,36 @@ Currently, Open Build Service is used by eweOS as building system. We found its 
 
 </details>
   
+#### Automatic Testing Infra
+
+eweOS is a relatively small distribution and perfect testing usually means a lot of duplicated work, which isn't practical for our developers. Luckily, OpenQA provides a method to convert manual testing steps into scripts and check the result automatically.
+
+This aims to setup an automatic testing infra based on OpenQA and write corresponding testcases for eweOS, enhancing reliability and reducing manual work.
+
+<details>
+  <summary>More Info</summary>
+
+#### Tasks
+
+- Setup an OpenQA x86_64 instance for eweOS
+- Write testcases to verify functionalities against tools included in eweOS desktop image.
+- Write testcases to perform an installation in eweOS desktop image.
+- Write testcases to check the installation works as expected.
+
+#### Expected Outcome
+
+- A suite of testcases to verify functionality of eweOS desktop liveimage.
+
+#### Required Skills
+
+- Perl programming
+  
+#### Useful Links
+
+- [OpenQA Website](http://open.qa/)
+
+</details>
+
 ## Wiki
 
 **Creating, editing and organizing of wiki content**
