@@ -2,7 +2,7 @@
 title: GitHub Repositories
 description: A list of repositories in github.
 published: 1
-date: 2024-05-11T03:35:10.668Z
+date: 2025-02-11T10:21:13.068Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-28T15:08:17.011Z
@@ -53,6 +53,14 @@ This repo provides default kernel config for eweOS.
 ### `artwork`: Artwork files
 
 This repo contains eweOS-related artworks.
+
+### `updatecheck`: Rollmeow check config
+
+This repo contains configs for rollmeow to check upstream versions.
+
+### `bot`: Cloudflare Webhook API & Telegram bot
+
+This repo contains codes to receive and run GitHub webhooks in cloudflare worker, processing bot commands in Telegram.
 
 ### `.packages-auto`: Automation Package Repo Fork
 
