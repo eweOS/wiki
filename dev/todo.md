@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T13:15:49.515Z
+date: 2025-02-11T13:15:58.835Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -152,8 +152,8 @@ This aims to setup an automatic testing infra based on OpenQA and write correspo
 #### Tasks
 
 - Setup an OpenQA x86_64 instance for eweOS
-- Write testcases to verify functionalities against tools included in eweOS desktop image.
-- Write testcases to perform an installation in eweOS desktop image.
+- Write testcases to verify functionalities against tools included in eweOS desktop liveimage.
+- Write testcases to perform an installation in eweOS desktop liveimage.
 - Write testcases to check the installation works as expected.
 
 #### Expected Outcome
