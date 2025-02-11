@@ -2,17 +2,13 @@
 title: Boot ISO Image from QEMU
 description: Launch prebuilt eweOS iso images from QEMU
 published: 1
-date: 2025-01-23T18:49:32.845Z
+date: 2025-02-11T08:41:22.214Z
 tags: 
 editor: markdown
 dateCreated: 2024-04-29T08:43:11.737Z
 ---
 
 ## Download Image
-
-### Architectures
-
-Currently, only `x86_64` and `aarch64` are supported for iso images.
 
 ### Download ISO Images
 
@@ -24,8 +20,8 @@ Daily build images can be downloaded from [GitHub Actions](https://github.com/ew
 
 ### Image Variants
 
-- `liveimage-desktop`: Live ISO image with desktop environment configured to provide out-of-box experiment.
-- `liveimage-minimal`: Live ISO image with cli tools only.
+- `liveimage-desktop-xfce`: Live ISO image with XFCE desktop environment configured to provide out-of-box experiment.
+- `liveimage-standard`: Live ISO image with cli tools only.
 - `tarball`: Tarball of eweOS minimal system.
 
 ## Configure and boot Your VM
@@ -35,7 +31,7 @@ The following script can be used to boot eweOS, with hardware graphic accelerati
 ```
 #!/bin/bash
 
-IMAGE=eweos-x86_64-liveimage-desktop.iso
+IMAGE=eweos-x86_64-liveimage-desktop-xfce.iso
 
 # Adjust cpu and ram here!
 VCPU=4
