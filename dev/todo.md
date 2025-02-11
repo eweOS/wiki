@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T14:40:18.263Z
+date: 2025-02-11T14:42:18.801Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -110,9 +110,9 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
   
 ## Languages
 
-#### Package openjdk (latest version)
+#### Package openjdk (latest version) on riscv64 and loongarch64
 
-Since there is no pre-compiled version of openjdk for musl for the riscv64 architecture, eweOS has not yet packaged the latest version of openjdk on riscv64. Since openjdk 24 will be released soon, packaging it will predictably require some patches and modifications.
+Since there is no pre-compiled version of openjdk for musl for the riscv64/loongarch64 architecture, eweOS has not yet packaged the latest version of openjdk on riscv64/loongarch64. Since openjdk 24 will be released soon, packaging it will predictably require some patches and modifications.
 
 <details>
   <summary>More Info</summary>
@@ -120,7 +120,7 @@ Since there is no pre-compiled version of openjdk for musl for the riscv64 archi
 #### Tasks
 
 - Upgrade the openjdk in eweOS to the latest version (24).
-- Build the latest version of the openjdk for the riscv64 architecture in eweOS.
+- Build the latest version of the openjdk for the riscv64/loongarch64 architecture in eweOS.
 - (Optional) Upstream related patches if possible.
 
 #### Expected Outcome
