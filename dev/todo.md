@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-02-11T14:47:42.829Z
+date: 2025-03-03T02:20:38.467Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -11,14 +11,19 @@ dateCreated: 2023-02-25T04:24:22.548Z
 > **This is an idea list, not a work plan.** The inclusion of an idea does not guarantee that it will be picked up by a developer.
 {.is-info}
 
+<!--
+
 > These ideas can be selected as [eweOS GSoC 2025](https://os-wiki.ewe.moe/activities/gsoc) project proposals.
 {.is-success}
+-->
 
 ## System Utils
 
 ### EKMS (DKMS for eweOS)
 
 DKMS is not eweOS-compatible, and a new, eweOS-compatible mechanism needs to be written in order to manage kernel modules.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -45,11 +50,15 @@ DKMS is not eweOS-compatible, and a new, eweOS-compatible mechanism needs to be 
 
 </details>
 
+-->
+
 ### Implement Library API for Turnstile
 
 Systemd integrates systemd-logind to track user sessions and seats, providing both D-Bus API and C API (through libsystemd) for querying these information. Many desktop applications, such as polkit and wireplumber, depend on the API. elogind implements these APIs but it's split from systemd source and thus unreliable and dirty. Without systemd, eweOS integrates turnstile to manage user session and per-session service managers. But it doesn't come with APIs to query these information.
 
 This aims to communicate with the upstream of turnstile (Chimera Linux) and implement a necessary set of APIs to get turnstile supporting most Linux desktop applications. To keep compatible with programs relying on libsystemd/elogind-style API, a wrapper library may be required as well.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -82,9 +91,13 @@ This aims to communicate with the upstream of turnstile (Chimera Linux) and impl
 
 </details>
   
+-->
+
 ### GRand Unified Boot Config Generator
 
 GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-boot is another bootloader popular among devboards and we want to support it as well. This aims to implement a generic framework, which evaluates some scripts to check available boot entries and create configuration for them, like `grub-mkconfig`. The difference is that GRUBCG is designed to support multiple different bootloaders.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -111,11 +124,15 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 
 </details>
   
+-->
+
 ## Languages
 
 #### Package openjdk (latest version) on riscv64 and loongarch64
 
 Since there is no pre-compiled version of openjdk for musl for the riscv64/loongarch64 architecture, eweOS has not yet packaged the latest version of openjdk on riscv64/loongarch64. Since openjdk 24 will be released soon, packaging it will predictably require some patches and modifications.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -142,11 +159,15 @@ Since there is no pre-compiled version of openjdk for musl for the riscv64/loong
 
 </details>
 
+-->
+
 ## Infra
 
 ### Improve PKGBUILD Parser in Open Build System
 
 Currently, Open Build Service is used by eweOS as building system. We found its pacman support, especially the PKGBUILD parser implemented in Perl with mostly regex, is quite flaky and lacks of bash features. This aims to improve the PKGBUILD parser to provide better compatibility with ArchLinux-like packaging convention.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -175,9 +196,13 @@ Currently, Open Build Service is used by eweOS as building system. We found its 
 
 </details>
   
+-->
+
 #### eweOS User Repository (EUR)
 
 Similar to ArchLinux, eweOS also plans to build a User Repository, which we will call EUR. The difference is that instead of using the AURweb scheme, we want to write our own distributed repo management system, where the code will be hosted in the user's own git repo. This means that we'll also need a corresponding EUR Helper.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -207,11 +232,15 @@ Similar to ArchLinux, eweOS also plans to build a User Repository, which we will
 
 </details>
   
+-->
+
 #### Automatic Testing Infra
 
 eweOS is a relatively small distribution and perfect testing usually means a lot of duplicated work, which isn't practical for our developers. Luckily, OpenQA provides a method to convert manual testing steps into scripts and check the result automatically.
 
 This aims to setup an automatic testing infra based on OpenQA and write corresponding testcases for eweOS, enhancing reliability and reducing manual work.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -237,10 +266,14 @@ This aims to setup an automatic testing infra based on OpenQA and write correspo
 
 </details>
 
+-->
+
 ## Wiki
 #### Creating, editing and organizing of wiki content
 
 Currently the eweOS Wiki is still not organised in a neat way and lacks a lot of guidance for users and developers. The lack of guidance on some key steps has led to users having to seek help from community developers to install or configure eweOS, and the lack of documentation has left contributors with no way to get started with eweOS packages, infrastructure, and workflows.
+
+<!--
 
 <details>
   <summary>More Info</summary>
@@ -269,3 +302,5 @@ Currently the eweOS Wiki is still not organised in a neat way and lacks a lot of
 - eweOS wiki pages on this site
 
 </details>
+
+-->
