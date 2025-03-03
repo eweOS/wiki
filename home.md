@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2025-02-11T08:50:05.418Z
+date: 2025-03-03T02:18:45.031Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -99,9 +99,12 @@ Community support (eweOS ports):
 
 - [Community Membership](/community/membership)
 
+<!--
 ## Activities
 
 - [Google Summer of Code 2025](/activities/gsoc)
+
+-->
 
 ## See Also
 
