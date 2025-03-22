@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-03-03T02:20:38.467Z
+date: 2025-03-22T15:49:20.072Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -125,6 +125,10 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 </details>
   
 -->
+
+### uutils coreutils transition
+
+### cmd/cli installer
 
 ## Languages
 
