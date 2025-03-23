@@ -1,8 +1,8 @@
 ---
-title: Open Source Software Supply Chain Promotion Plan
-description: OSPP
+title: OSPP 2025
+description: Open Source Software Supply Chain Promotion Plan
 published: 1
-date: 2025-03-22T15:25:21.514Z
+date: 2025-03-23T03:58:28.679Z
 tags: 
 editor: markdown
 dateCreated: 2025-02-11T07:38:50.933Z
