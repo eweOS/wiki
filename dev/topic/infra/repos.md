@@ -2,7 +2,7 @@
 title: Repository Management
 description: 
 published: 1
-date: 2024-11-29T09:42:46.074Z
+date: 2025-03-26T16:31:50.730Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-19T06:08:50.393Z
@@ -105,7 +105,8 @@ rsync policy:
 ## Official Repo Server
 
 - Luxembourg, EU, Repo Server: `os-repo-lu.ewe.moe`
-- St. Louis, United States, Repo Server: `os-repo-us.ewe.moe`
+- St. Louis, United States, Repo Server: `os-repo-us-stl.ewe.moe`
+- Las Vegas, United States, Repo Server: `os-repo-us-las.ewe.moe`
 - Wuhan, China, Repo Server: `os-repo-cn.ewe.moe`
 
 These servers would be placed at the bottom of the pacman mirrorlist to recommend local mirrors.
