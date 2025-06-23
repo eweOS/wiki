@@ -2,7 +2,7 @@
 title: Software Replacements
 description: Lists and status of alternatives we used in eweOS and a list of unsupported and dropped softwares
 published: 1
-date: 2025-01-23T18:32:38.041Z
+date: 2025-06-23T03:25:38.442Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:40.309Z
@@ -30,7 +30,6 @@ Some softwares are replaced/dropped in eweOS. Here is a incomplete list.
 - `binutils` : `llvm` + `binutils-*` (standalone tools)
 - `coreutils` : `busybox`
 - `util-linux` : `busybox` (partially)ℹ️
-- `kmod` : `busybox`ℹ️
 - `systemd` : `dinit`⚠️
 - `lld` : `mold` (default)
 - `zlib` : `zlib-ng` (Builtin multithreading may cause test failures)
