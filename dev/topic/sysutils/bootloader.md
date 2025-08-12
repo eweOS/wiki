@@ -2,7 +2,7 @@
 title: Bootloader
 description: 
 published: 1
-date: 2025-08-12T03:51:57.599Z
+date: 2025-08-12T03:53:11.364Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-26T16:25:19.855Z
@@ -43,6 +43,6 @@ Generate limine configuration
 limine-mkconfig -o EFI_PARTITION_MOUNTPOINT/limine.conf
 ```
 
-Currently kernel updating and initramfs generation is handled by `limine-mkconfig` as well, so running `limine-mkconfig` (without arguments) may be needed after a system upgrade or changing initramfs configuration.
+Currently kernel updating and initramfs generation is handled by `limine-mkconfig` as well, so running `limine-mkconfig` (without arguments) may be needed after a system upgrade or changing initramfs configuration. It copies kernel and initrd to `EFI_PARTITION_MOUNTPOINT/`, thus it's recommended to use the EFI partition as the `/boot` directory for simplicity.
 
 `limine-mkconfig` would only read kernels located at `/usr/lib/modules/` AND belongs to packages installed by pacman. Single user mode menu options will also be generated.
