@@ -2,7 +2,7 @@
 title: Installation Guide
 description: Installation Guide for EweOS using Jade
 published: 1
-date: 2025-09-30T16:57:50.127Z
+date: 2025-09-30T17:22:45.088Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-30T16:21:19.491Z
@@ -15,7 +15,7 @@ No manual partitioning required. Works on both **UEFI** and **BIOS** systems.
 
 **NOTE: This is yet to be tested!**
 
-For more details see the [Jade documentation](https://github.com/eweOS/jade).
+For more details see the [Jade documentation](https://github.com/eweOS/jade/blob/main/README.md).
 
 ---
 
