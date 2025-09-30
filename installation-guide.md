@@ -2,7 +2,7 @@
 title: Installation Guide
 description: Installation Guide for EweOS using Jade
 published: 1
-date: 2025-09-30T16:22:46.007Z
+date: 2025-09-30T16:24:30.403Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-30T16:21:19.491Z
