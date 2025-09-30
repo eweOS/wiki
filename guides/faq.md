@@ -2,7 +2,7 @@
 title: FAQ
 description: Some frequently asked questions
 published: 1
-date: 2025-02-11T08:46:06.648Z
+date: 2025-09-30T17:26:11.164Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-16T22:06:46.826Z
@@ -43,3 +43,6 @@ dateCreated: 2023-02-16T22:06:46.826Z
 Use `flatpak`.
 
 ## Community
+
+### How to install eweOS
+Refer to this guide: [Installation Guide](https://os-wiki.ewe.moe/en/guides/installation-guide)
