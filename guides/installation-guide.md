@@ -2,7 +2,7 @@
 title: Installation Guide
 description: Installation Guide for EweOS using Jade
 published: 1
-date: 2025-09-30T16:56:45.974Z
+date: 2025-09-30T16:57:38.996Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-30T16:21:19.491Z
@@ -20,7 +20,7 @@ For more details see the [Jade documentation](https://github.com/eweOS/jade).
 ---
 
 ## 1. Boot into Live System
-- Write the eweOS ISO to a USB stick.  
+- Write the eweOS (base) ISO to a USB stick.  
 - Boot from it (choose "Live" in the menu).  
 - You’ll be in a **terminal environment**.
 
