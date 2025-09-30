@@ -2,7 +2,7 @@
 title: Installation Guide
 description: Installation Guide for EweOS using Jade
 published: 1
-date: 2025-09-30T16:21:55.735Z
+date: 2025-09-30T16:22:09.235Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-30T16:21:19.491Z
@@ -147,7 +147,7 @@ reboot
 ```
 
 Remove the USB stick when asked.  
-You should now boot into eweOS 🎉
+You should now boot into eweOS
 
 ---
 
