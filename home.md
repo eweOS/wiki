@@ -2,7 +2,7 @@
 title: eweOS Wiki
 description: Too Young - Too Simple - Sometimes Naive
 published: 1
-date: 2025-06-04T13:11:30.992Z
+date: 2025-09-30T17:04:14.233Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-13T14:12:29.050Z
@@ -20,6 +20,8 @@ eweOS is an musl-based, lightweight, general-purpose Linux distribution, which a
 - :package: [Repo](https://os-repo.ewe.moe) - Download eweOS packages, system images and resources for developers
 - :hammer: [Build System](https://os-build.ewe.moe) - An automatic and open platform for eweOS developers to build packages
 - :computer: [Test Server](https://os-test.ewe.moe) - Unstable eweOS web server for showcasing
+- :package: [Installation Guide](https://os.ewe.moe/docs/installation) – Step-by-step guide to install eweOS on your system.
+
 
 ## User Guides
 
