@@ -2,7 +2,7 @@
 title: Fonts
 description: 
 published: 1
-date: 2024-05-20T09:57:02.767Z
+date: 2025-10-10T04:45:30.919Z
 tags: 
 editor: markdown
 dateCreated: 2024-05-20T08:06:10.829Z
@@ -33,5 +33,9 @@ dateCreated: 2024-05-20T08:06:10.829Z
 (emoji fonts are providing `emoji-font`)
 
 - `ttf-noto-fonts-emoji`
+
+## Noto Fonts
+
+![noto.drawio.svg](/noto.drawio.svg)
 
 ## Font Provides
