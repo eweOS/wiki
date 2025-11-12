@@ -70,7 +70,7 @@ This will erase the disk and create partitions automatically.
 ## 4. Install Base System
 
 ```
-jade install-base
+jade install-base --kernel default
 ```
 
 ---
@@ -80,7 +80,7 @@ jade install-base
 For **UEFI**:
 
 ```
-jade bootloader limine-efi /boot/efi
+jade bootloader limine-efi
 ```
 
 For **BIOS/Legacy**:
@@ -153,6 +153,7 @@ You should now boot into eweOS!
 ---
 
 ## Notes
+- All above command should run with superuser privilege.  
 - Always run `lsblk` first to confirm the correct disk.  
 - `jade partition auto` will **wipe the disk completely**.  
 - Use the correct bootloader command depending on UEFI or BIOS mode.  
