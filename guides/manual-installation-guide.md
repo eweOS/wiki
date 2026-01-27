@@ -2,7 +2,7 @@
 title: Installation Guide (Manual)
 description: 
 published: 1
-date: 2026-01-27T15:24:37.315Z
+date: 2026-01-27T15:27:56.392Z
 tags: 
 editor: markdown
 dateCreated: 2026-01-27T15:24:37.315Z
@@ -94,7 +94,7 @@ NetworkManager provides an interactive `TUI` configuration program, which could 
 First, bring the interface up,
 
 ```shell
-# ip link set <INTERFACE> up
+ip link set <INTERFACE> up
 ```
 
 For wireless connection, you need to configure and invoke `wpa_supplicant` to authenticate and connect to the AP. ArchWiki provides a [hand-by-hand guide](https://wiki.archlinux.org/title/Wpa_supplicant).
@@ -114,7 +114,7 @@ wlan0: Limiting TX power to 30 (30 - 0) dBm as advertised by 11:45:14:51:19:19
 And then you should configure IP for the interface. This could be done with `udhdpc` when DHCP is available. You could simply invoke it with interface as argument,
 
 ```shell
-# udhpc -i <INTERFACE>
+udhpc -i <INTERFACE>
 ```
 
 ### Select eweOS Mirror
@@ -155,7 +155,7 @@ Before installing the rootfs, you should have the partition for it mounted somew
 `pacstrap` is provided by `arch-install-scripts` package.
 
 ```shell
-# pacstrap <ROOT_MOUNTPOINT> base base-baremetal linux [OTHER PACKAGES]
+pacstrap <ROOT_MOUNTPOINT> base base-baremetal linux [OTHER PACKAGES]
 ```
 
 You could run `pacstrap --help` for a detailed list of possible options.
@@ -165,13 +165,13 @@ You could run `pacstrap --help` for a detailed list of possible options.
 The data directory for `pacman` must be created manually ahead of time,
 
 ```shell
-# mkdir -p <ROOT_MOUNTPOINT>/var/lib/pacman
+mkdir -p <ROOT_MOUNTPOINT>/var/lib/pacman
 ```
 
 then run `pacman` with
 
 ```shell
-# pacman --root <ROOT_MOUNTPOINT> -Syu base base-baremetal linux [OTHER PACKAGES]
+pacman --root <ROOT_MOUNTPOINT> -Syu base base-baremetal linux [OTHER PACKAGES]
 ```
 
 Differing from `pacstrap`, pacman doesn't automatically copy mirror configuration from Live environment to the target rootfs. Please configure them manually again if it's necessary.
@@ -185,7 +185,7 @@ Now an eweOS copy has been installed on your target disk. However to make it ful
 Please install package `arch-install-scripts` for `arch-chroot script`, then run
 
 ```shell
-# arch-chroot <ROOT_MOUNTPOINT>
+arch-chroot <ROOT_MOUNTPOINT>
 ```
 
 In the new shell poped after running the command, `/` is the rootfs partition that you've installed eweOS, instead of the Live environment. It's important to remember which system you're making changes to.
@@ -223,8 +223,8 @@ Before installation of Limine, please install `efibootmgr` for `limine-install` 
 
 ```shell
 # Assuming ESP is mounted as /boot
-(chroot) # limine-install --efi-directory=/boot <TARGET_DISK_DEV>
-(chroot) # limine-mkconfig -o /boot/limine.conf
+limine-install --efi-directory=/boot <TARGET_DISK_DEV>
+limine-mkconfig -o /boot/limine.conf
 ```
 
 Note `limine-mkconfig` also handles generation of initrd, and copies kernel images to the correct place, thus there's no need to do so manually.
