@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2025-03-28T05:12:22.745Z
+date: 2026-02-03T08:55:06.763Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -127,6 +127,8 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 -->
 
 ### uutils coreutils transition
+
+Evaluate `uutils-coreutils` as a potential replacement for parts of Busybox to modernize the userland.
 
 ### cmd/cli installer
 
@@ -274,6 +276,8 @@ This aims to setup an automatic testing infra based on OpenQA and write correspo
 
 
 ### Mirror Redirector
+
+Improve the logic for `os-repo-auto` to handle geographical redirection more accurately.
 
 ## Wiki
 #### Creating, editing and organizing of wiki content
