@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2026-02-03T08:58:04.377Z
+date: 2026-02-03T09:04:22.446Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -102,6 +102,27 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 ### uutils coreutils transition
 
 Evaluate `uutils-coreutils` as a potential replacement for parts of Busybox to modernize the userland.
+
+<details>
+<summary>More Info</summary>
+
+#### Tasks
+
+- Package `uutils-coreutils` for eweOS.
+- Identify which Busybox applets can be replaced by uutils counterparts.
+- Test compatibility with critical system scripts (e.g., makepkg, init scripts, pacman hooks) which often rely on specific flags.
+- Create a metapackage or split package scheme to allow users to switch between Busybox and uutils.
+
+#### Expected Outcome
+
+- A working eweOS system where the majority of core utilities are provided by uutils.
+- A report detailing missing features or incompatibilities found during testing.
+
+#### Useful Links
+
+- [github link for uutils/coreutils](https://github.com/uutils/coreutils)
+
+</details>
 
 ### cmd/cli installer
 
@@ -219,9 +240,26 @@ This aims to setup an automatic testing infra based on OpenQA and write correspo
 
 ### Mirror Redirector
 
-Improve the logic for `os-repo-auto` to handle geographical redirection more accurately.
+Currently, `os-repo-auto.ewe.moe` uses a static redirection logic. We need a more robust service to handle geographical redirection accurately to ensure users download packages from the nearest/fastest mirror.
+
+<details>
+<summary>More Info</summary>
+
+#### Tasks
+
+- Develop a redirect service for repositories
+- Develop a mechanism that can redirect mirrors based on the user's location
+- Implement a health-check mechanism to avoid redirecting users to down/out-of-sync mirrors
+- Create an API to list active mirrors for pacman mirrorlist generation.
+
+#### Expected Outcome
+
+A deployed service that reduces download latency for global users and provides automatic failover
+
+</details>
 
 ## Wiki
+
 #### Creating, editing and organizing of wiki content
 
 Currently the eweOS Wiki is still not organised in a neat way and lacks a lot of guidance for users and developers. The lack of guidance on some key steps has led to users having to seek help from community developers to install or configure eweOS, and the lack of documentation has left contributors with no way to get started with eweOS packages, infrastructure, and workflows.
