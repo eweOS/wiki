@@ -2,7 +2,7 @@
 title: TODO
 description: A list of TODOs
 published: 1
-date: 2026-02-03T08:55:06.763Z
+date: 2026-02-03T08:58:04.377Z
 tags: 
 editor: markdown
 dateCreated: 2023-02-25T04:24:22.548Z
@@ -23,8 +23,6 @@ dateCreated: 2023-02-25T04:24:22.548Z
 
 DKMS is not eweOS-compatible, and a new, eweOS-compatible mechanism needs to be written in order to manage kernel modules.
 
-<!--
-
 <details>
   <summary>More Info</summary>
 
@@ -38,11 +36,6 @@ DKMS is not eweOS-compatible, and a new, eweOS-compatible mechanism needs to be 
 
 - A fully functional EKMS system that allows eweOS users to easily build, install, and manage kernel modules
 
-#### Required Skills
-
-- POSIX Shell
-- C Programming
-
 #### Useful Links
 
 - [DKMS Source Repo](https://github.com/dell/dkms)
@@ -50,15 +43,11 @@ DKMS is not eweOS-compatible, and a new, eweOS-compatible mechanism needs to be 
 
 </details>
 
--->
-
 ### Implement Library API for Turnstile
 
 Systemd integrates systemd-logind to track user sessions and seats, providing both D-Bus API and C API (through libsystemd) for querying these information. Many desktop applications, such as polkit and wireplumber, depend on the API. elogind implements these APIs but it's split from systemd source and thus unreliable and dirty. Without systemd, eweOS integrates turnstile to manage user session and per-session service managers. But it doesn't come with APIs to query these information.
 
 This aims to communicate with the upstream of turnstile (Chimera Linux) and implement a necessary set of APIs to get turnstile supporting most Linux desktop applications. To keep compatible with programs relying on libsystemd/elogind-style API, a wrapper library may be required as well.
-
-<!--
 
 <details>
   <summary>More Info</summary>
@@ -77,12 +66,6 @@ This aims to communicate with the upstream of turnstile (Chimera Linux) and impl
 - A library serves as compatible layer between sd-login and turnstile APIs
 - Disabled features on eweOS due to missing session tracking API get enabled.
 
-#### Required Skills
-
-- C Programming
-- Experience with POSIX/Linux APIs
-- Execllent communication skills
-
 #### Useful Links
 
 - [Repository of turnstile](https://github.com/chimera-linux/turnstile)
@@ -90,14 +73,10 @@ This aims to communicate with the upstream of turnstile (Chimera Linux) and impl
 - [Documentation of ConsoleKit2](https://consolekit2.github.io/ConsoleKit2/)
 
 </details>
-  
--->
 
 ### GRand Unified Boot Config Generator
 
 GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-boot is another bootloader popular among devboards and we want to support it as well. This aims to implement a generic framework, which evaluates some scripts to check available boot entries and create configuration for them, like `grub-mkconfig`. The difference is that GRUBCG is designed to support multiple different bootloaders.
-
-<!--
 
 <details>
   <summary>More Info</summary>
@@ -112,10 +91,6 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 
 - Well-documented configuration generator with Limine/U-boot support and eweOS integration
 
-#### Required Skills
-
-- Familiar with shell scripts.
-
 #### Useful Links
 
 - [Source of grub-mkconfig](https://github.com/olafhering/grub/blob/master/util/grub-mkconfig.in)
@@ -123,8 +98,6 @@ GRUB was the old bootloader used by eweOS and Limine has replaced its place. U-b
 - [u-boot-menu maintained by Debian](https://salsa.debian.org/debian/u-boot-menu)
 
 </details>
-  
--->
 
 ### uutils coreutils transition
 
@@ -136,9 +109,7 @@ Evaluate `uutils-coreutils` as a potential replacement for parts of Busybox to m
 
 #### Package openjdk (latest version) on riscv64 and loongarch64
 
-Since there is no pre-compiled version of openjdk for musl for the riscv64/loongarch64 architecture, eweOS has not yet packaged the latest version of openjdk on riscv64/loongarch64. Since openjdk 24 will be released soon, packaging it will predictably require some patches and modifications.
-
-<!--
+Since there is no pre-compiled version of openjdk for musl for the riscv64/loongarch64 architecture, eweOS has not yet packaged the latest version of openjdk on riscv64/loongarch64. Packaging it will predictably require some patches and modifications.
 
 <details>
   <summary>More Info</summary>
@@ -153,27 +124,17 @@ Since there is no pre-compiled version of openjdk for musl for the riscv64/loong
 
 - A working openjdk (latest version) on riscv64 for eweOS
 
-#### Required Skills
-
-- C++
-- Java
-- Software packaging
-
 #### Useful Links
 
 - [Current version (23) of openjdk in eweOS](https://github.com/eweOS/packages/tree/java23-openjdk)
 
 </details>
 
--->
-
 ## Infra
 
 ### Improve PKGBUILD Parser in Open Build System
 
 Currently, Open Build Service is used by eweOS as building system. We found its pacman support, especially the PKGBUILD parser implemented in Perl with mostly regex, is quite flaky and lacks of bash features. This aims to improve the PKGBUILD parser to provide better compatibility with ArchLinux-like packaging convention.
-
-<!--
 
 <details>
   <summary>More Info</summary>
@@ -201,14 +162,10 @@ Currently, Open Build Service is used by eweOS as building system. We found its 
 - [Comments in an array break the parser](https://github.com/eweOS/packages/pull/1082/commits/7e7e99b9cdef8915ebe28e1491ddb41d1a34d163)
 
 </details>
-  
--->
 
 #### eweOS User Repository (EUR)
 
 Similar to ArchLinux, eweOS also plans to build a User Repository, which we will call EUR. The difference is that instead of using the AURweb scheme, we want to write our own distributed repo management system, where the code will be hosted in the user's own git repo. This means that we'll also need a corresponding EUR Helper.
-
-<!--
 
 <details>
   <summary>More Info</summary>
@@ -226,27 +183,18 @@ Similar to ArchLinux, eweOS also plans to build a User Repository, which we will
 - A usable, auto-refreshing repository of EUR metadata from distributed git repositories.
 - Any User Repository helper that works.
 
-#### Required Skills
-
-- GitHub workflow
-- python, javascript, bash, or any suitable programming language
-
 #### Useful Links
 
 - [AURweb repo](https://gitlab.archlinux.org/archlinux/aurweb)
 - [A proposed draft of EUR design](https://hackmd.io/@yukarichiba/By3uVDW71x)
 
 </details>
-  
--->
 
 #### Automatic Testing Infra
 
 eweOS is a relatively small distribution and perfect testing usually means a lot of duplicated work, which isn't practical for our developers. Luckily, OpenQA provides a method to convert manual testing steps into scripts and check the result automatically.
 
 This aims to setup an automatic testing infra based on OpenQA and write corresponding testcases for eweOS, enhancing reliability and reducing manual work.
-
-<!--
 
 <details>
   <summary>More Info</summary>
@@ -261,18 +209,12 @@ This aims to setup an automatic testing infra based on OpenQA and write correspo
 #### Expected Outcome
 
 - A suite of testcases to verify functionality of eweOS desktop liveimage.
-
-#### Required Skills
-
-- Perl programming
   
 #### Useful Links
 
 - [OpenQA Website](http://open.qa/)
 
 </details>
-
--->
 
 
 ### Mirror Redirector
@@ -283,8 +225,6 @@ Improve the logic for `os-repo-auto` to handle geographical redirection more acc
 #### Creating, editing and organizing of wiki content
 
 Currently the eweOS Wiki is still not organised in a neat way and lacks a lot of guidance for users and developers. The lack of guidance on some key steps has led to users having to seek help from community developers to install or configure eweOS, and the lack of documentation has left contributors with no way to get started with eweOS packages, infrastructure, and workflows.
-
-<!--
 
 <details>
   <summary>More Info</summary>
@@ -313,5 +253,3 @@ Currently the eweOS Wiki is still not organised in a neat way and lacks a lot of
 - eweOS wiki pages on this site
 
 </details>
-
--->
