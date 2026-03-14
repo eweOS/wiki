@@ -111,10 +111,10 @@ wlan0: associated
 wlan0: Limiting TX power to 30 (30 - 0) dBm as advertised by 11:45:14:51:19:19
 ```
 
-And then you should configure IP for the interface. This could be done with `udhdpc` when DHCP is available. You could simply invoke it with interface as argument,
+And then you should configure IP for the interface. This could be done with `udhcpc` when DHCP is available. You could simply invoke it with interface as argument,
 
 ```shell
-udhpc -i <INTERFACE>
+udhcpc -i <INTERFACE>
 ```
 
 ### Select eweOS Mirror
