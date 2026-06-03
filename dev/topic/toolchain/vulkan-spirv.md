@@ -2,7 +2,7 @@
 title: Vulkan / SPIR-V
 description: Vulkan / Standard Portable Intermediate Representation
 published: 1
-date: 2026-06-03T05:27:48.271Z
+date: 2026-06-03T05:34:01.973Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-13T07:28:01.659Z
@@ -22,7 +22,7 @@ current vulkan sdk version: 1.4.350.0
 - `vulkan-icd-loader`: `vulkan-sdk-${vulkan-headers}`
 
 ## Order 2
-- `spirv-llvm-translator`: 21.1.8 (same as `llvm`)
+- `spirv-llvm-translator`: 21.1.8 ~~(same as `llvm`)~~ (lookup release date for `vulkan-sdk`)
 - `glslang`: `vulkan-sdk-${vulkan-headers}`
 
 ## Order 3
