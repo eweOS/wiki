@@ -2,7 +2,7 @@
 title: makepkg Helpers
 description: 
 published: 1
-date: 2023-12-07T03:52:57.518Z
+date: 2026-07-18T09:19:51.665Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-23T14:27:37.678Z
@@ -63,9 +63,15 @@ makepkg helpers are groups of scripts used for stages in packaging. These script
 - example:
   - `_dinit_enable_user_services_ dbus` will enable spefcified user services by create symlinks.
 
-### `tmpfiles.d` / `sysusers.d` management
+### `tmpfiles.d` / `sysusers.d` configuration installation
 
-### license management
+`_install_sysusers_ conf1 conf2 ...`
+- install one or more sysusers configuration to the system sysusers configuration directory
+
+`_insatll_tmpfiles_ conf1 conf2 ...`
+- install one or more tmpfiles configuration to the system tmpfiles configuration directory
+
+### license installation
 
 `_install_license_ file`:
 - install a license file as the name of current package
