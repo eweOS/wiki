@@ -246,7 +246,7 @@ Wireless NIC, graphics cards, and audio codec usually require firmware to functi
 - Intel wireless NIC: `linux-firmware-iwlwifi`
 - Qualcomm/Atheros wireless NIC: `linux-firmware-atheros`
 - MediaTek wireless NIC: `linux-firmware-mediatek`
-- AMD Graphics Cards: `linux-firwware-amdgpu`
+- AMD Graphics Cards: `linux-firmware-amdgpu`
 - Mellanox NIC: `linux-firmware-mellanox`
 
 Please note that `linux-firwmare` doesn't pull in all firmware packages. It only contains firmware that is hard or isn't worth to categorize.
