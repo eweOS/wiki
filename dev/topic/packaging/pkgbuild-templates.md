@@ -2,7 +2,7 @@
 title: PKGBUILD Templates
 description: 
 published: 1
-date: 2024-10-16T07:00:37.004Z
+date: 2026-11-13T02:54:48.862Z
 tags: 
 editor: markdown
 dateCreated: 2023-12-07T03:25:04.800Z
@@ -161,4 +161,10 @@ weston --backend=headless-backend.so --socket=$WAYLAND_DISPLAY --idle-time=0 &
 _w=$!
 
 trap "kill $_w; wait" EXIT
+```
+
+### Qt offscreen mode
+
+```
+export QT_QPA_PLATFORM=offscreen
 ```
